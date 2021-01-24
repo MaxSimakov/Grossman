@@ -32,17 +32,21 @@
 	}
 
 	&__top-inner {
-		padding: rem(70) 0;
+		padding: rem(65) 0;
 		@include media-breakpoint-down(lg) {
 			padding: rem(35) 0;
 		}
 
 		&>ul {
-			padding-left: rem(30);
+			// padding-left: rem(30);
+		}
+
+		.firstStage ul li {
+			padding: 0 0 rem(6);
 		}
 
 		.firstStage:first-of-type {
-			min-width: rem(500);
+			// min-width: rem(500);
 			@include media-breakpoint-up(xxl) {
 				width: 33%;
 			}
@@ -61,7 +65,7 @@
 		}
 
 		.firstStage {
-			min-width: rem(250);
+			// min-width: rem(250);
 			@include media-breakpoint-up(xxl) {
 				width: 16%;
 			}

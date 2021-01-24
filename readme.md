@@ -1,4 +1,2 @@
-1. Отключил lazy плагин. Поставил  loading="lazy"
-
-
-rm -rf node_modules
+<!-- https://github.com/MaxSimakov/Grossman -->
+1. <https://maxsimakov.github.io/Grossman/public>
