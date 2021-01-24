@@ -1,0 +1,109 @@
+.breadcrumbs {
+    margin-bottom: 12px;
+
+}
+    .breadcrumbs__inner{
+        color: #494949;
+        font-size: 13px;
+        line-height: normal;
+    }
+    .breadcrumbs__inner a:not(.defLink){
+            color: currentColor;
+            text-decoration: none;
+            position: relative;
+            display: inline
+        }
+    .breadcrumbs__inner a:not(.defLink):not(.arrowDown) {
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+
+}
+    .breadcrumbs__inner a:not(.defLink):not(.arrowDown) a:hover {
+                    -webkit-transition: all .3s ease-out;
+                    -o-transition: all .3s ease-out;
+                    transition: all .3s ease-out;
+
+}
+    .breadcrumbs__inner a:not(.defLink) span {
+                display: inline;
+
+}
+    .breadcrumbs__inner .crumb{
+            position: relative
+            
+        }
+    .breadcrumbs__inner .crumb:not(:last-of-type)::after {
+    content: "•";
+    font-size: 15px;
+    margin: 0 2px;
+    font-family: auto;
+
+}
+    .breadcrumbs__inner .crumb {
+    display: inline;
+
+}
+    .breadcrumbs__inner .crumb div {
+                display: inline;
+
+}
+    .breadcrumbs__inner .arrowDown{
+            padding-right: 0
+        }
+    .breadcrumbs__inner .arrowDown::after {
+    position: static;
+    vertical-align: middle;
+    font-size: 4px;
+
+}
+    .breadcrumbs__inner .arrowDown::before {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 20px;
+    background-color: transparent;
+
+}
+    .breadcrumbs__inner .arrowDown:hover {
+    color: var(--Flamenco);
+    color: var(--Flamenco);
+
+}
+    .breadcrumbs__inner .dropdown{
+            font-size: 13px;
+            width: 305px;
+            top: calc(100% + 8px);
+            left: -8px;
+        }
+    .breadcrumbs__inner .dropdown li{
+                padding: 6px 0;
+            }
+    @media(max-width: 1024px){
+    .breadcrumbs__inner .arrowDown .dropdown{
+        left: auto;
+    }
+    .breadcrumbs__inner{
+        position: relative;
+    }
+        .breadcrumbs__inner .arrowDown, .breadcrumbs__inner .crumb{
+            position: static;
+        }
+}
+    @media(max-width: 575px){
+    .breadcrumbs{
+        margin: 5px 0 15px;
+    }
+            .breadcrumbs__inner .dropdown{
+                top: calc(100% + 4px);
+                padding: 5px 14px;
+                width: 235px;
+            }
+            .breadcrumbs__inner .arrowDown::after {
+        right: 0;
+
+    }
+}
+/*# sourceMappingURL=../../../maps/templates/components/breadcrumbs/breadcrumbs.css.map */

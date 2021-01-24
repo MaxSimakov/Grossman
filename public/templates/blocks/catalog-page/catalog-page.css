@@ -1,0 +1,82 @@
+.catalog-page .feedback,.subcategory-page .feedback,.brands .feedback,.services-card .feedback,.services-page .feedback{
+        margin-top: 40px;
+    }
+        .catalog-page .feedback__inner .Btn,.subcategory-page .feedback__inner .Btn,.brands .feedback__inner .Btn,.services-card .feedback__inner .Btn,.services-page .feedback__inner .Btn{
+                margin-left: 20px;
+            }
+        .catalog-page .feedback-brims,.subcategory-page .feedback-brims,.brands .feedback-brims,.services-card .feedback-brims,.services-page .feedback-brims{
+            margin-left: 20px;
+        }
+.catalog-page .catalog-block, .subcategory-page .catalog-block {
+        margin-top: 0;
+    }
+.subcategory-page .feedback__inner .section-title{
+                    font-size: 20px;
+                }
+    .sorting:first-child .dropdown li:nth-child(3) span::after,.sorting:first-child .dropdown li:nth-child(4) span::after{
+                    position: absolute;
+                    content: "\E008";
+                    font-family: "icons";
+                    font-size: 5px;
+                    top: 9px;
+                    right: -17px;
+                }
+    .sorting:first-child .dropdown li:nth-child(3) span::after{
+                -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg);
+            }
+    .sorting:first-child .dropdown span{
+                position: relative;
+            }
+    @media(max-width: 1700px){
+                .subcategory-page .feedback__inner .input,.brands .feedback__inner .input,.services-card .feedback__inner .input,.services-page .feedback__inner .input{
+                    width: 195px;
+                }
+}
+    @media(max-width: 1600px){
+                .catalog-page .feedback__inner .input{
+                    width: 195px;
+                }
+                .subcategory-page .feedback__inner .section-title{
+                    font-size: 17px;
+                }
+}
+    @media(max-width: 1199px){
+        .catalog-page h1.section-title,.subcategory-page h1.section-title,.brands h1.section-title,.card-product__page h1.section-title,.services-card h1.section-title,.services-page h1.section-title{
+            margin-bottom: 30px;
+        }
+                .catalog-page .feedback__inner .section-title,.subcategory-page .feedback__inner .section-title,.brands .feedback__inner .section-title,.card-product__page .feedback__inner .section-title,.services-card .feedback__inner .section-title,.services-page .feedback__inner .section-title{
+                    font-size: 22px;
+                }
+                .catalog-page .feedback__inner .input,.subcategory-page .feedback__inner .input,.brands .feedback__inner .input,.card-product__page .feedback__inner .input,.services-card .feedback__inner .input,.services-page .feedback__inner .input{
+                    width: 100%;
+                }
+                .catalog-page .feedback__inner .Btn,.subcategory-page .feedback__inner .Btn,.brands .feedback__inner .Btn,.card-product__page .feedback__inner .Btn,.services-card .feedback__inner .Btn,.services-page .feedback__inner .Btn{
+                    margin-left: 10px;
+                }
+}
+    @media(max-width: 767px){
+        .catalog-page .feedback,.subcategory-page .feedback{
+            margin-top: 20px;
+        }
+            .catalog-page .feedback__inner .Btn,.subcategory-page .feedback__inner .Btn{
+                margin-left: 10px;
+            }
+    .catalog-page .catalog-block, .subcategory-page .catalog-block {
+        margin-top: 0;
+    }
+}
+    @media(max-width: 600px){
+            .catalog-page .feedback__inner .Btn,.subcategory-page .feedback__inner .Btn{
+                margin-left: 0;
+            }
+            .catalog-page .feedback__inner .section-title,.subcategory-page .feedback__inner .section-title{
+                font-size: 21px;
+            }
+}
+    @media(max-width: 575px){
+        .catalog-page h1.section-title,.subcategory-page h1.section-title{
+            margin-bottom: 20px;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/catalog-page/catalog-page.css.map */

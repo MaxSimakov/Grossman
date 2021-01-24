@@ -1,0 +1,1 @@
+{"version":3,"sources":["templates/components/shadows/shadows.css"],"names":[],"mappings":"AAAA;IACI,wDAAgD;YAAhD,gDAAgD;CACnD","file":"../../../../templates/components/shadows/shadows.css","sourcesContent":[".shadow-15{\r\n    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .15);\r\n}\r\n"]}

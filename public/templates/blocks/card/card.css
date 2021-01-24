@@ -1,0 +1,640 @@
+.card, .card-type-1, .card-type-2, .card-full{
+        background-color: var(--White);
+        background-color: var(--White);
+        text-decoration: none;
+        display: block;
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        width: 100%;
+    }
+    .card-type-1, .card-type-2, .card-full{
+        border: 1px solid var(--Gainsboro);
+        border: 1px solid var(--Gainsboro);
+        position: relative
+    }
+    .card-type-1:hover,.card-type-2:hover,.card-full:hover{
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .15);
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .15);
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+}
+    .card-type-1 .card-img,.card-type-2 .card-img{
+            height: 190px;
+        }
+    .card-img{
+        width: 100%;
+        max-width: 100%;
+        height: 260px;
+        margin-bottom: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .card-body{
+        color: var(--mainColor);
+        color: var(--mainColor);
+        padding: 0 15px 20px;
+    }
+    .card-body strong{
+            line-height: 18px;
+            margin-bottom: 7px;
+            display: block;
+        }
+    .card-body p{
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+    .card-body .Btn{
+            margin-top: 30px;
+        }
+    .card-type-1::after{
+        opacity: 0;
+        position: absolute;
+        content: "\E008";
+        font-family: "icons";
+        font-size: 10px;
+        color: var(--Flamenco);
+        color: var(--Flamenco);
+        top: 35px;
+        right: 35px;
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+}
+    .card-type-1:hover .card-body{
+                color: var(--mainColor);
+                color: var(--mainColor);
+                -webkit-transition: all .3s ease-out;
+                -o-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+}
+    .card-type-1:hover::after{
+        right: 25px;
+        opacity: 1;
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+}
+    .card-type-1 .card-body{
+            padding-top: 20px;
+            position: relative;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            color: var(--Charcoal);
+            color: var(--Charcoal);
+            -webkit-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+}
+    .card-type-1 .card-body::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: var(--Gainsboro);
+        background-color: var(--Gainsboro);
+        left: calc(50% - 25px);
+        top: -3px;
+}
+    .card-type-2 .card-img{
+            margin-bottom: 28px;
+        }
+    .card-type-2 .card-body{
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 20px;
+            font-weight: 600;
+        }
+    .card-type-2 .card-body strong{
+                font-weight: 700;
+            }
+    .card-full .card-img{
+            height: 200px;
+            margin-bottom: 10px;
+        }
+    .card-full .card-body .card-link{
+                color: var(--Charcoal);
+                color: var(--Charcoal);
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 25px;
+                text-decoration: none;
+                display: block;
+                font-size: 13px;
+                line-height: 1.77;
+                -webkit-transition: all .3s ease-out;
+                -o-transition: all .3s ease-out;
+                transition: all .3s ease-out
+            }
+    .card-full .card-body .card-link::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+}
+    .card-full .card-body .card-link:hover{
+        color: var(--mainColor);
+        color: var(--mainColor);
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+}
+    .card-full .card-body .price{
+                margin-bottom: 25px;
+            }
+    .card-full .card-body .card-action{
+                margin-bottom: 25px;
+            }
+    .card-full .card-body .card-action button{
+                    position: relative;
+                    z-index: 1;
+                }
+    .card-full .card-body .card-action .popup-desc{
+                    left: 0px;
+                    top: -37px;
+                    white-space: nowrap;
+                }
+    .card-full .card-bottom{
+            position: absolute;
+            width: calc(100% + 2px);
+            background-color: #fff;
+            border: 1px solid var(--Gainsboro);
+            border: 1px solid var(--Gainsboro);
+            border-top: transparent;
+            left: -1px;
+            padding-bottom: 20px;
+            top: calc(100% - 20px);
+            z-index: 2;
+            -webkit-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+        }
+    .card-full .card-bottom .card-action__bottom button{
+                    position: relative;
+                    z-index: 1
+                }
+    .card-full .card-bottom .card-action__bottom button:focus{
+        outline: none;
+}
+    .card-full .card-bottom .card-action__bottom .buyFast{
+                    margin-right: 10px;
+                }
+    .card-full .card-bottom .card-action__bottom .Btn-Wedgewood{
+                    padding-left: 23px;
+                    padding-right: 23px;
+                    cursor: pointer;
+                }
+    .card-full .card-bottom .count__wrap{
+                opacity: 0;
+                visibility: hidden;
+                height: 0;
+                margin-bottom: 0;
+                -webkit-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+            }
+    .card-full .card-bottom .count__wrap button, .card-full .card-bottom .count__wrap input{
+                    position: relative;
+                    z-index: 1;
+                }
+    .card-full .card-bottom .price{
+                display: none;
+            }
+    .card-full .card-bottom .Instock{
+                display: none;
+            }
+    .card-full:hover .card-bottom{
+                -webkit-box-shadow: 0px 17px 15px 0px rgba(0, 0, 0, .15);
+                        box-shadow: 0px 17px 15px 0px rgba(0, 0, 0, .15);
+                -webkit-transition: all .3s ease-out;
+                -o-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+}
+    .card-full:hover .count__wrap{
+                opacity: 1;
+                visibility: visible;
+                height: 59px;
+                margin-bottom: 25px;
+                -webkit-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+}
+    .card-Item{
+        padding-bottom: 57px;
+    }
+.view-list{
+    padding-bottom: 20px;
+}
+.view-list .card-full{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 20px 30px
+    }
+.view-list .card-full:hover .card-bottom {
+                -webkit-box-shadow: none;
+                        box-shadow: none;
+}
+.view-list .card-full .card-img{
+            max-width: 240px;
+            width: 100%;
+            margin: 0 30px 0 0;
+}
+.view-list .card-full .card-bottom {
+            width: auto;
+            position: static;
+            border: none;
+            max-width: 400px;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            background-color: transparent;
+            padding-bottom: 0;
+            margin-left: 20px;
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+}
+.view-list .card-full .card-bottom .count__wrap{
+                opacity: 1;
+                visibility: visible;
+                height: auto;
+                margin: 0 auto 0 0;
+            }
+.view-list .card-full .card-bottom .card-bottom_block{
+                margin-left: 20px;
+            }
+.view-list .card-full .card-bottom .price{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: flex-start;
+            }
+.view-list .card-full .card-bottom .Instock{
+                display: block;
+                line-height: normal;
+                margin-top: 10px;
+            }
+.view-list .card-full .card-bottom .card-action__bottom{
+                margin-top: 20px;
+            }
+.view-list .card-full .card-body{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
+            padding: 0;
+            max-width: 580px;
+            width: 100%;
+            margin-right: auto;
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+}
+.view-list .card-full .card-body .price{
+                display: none;
+            }
+.view-list .card-full .card-body .card-action{
+                margin-left: 20px;
+                margin-bottom: 0;
+            }
+.view-list .card-full .card-link{
+            max-width: 380px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 0;
+            margin-right: auto;
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+}
+.view-list .card-full .card-body__wrap{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+}
+@media(max-width: 1890px){
+        .card-type-1 .card-img{
+            height: 10vw;
+        }
+        .card-type-2 .card-img{
+            height: 9.6vw;
+        }
+    .card-full .card-img {
+        height: 10.15vw;
+    }
+}
+@media(max-width: 1400px){
+    .card-type-1::after{
+                top: 20px;
+                right: 20px;
+        }
+    .card-type-1:hover::after{
+                right: 15px;
+        }
+    .card-Item:not([data-card="list"]){
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.3333333333%;
+                flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+        .view-list .card-full {
+            padding: 15px;
+        }
+            .view-list .card-full .card-img{
+                margin-right: 15px;
+                max-width: 200px;
+            }
+            .view-list .card-full .card-body {
+                max-width: 382px;
+            }
+                .view-list .card-full .card-body .card-action{
+                    margin-left: 10px;
+                }
+            .view-list .card-full .card-bottom {
+                margin-left: 10px;
+            }
+                .view-list .card-full .card-bottom .card-bottom_block{
+                    margin-left: 10px;
+                }
+            .view-list .card-full .card-link{
+                max-width: 240px;
+                margin-right: 0;
+            }
+        .view-list .badge.text{
+            right: 143px;
+        }
+}
+@media(max-width: 1199px){
+        .card-type-1 .card-img{
+            height: 13.9vw;
+            margin-bottom: 20px;
+        }
+        .card-type-1 .card-body {
+            padding-top: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.46;
+        }
+            .card-type-1 .card-body strong{
+                font-weight: 600;
+            }
+        .card-type-1 .card-body::after{
+                width: 24px;
+                height: 2px;
+                left: calc(50% - 12px);
+        }
+        .card-type-2 .card-img{
+            margin-bottom: 22px;
+            height: 12.9vw;
+        }
+        .card-type-2 .card-body{
+            padding-bottom: 22px;
+            padding-right: 0;
+            padding-left: 0;
+            font-size: 13px;
+            line-height: 1.46;
+        }
+            .card-type-2 .card-body strong{
+                font-weight: 600;
+            }
+    .card-Item:not([data-card="list"]){
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+        max-width: 25%;
+    }
+            .view-list .card-full .card-bottom{
+                margin-left: 22px;
+                max-width: 380px;
+            }
+    .card-full .card-img {
+        height: 13.3vw;
+    }
+}
+@media(max-width: 1024px){
+    .card-Item:not([data-card="list"]){
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.3333333333%;
+                flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+    .card-full .card-img{
+        height: 18.25vw;
+    }
+    .badge.text{
+        padding: 0;
+    }
+        .card-full .card-body{
+            padding-bottom: 0;
+        }
+        .card-full .card-bottom{
+            position: static;
+            border: none;
+            width: 100%;
+        }
+            .card-full .card-bottom .count__wrap{
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+                margin-bottom: 25px;
+            }
+    .card-Item {
+        padding-bottom: 20px;
+    }
+}
+@media(max-width: 991px){
+        .view-list .card-full{
+            padding: 20px;
+        }
+            .view-list .card-full .card-img{
+                max-width: 240px;
+                margin-right: 20px;
+                height: 135px;
+                margin-bottom: 50px;
+            }
+            .view-list .card-full .card-body__wrap{
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                width: calc(100% - 260px);
+            }
+            .view-list .card-full .card-body{
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
+                max-width: 100%;
+                margin-right: 0;
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: flex-start;
+            }
+                .view-list .card-full .card-body .card-action{
+                    margin-left: 0;
+                    position: absolute;
+                    left: 85px;
+                    top: 165px;
+                }
+                .view-list .card-full .card-body .price{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin-top: 17px;
+                    margin-bottom: 0;
+                }
+            .view-list .card-full .card-bottom{
+                -webkit-box-align: end;
+                    -ms-flex-align: end;
+                        align-items: flex-end;
+                width: 100%;
+                margin-left: 0;
+            }
+                .view-list .card-full .card-bottom .price{
+                    display: none;
+                }
+                .view-list .card-full .card-bottom .count__wrap{
+                    margin-right: 0;
+                }
+                .view-list .card-full .card-bottom .Instock{
+                    -webkit-transform: translateX(-120px);
+                            transform: translateX(-120px);
+                }
+                .view-list .card-full .card-bottom .card-action__bottom{
+                    margin-top: 20px;
+                    margin-bottom: 22px;
+                }
+             .view-list .card-full .card-link{
+                 max-width: 100%;
+             }
+}
+@media(max-width: 767px){
+        .card-type-1 .card-img{
+            height: 107px;
+        }
+        .card-type-1 .card-body {
+            padding-bottom: 5px;
+        }
+        .card-type-2 .card-img{
+           margin-bottom: 13px;
+           height: 13.04vw;
+        }
+        .card-type-2 .card-body{
+           font-size: 11px;
+           padding-bottom: 10px;
+        }
+            .card-full .card-body .card-action{
+                margin-bottom: 15px;
+            }
+            .card-full .card-body .card-link{
+                margin-bottom: 15px;
+            }
+            .card-full .card-body .price{
+                margin-bottom: 18px;
+            }
+            .card-full .card-bottom .count__wrap{
+                margin-bottom: 15px;
+            }
+    .card-Item {
+        padding-bottom: 10px;
+    }
+    .view-list .card-full .card-link{
+        margin-bottom: 0;
+    }
+}
+@media(max-width: 750px){
+    .card-Item:not([data-card="list"]){
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .card-full .card-img {
+        height: 28.25vw;
+    }
+}
+@media(max-width: 700px){
+            .view-list .card-full .card-img{
+                height: 195px;
+            }
+                .view-list .card-full .card-body .card-action{
+                    top: 223px;
+                }
+            .view-list .card-full .card-bottom {
+                position: relative;
+                top: 0;
+                right: 0;
+                left: auto;
+            }
+                .view-list .card-full .card-bottom .count__wrap{
+                    position: absolute;
+                    bottom: 45px;
+                    left: 0;
+                }
+                .view-list .card-full .card-bottom .Instock{
+                    -webkit-transform: translateX(0);
+                            transform: translateX(0);
+                }
+                .view-list .card-full .card-bottom .card-action__bottom{
+                    margin-bottom: 0;
+                    margin-top: 90px;
+                }
+                .view-list .card-full .card-bottom .card-bottom_block{
+                    margin-left: 0;
+                }
+}
+@media(max-width: 575px){
+        .card-type-1 .card-img{
+            height: 27.9vw;
+        }
+        .card-type-1 .card-body {
+            padding-bottom: 5px;
+            
+        }
+    .card-type-1::after{
+                top: 15px;
+                right: 15px;
+                font-size: 6px;
+        }
+    .card-type-1:hover::after{
+                right: 10px;
+        }
+        .card-type-2 .card-body {
+            font-size: 11px;
+        }
+    .card-Item:not([data-card="list"]){
+        -webkit-box-flex: 0!important;
+            -ms-flex: 0 0 100%!important;
+                flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .card-full .card-img {
+        height: 51.25vw;
+    }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/card/card.css.map */

@@ -1,0 +1,61 @@
+mixin catalog-item(i, t, pr, pro, buy)
+	.col-sm-6.col-lg-3
+		+b.catalog-item
+			+e.img-wrap(href="#")
+				img.res-i(src=`assets/images/catalog-${i}.jpg`, alt="")
+			+e.labels
+				+e.label.warning-bg Хит продаж
+				+e.label.black-bg -10%
+				+e.label.primary-bg Новинка
+			.row
+				.col.d-flex
+					+e.link(href="#")
+						+icon('heart')
+					+e.link(href="#")
+						+icon('compare')
+				.col-auto
+					block
+			+e.title
+				a(href="#")= t
+			.row
+				+e.price.strong.col-auto= pr
+				if pro
+					+e.price--old.col-auto= pro
+			.row
+				.col-auto
+					.card-action__bottom
+						button.buyFast.Btn-Flamenco1 Купить в 1 клик
+						if buy
+							button.basketBtn.active
+								i.icon-1-1_basket
+						else
+							button.basketBtn
+								i.icon-1-1_basket
+mixin sCatalog(data)
+	.container
+		.sCatalog
+			h2.section-title
+				span= data.title
+			.row
+				+catalog-item('9','Душевая кабина GR-227 L/R','22 147 ₽','','buy')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item('10','Раковина GR-3017','65 345 ₽')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item('11','Унитаз GR-B4455','85 548 ₽')
+					+e.SPAN.presence Нет в наличии 
+				+catalog-item('9','Раковина GR-3017','24 684 ₽')
+					+e.SPAN.presence.text-warning В наличии
+mixin sCatalog2(data)
+	.container
+		.sCatalog
+			h2.section-title
+				span= data.title
+			.row
+				+catalog-item('12','Ванна GR-17985','22 345 ₽','','buy')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item('13','Ванна GR-1301','22 345 ₽')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item('14','Унитаз GR-B4455','22 345 ₽')
+					+e.SPAN.presence Нет в наличии 
+				+catalog-item('9','Раковина GR-3017','22 345 ₽')
+					+e.SPAN.presence.text-warning В наличии

@@ -1,0 +1,13 @@
+.about-company {
+    padding-bottom: 60px;
+}
+    .about-company img[align="left"], .about-company img[align="right"] {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    @media(max-width: 900px) {
+    .about-company {
+        padding-bottom: 30px;
+    }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/about-company/about-company.css.map */

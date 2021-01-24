@@ -1,0 +1,216 @@
+
+	// start .advantages
+	.advantages {
+		padding-top: rem(55);
+		padding-bottom: rem(70);
+		background-color: $dark;
+		color: $white;
+
+		@include media-breakpoint-down(md) {
+			padding-top: rem(50);
+			padding-bottom: rem(50);
+		}
+
+		.section-title {
+			padding: 0;
+			margin-bottom: rem(40);
+
+			@include media-breakpoint-down(xl) {
+				margin-bottom: rem(20);
+			}
+
+			h2 {
+				color: $white;
+				font-size: 32px;
+				font-weight: 300 !important;
+				text-align: center;
+				text-transform: uppercase;
+				margin: 0;
+
+				@include media-breakpoint-down(lg) {
+					font-size: rem(30);
+				}
+
+				@include media-breakpoint-down(md) {
+					font-size: rem(25);
+				}
+			}
+		}
+		
+		&__list {
+			display: flex;
+			list-style: none;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 0 rem(5);
+			margin-bottom: 0;
+
+			@include media-breakpoint-down(xl) {
+				justify-content: space-around;
+			}
+		}
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 20%;
+			min-width: rem(227);
+			min-height: rem(155);
+			padding: rem(20) rem(10) 0;
+			
+
+			&:not(:last-child) {
+				border-right: 1px solid #3c3c3c;
+
+				@include media-breakpoint-down(xl) {
+					border-right: none;
+				}
+			}
+
+			&:hover {
+					@include media-breakpoint-down(xl) {
+					position: relative;
+					border: 1px solid #3c3c3c !important;
+					&::before {
+						content: url(../assets/images/grossman-logo-2.png);
+						position: absolute;
+						text-align: center;
+						width: rem(118);
+						height: rem(18);
+						background-color: $dark;
+						top: rem(-9);
+						right: rem(20);
+					}
+				}
+			}
+			
+			&:nth-child(3) {
+				position: relative;
+				border: 1px solid #3c3c3c;
+				&::after {
+					content: url(../assets/images/grossman-logo-2.png);
+					position: absolute;
+					text-align: center;
+					width: rem(118);
+					height: rem(18);
+					background-color: $dark;
+					top: rem(-9);
+					right: rem(20);
+					@include media-breakpoint-down(xl) {
+						display: none;
+					}
+				}
+				@include media-breakpoint-down(xl) {
+					border-top: none;
+					border-left: none;
+				}
+			}
+			@include media-breakpoint-down(xl) {
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				min-width: 35%;
+				border-right: none;
+				border-bottom: 1px solid #3c3c3c;
+			}
+
+			@include media-breakpoint-down(lg) {
+				min-width: rem(320);
+				min-height: rem(120);
+				padding: rem(15) rem(10) 0;
+			}
+
+
+			@include media-breakpoint-down(md) {
+				width: 45%;
+				justify-content: flex-start;
+				padding-left: rem(20);
+			}
+
+			@include media-breakpoint-down(sm) {
+				padding-left: rem(30);
+			}
+		}
+
+		&__text {
+			display: block;
+			margin-bottom: rem(20);
+			text-align: center;
+			font-size: rem(19);
+			font-weight: 300;
+
+			@include media-breakpoint-down(xl) {
+				padding-left: rem(40);
+				text-align: left;
+				max-width: rem(250);
+				margin-bottom: 0;
+			}
+
+			@include media-breakpoint-down(md) {
+				font-size: rem(16);
+			}
+
+		}
+
+		&__img {
+			position: relative;
+			display: inline-block;
+			margin-bottom: rem(22);
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: rem(15);
+			}
+
+			&::after {
+				content: url(../assets/svg/advantage-mark.svg);
+				width: rem(16);
+				height: rem(28);
+				position: absolute;
+				right: -19px;
+				bottom: 0;
+				@include media-breakpoint-down(md) {
+					width: rem(13);
+					height: rem(22);
+					right: -15px;
+				}
+			}
+			
+			img {
+				width: rem(64);
+				height: rem(64);
+				@include media-breakpoint-down(md) {
+					width: rem(50);
+					height: rem(50);
+				}
+			}
+		}
+
+		&__item:nth-child(1) .advantages__img:after {
+			right: -14px;
+		}
+		&__item:nth-child(4) .advantages__img:after {
+			right: -14px;
+			@include media-breakpoint-down(md) {
+				right: -12px;
+			}
+		}
+		&__item:nth-child(5) .advantages__img:after {
+			right: -22px;
+			@include media-breakpoint-down(md) {
+				right: -15px;
+			}
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.advantages

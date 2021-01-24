@@ -1,0 +1,58 @@
+.services-card {
+    padding-bottom: 45px;
+}
+    .services-card img {
+        margin-right: 50px;
+        width: 494px;
+    }
+    .services-card h1 {
+        font-size: 20px;
+    }
+    .services-card h1:first-child {
+        margin-top: 0;
+    }
+    .services-card .typography p:first-child {
+            margin-top: 0;
+        }
+    .services-card .typography:first-child {
+        margin-bottom: 45px;
+    }
+    .services-card .typography:first-child img {
+            margin-top: 0;
+        }
+    .services-card button {
+        padding: 8px 35px
+    }
+    .services-card button:hover {
+    color: var(--mainColor);
+    color: var(--mainColor);
+}
+    .services-card .feedback {
+        display: inline-block;
+        width: 100%;
+    }
+    .services-card .feedback__inner {
+            padding: 23px 44px;
+        }
+    @media(max-width: 1700px) {
+            .services-card .feedback__inner {
+                padding: 23px 15px;
+            }
+}
+    @media(max-width: 767px) {
+    .services-card {
+        padding-bottom: 15px;
+    }
+        .services-card .typography:first-child {
+            margin-bottom: 25px;
+        }
+        .services-card .feedback {
+            margin: 30px 0 25px;
+        }
+}
+    @media(max-width: 425px) {
+        .services-card .Btn-Flamenco {
+            width: 100%;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/services-card/services-card.css.map */

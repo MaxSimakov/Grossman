@@ -1,0 +1,41 @@
+@font-face {
+	font-family: "OpenSans";
+	src: url("../assets/fonts/OpenSans-Light.ttf"),
+        url("../assets/fonts/OpenSans-Light.woff"),
+        url("../assets/fonts/OpenSans-Light.woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../assets/fonts/OpenSans-Regular.ttf"),
+        url("../assets/fonts/OpenSans-Regular.woff"),
+        url("../assets/fonts/OpenSans-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../assets/fonts/OpenSans-Semibold.ttf"),
+        url("../assets/fonts/OpenSans-Semibold.woff"),
+        url("../assets/fonts/OpenSans-Semibold.woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../assets/fonts/OpenSans-Bold.ttf"),
+        url("../assets/fonts/OpenSans-Bold.woff"),
+        url("../assets/fonts/OpenSans-Bold.woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../assets/fonts/OpenSans-ExtraBold.ttf"),
+        url("../assets/fonts/OpenSans-ExtraBold.woff"),
+        url("../assets/fonts/OpenSans-ExtraBold.woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+/*# sourceMappingURL=../../maps/styles/default/fonts.css.map */

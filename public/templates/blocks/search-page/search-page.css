@@ -1,0 +1,13 @@
+.search-page .card-action__bottom {
+        height: 37px;
+    }
+    .search-page .search_block .input {
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+    }
+    @media(max-width: 1650px) {
+        .search-page .view-list .card-full .card-body {
+            max-width: 352px;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/search-page/search-page.css.map */

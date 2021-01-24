@@ -1,6 +1,317 @@
 
 	// start .header
 	.header {
+		background-color: $white;
+		a:hover {
+			color: $primary;
+		}
+		.logo {
+			width: rem(188);
+			@include media-breakpoint-down(md) {
+				width: rem(160);
+			}
+			@include media-breakpoint-down(sm) {
+				width: rem(130);
+			}
+		}
+
+		&__top {
+			background-color: $white;
+		}	
+
+		.header__top .basket__inner {
+			@media (max-width: 600px) {
+				background-color: $dark;
+			}
+		}
+
+		.icon {
+			color: $primary;
+			margin-right: rem(12);
+		}
+
+		.icon-basket {
+			margin-right: rem(17);
+			@include media-breakpoint-down(lg) {
+				width: rem(25);
+				height: rem(25);
+			}
+			@include media-breakpoint-down(sm) {
+				margin-right: rem(12);
+			}
+		}
+
+		.icon-phone {
+			width: rem(17);
+			height: rem(18);
+			@media (max-width: 1390px) {
+				width: rem(20);
+				height: rem(20);
+			}
+			@include media-breakpoint-down(lg) {
+				margin-right: rem(20);
+				width: rem(25);
+				height: rem(25);
+			}
+			@include media-breakpoint-down(sm) {
+				margin-right: rem(12);
+			}
+		}
+
+		.icon-mail {
+			width: rem(17);
+			height: rem(14);
+			@media (max-width: 1390px) {
+				width: rem(20);
+				height: rem(20);
+			}
+			@include media-breakpoint-down(lg) {
+				width: rem(25);
+				height: rem(25);
+			}
+			@include media-breakpoint-down(sm) {
+				margin-right: rem(10);
+			}
+		}
+
+		.contact .defLink {
+			// align-items: flex-start;
+		}
+
+
+		&__top .basket__inner span:nth-of-type(2) {
+			margin: 0;
+		}
+
+		.list-line li {
+			padding: rem(19) rem(21) rem(19);
+			border: none;
+			@media (max-width: 600px) {
+				padding: rem(19) rem(0);
+			}
+		}
+
+		&__top-right .contact {
+			display: flex;
+		}
+
+		&__top-right .contact a:nth-child(2) span:nth-child(2) {
+			font-size: rem(13);
+			font-weight: 300;
+		}
+
+		.contact	a:nth-child(1) {
+			display: block;
+			span {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+
+		.contact	a:nth-child(2) {
+			display: flex;
+			flex-direction: column;
+			margin-right: rem(50) !important;
+			margin-left: rem(30);
+			align-items: flex-start;
+			@media (max-width: 1745px) {
+				display: none;
+			}
+			span {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+
+		.contact	a:nth-child(3) {
+			align-items: center;
+			span {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+
+		.contact	a span {
+			@media (max-width: 1390px) {
+				display: none;
+			}
+		}
+
+		.contact {
+			@media (max-width: 1550px) {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+
+		.contact a i {
+			font-size: rem(15);
+			line-height: 20px;
+	  }
+
+	  	.contact a:not(:last-of-type) {
+		  margin-bottom: 0;
+		  margin-right: rem(15);
+		  @media (max-width: 600px) {
+			margin-right: rem(0);
+		  }
+	  }
+	  
+		@media (max-width: 1345px) {
+			.header__top-right .contact a i {
+				 font-size: rem(18);
+				 margin-right: rem(30);
+			}
+		}
+
+		@media (max-width: 600px) {
+			.header__top-right .contact a i {
+				 font-size: rem(20);
+				 margin-right: rem(10);
+			}
+		}
+
+		&__bottom-left .menu> li:first-child {
+			padding: rem(15) rem(60) rem(15) rem(30);
+			background-color: $primary;
+			border: 1px solid $primary;
+			&:hover {
+				background-color: transparent;
+				border-color: $primary;
+			}
+		}
+		
+		&__bottom-left .menu> li:first-child> .dropdown {
+			padding: 0;
+		}
+
+		&__bottom {
+			background-color: $dark;
+		}
+
+		&__bottom-right form {
+			@media (min-width: 1600px) {
+				width: 50.177vw;
+			}
+		}
+
+		.Btn-Flamenco {
+			font-size: rem(14);
+			font-weight: 300;
+		}
+
+		.serv-center {
+			color: #ffffff;
+			font-size: rem(17);
+			font-weight: 300;
+			text-decoration: none;
+			margin: 0 rem(40);
+			min-width: rem(250);
+			&:hover {
+			color: #ff0033;
+			}
+		}
+
+		&__bottom-left {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@media (max-width: 1199px) {
+				display: none;
+			}
+		}
+
+		.menu .defLink {
+			font-size: rem(15);
+			font-weight: 300;
+			color: #686868;
+		}
+
+		&__bottom-left .menu> li> a {
+			font-size: rem(17) !important;
+			font-weight: 300;
+			color: $white !important;
+		}
+		
+		.defLink:hover {
+			color: $primary;
+		}
+
+		&__bottom-right input{
+			font-size: 15px;
+			font-weight: 300;
+			height: rem(37) !important;
+			// margin-right: rem(20);
+			// @media (max-width: 600px) {
+			// 	margin-right: 0;
+			// }
+		}
+
+		&__bottom-right .Btn-Flamenco { 
+			margin-left: rem(15);
+			height: rem(37);
+			@media (max-width: 600px) {
+				margin-left: 0;
+			}
+		}
+
+		.input-wrap .searchBtn {
+			position: absolute;
+			top: rem(10);
+			right: rem(19);
+			@media (max-width: 600px) {
+				right: rem(10);
+				top: rem(19);
+			}
+		}
+		&__top-inner .dropdown li:not(:last-child) {
+		border-bottom: 1px solid #e8e8e8;
+		}
+
+		&__top-inner .dropdown li {
+			padding: rem(17) 0;
+		}
+
+		&__top-inner .dropdown {
+			padding: 0 rem(20);
+			min-width: rem(230);
+		}
+
+		
+
+		&__bottom-left .catalog-list .defLink {
+			font-size: rem(16);
+			font-weight: 500;
+			color: $dark;
+			padding: rem(10) 0;
+			display: block;
+			width: 100%;
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+		.catalog-list> li:hover> .icon-wrap i, .catalog-list> li:hover> a {
+			color: $primary;
+		}
+
+		.catalog-list> li:hover {
+			background-color: $white;
+		}
+
+		.catalog-list> li i {
+			color: $primary;
+		}
+
+		.menu-mobile__list .secondStage> li:hover> .item__inner {
+			background-color: $dark;
+		}
+
+		
+		
+
+	  
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -27,3 +338,46 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.header
+
+.header-fixed {
+	background-color: $dark;
+
+	.contact a {
+		align-items: center;
+	}
+
+	.icon {
+		color: $white;
+		margin-right: rem(12);
+	}
+}
+
+.menu-mobile__list .secondStage> li:hover> .item__inner {
+	background-color: $dark;
+}
+
+.icon-phone {
+	width: rem(17);
+	height: rem(18);
+}
+.icon-mail {
+	width: rem(17);
+	height: rem(14);
+}
+.icon-heart {
+	width: rem(20);
+	height: rem(18);
+}
+.icon-compare {
+	width: rem(18);
+	height: rem(18);
+}
+.icon-basket {
+	width: rem(19);
+	height: rem(18);
+}
+.icon-user {
+	width: rem(15);
+	height: rem(18);
+}
+

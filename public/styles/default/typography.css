@@ -1,0 +1,216 @@
+.typography {
+    font-size: 13px;
+    line-height: 1.46;
+}
+    .typography .h1, .typography .h2, .typography .h3, .typography .h4, .typography .h5, .typography .h6, .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+        margin: 35px 0 20px;
+        font-family: inherit;
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--Wedgewood);
+        color: var(--Wedgewood);
+        text-transform: uppercase;
+    }
+    .typography h1 {
+        font-size: 25px;
+    }
+    .typography h2 {
+        font-size: 21px;
+    }
+    .typography h3 {
+        font-size: 17px;
+    }
+    .typography h4 {
+        font-size: 15px;
+    }
+    .typography h5 {
+        font-size: 14px;
+    }
+    .typography h6 {
+        font-size: 14px;
+    }
+    .typography p {
+        margin-top: 20px
+    }
+    .typography p:not(:last-child) {
+    margin-bottom: 20px;
+}
+    .typography p:first-child {
+    margin-top: 0;
+}
+    .typography a {
+        display: inline;
+        border-bottom: 1px solid var(--Wedgewood);
+        border-bottom: 1px solid var(--Wedgewood);
+        text-decoration: none;
+        color: var(--Wedgewood);
+        color: var(--Wedgewood);
+    }
+    .typography mark {
+        padding: .2em;
+        background-color: #fcf8e3;
+    }
+    .typography small {
+        font-size: 80%;
+        font-weight: 400;
+    }
+    .typography b, .typography strong {
+        font-weight: 800;
+    }
+    .typography blockquote {
+        position: relative;
+        margin: 40px 0;
+        padding: 30px 0 30px 50px;
+        margin-left: 132px;
+        border-left: 3px solid var(--Gainsboro);
+        border-left: 3px solid var(--Gainsboro);
+        font-style: italic
+    }
+    .typography blockquote:before {
+    position: absolute;
+    left: -90px;
+    top: calc(50% - 10px);
+    content: '“';
+    font-family: "OpenSans";
+    font-size: 80px;
+    color: var(--Gainsboro);
+    color: var(--Gainsboro);
+    font-style: normal;
+    line-height: 0.7;
+}
+    .typography dl, .typography ol, .typography ul {
+        margin: 0;
+        padding: 0;
+    }
+    .typography ol ol, .typography ol ul, .typography ul ol, .typography ul ul {
+        margin-bottom: 0;
+    }
+    .typography ul {
+        list-style-position: inside;
+        list-style: none;
+    }
+    .typography ul li:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    .typography ul li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start
+        }
+    .typography ul li:before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    background-color: var(--mainColor);
+    margin: 6.5px 18px 0 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+}
+    .typography ul li span {
+                display: block;
+                -ms-flex-negative: 1;
+                    flex-shrink: 1;
+}
+    .typography ol {
+        counter-reset: counter;
+    }
+    .typography ol li:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    .typography ol li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            counter-increment: counter
+        }
+    .typography ol li:before {
+    content: counter(counter) ". ";
+    margin-right: 18px;
+    font-weight: bold;
+}
+    .typography ol li span {
+                display: block;
+                -ms-flex-negative: 1;
+                    flex-shrink: 1;
+}
+    .typography table {
+        border-collapse: collapse;
+    }
+    .typography img {
+        width: 472px;
+    }
+    .typography img[align="right"] {
+        margin: 5px 0 5px 40px;
+    }
+    .typography img[align="left"] {
+        margin: 5px 40px 5px 0;
+    }
+    @media(max-width: 900px) {
+        .typography .h1, .typography .h2, .typography .h3, .typography .h4, .typography .h5, .typography .h6, .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+            margin: 25px 0 15px 0;
+        }
+        .typography p {
+            margin-top: 20px
+        }
+        .typography p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+            .typography ul li:before, .typography ol li:before {
+                margin-right: 10px;
+            }
+            .typography ul li:not(:last-child), .typography ol li:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        .typography blockquote {
+            margin: 30px 0 30px 98px;
+            padding: 15px 0 15px 30px
+        }
+        .typography blockquote:before {
+        left: -70px;
+    }
+        .typography img {
+            width: 356px;
+            height: auto;
+        }
+        .typography img[align="right"] {
+            margin: 0 0 0 20px;
+        }
+        .typography img[align="left"] {
+            margin: 0 20px 0 0;
+        }
+}
+    @media(max-width: 575px){
+        .typography h2 {
+            font-size: 20px;
+        }
+        .typography p{
+            margin-top: 17px;
+            font-size: 14px
+        }
+        .typography p:not(:last-child) {
+        margin-bottom: 17px;
+    }
+            .typography ul li:not(:last-child), .typography ol li:not(:last-child) {
+                margin-bottom: 17px;
+            }
+        .typography blockquote {
+            padding-left: 20px;
+            margin-left: 70px
+        }
+        .typography blockquote:before {
+        left: -55px;
+    }
+        .typography img {
+            width: 100%;
+        }
+        .typography img[align="right"], .typography img[align="left"] {
+            margin: 0 0 17px 0;
+        }
+}
+/*# sourceMappingURL=../../maps/styles/default/typography.css.map */

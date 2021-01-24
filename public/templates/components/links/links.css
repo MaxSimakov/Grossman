@@ -1,0 +1,39 @@
+.h-Flamenco span, .h-Flamenco-1, .h-White, .dashed, .solid{
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+.h-Flamenco span:hover,.h-Flamenco-1:hover,.h-White:hover,.dashed:hover,.solid:hover{
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.h-Flamenco:hover span:not(.popup-desc){
+            color: var(--Flamenco);
+            color: var(--Flamenco);
+}
+.h-Flamenco-1:hover{
+    color: var(--Flamenco);
+    color: var(--Flamenco);
+}
+.h-White:hover{
+    color: var(--White);
+    color: var(--White);
+}
+.h-Wedgewood:hover{
+    color: var(--Wedgewood);
+    color: var(--Wedgewood);
+}
+.dashed, .solid{
+    color: var(--Charcoal);
+    color: var(--Charcoal);
+    display: inline-block
+}
+.dashed:hover,.solid:hover{
+    color: var(--Wedgewood);
+    color: var(--Wedgewood);
+}
+.dashed{
+    border-bottom: 1px dashed currentColor;
+}
+/*# sourceMappingURL=../../../maps/templates/components/links/links.css.map */

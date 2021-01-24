@@ -1,4 +1,7 @@
 :root {
+	@include media-breakpoint-up(xl) {
+		--asideW: calc(362px + var(--bs-gutter-x));
+	}
 	--animate-delay: 1.2s;
 	--fontSizeBase: #{$em-base};
 	@include media-breakpoint-up(md) {

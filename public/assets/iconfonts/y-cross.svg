@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="крестик_картинка" data-name="крестик картинка" class="cls-1" d="M1867.36,1263.01l1.63,1.65-15.35,14.33-1.63-1.65Zm-15.35,1.65,1.63-1.65,15.35,14.33-1.63,1.65Z" transform="translate(-1852 -1263)"/>
+</svg>

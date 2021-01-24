@@ -1,0 +1,99 @@
+
+	// start .catalog-block
+	.catalog-block {
+		padding-top: rem(62);
+		padding-bottom: rem(67);
+		margin: 0;
+
+		@include media-breakpoint-down(lg) {
+			padding-top: rem(30);
+			padding-bottom: rem(30);
+		}
+
+		.row {
+			--bs-gutter-y: 1.25rem;
+		}
+
+		.card-type-1 {
+			padding: rem(20);
+
+			@include media-breakpoint-down(xl) {
+				padding: rem(10);
+			}
+
+			&::after {
+				display: none;
+			}
+
+			&:hover {
+				box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);;
+			}
+
+			.card-img {
+				margin-bottom: rem(23);
+				height: auto;
+
+				@include media-breakpoint-down(xl) {
+					margin-bottom: rem(10);
+				}
+			}
+
+			.card-body {
+				padding: 0;
+				margin-bottom: rem(3);
+				text-align: left;
+				color: #000000;
+				font-size: 19px;
+				font-weight: 300;
+				text-transform: none;
+
+				@include media-breakpoint-down(xl) {
+					font-size: 15px;
+					margin-bottom: 0;
+				}
+
+				&::after {
+					display: none;
+				}
+
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+
+		.section-title {
+			color: $dark;
+			font-size: 36px;
+			font-weight: 300;
+			text-align: left;
+			text-transform: uppercase;
+			margin: 0;
+			padding-bottom: rem(30);
+
+			@include media-breakpoint-down(lg) {
+				font-size: rem(30);
+				padding-bottom: rem(20);
+			}
+
+			@include media-breakpoint-down(md) {
+				font-size: rem(25);
+			}
+
+			span::after {
+				display: none;
+			}
+		}		
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.catalog-block
+

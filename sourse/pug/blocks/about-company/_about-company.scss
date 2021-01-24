@@ -1,0 +1,119 @@
+
+	// start .about-company
+	.about-company {
+		padding: rem(50) 0 rem(30);
+		color: $dark;
+		@include media-breakpoint-down(lg) {
+			padding: rem(25) 0 rem(35);
+		}
+
+
+		&__title {
+			font-size: $h2-font-size;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-bottom: rem(10);
+			@include media-breakpoint-down(lg) {
+				margin-bottom: rem(10);
+				font-size: rem(30);
+			}
+			
+			@include media-breakpoint-down(md) {
+				font-size: rem(25);
+			}
+
+		}
+
+		&__descr {
+			color: #686868;
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: rem(40);
+			@include media-breakpoint-down(lg) {
+				margin-bottom: rem(20);
+			}
+		}
+
+		&__subtitle {
+			font-size: rem(16);
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-bottom: rem(3);
+		}
+
+		&__content {
+			font-size: rem(16);
+			font-weight: 300;
+			margin-bottom: rem(25);
+			@include media-breakpoint-down(lg) {
+				margin-bottom: rem(15);
+			}
+		}
+
+		&__content:last-of-type {
+			margin-bottom: rem(30);
+			@include media-breakpoint-down(lg) {
+				margin-bottom: rem(25);
+			}
+		}
+
+		&__img-wrapper {
+			background-color: $white;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			@include media-breakpoint-up(xxl) {
+				margin-right: rem(-10);
+			}
+		}
+
+		&__content-wrapper {
+			background-color: $white;
+			padding: rem(65) rem(45) rem(35) rem(42);
+			height: 100%;
+			@include media-breakpoint-up(xxl) {
+				margin-left: rem(-10);
+			}
+			@include media-breakpoint-down(lg) {
+				padding: rem(40) rem(30) rem(30) rem(25);
+			}
+			@include media-breakpoint-between(md, xxl) {
+				background-color: transparent;
+			}
+		}
+
+		&__img {	
+				width: 100%;
+				@include media-breakpoint-between(md, xxl) {
+					@include a-cent;
+					object-fit: cover;
+					opacity: .5;
+					z-index: -1;
+					height: 100%;
+					width: 100%;
+				}
+			}
+			.rel {
+				position: relative;
+			}
+
+		.Btn-Flamenco {
+			font-size: rem(14);
+			font-weight: 300;
+			text-decoration: none;
+			cursor: pointer;
+			padding: 12px 40px;
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.about-company

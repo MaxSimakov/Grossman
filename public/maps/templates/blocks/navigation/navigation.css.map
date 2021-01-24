@@ -1,0 +1,1 @@
+{"version":3,"sources":["templates/blocks/navigation/navigation.css"],"names":[],"mappings":"AAAA;IACI,uBAAuB;CAC1B","file":"../../../../templates/blocks/navigation/navigation.css","sourcesContent":["nav {\r\n    background-color: #fff;\r\n} "]}

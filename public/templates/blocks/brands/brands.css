@@ -1,0 +1,188 @@
+.brands__filter {
+        padding: 18px 30px 28px;
+        border: 1px solid var(--Gainsboro);
+        border: 1px solid var(--Gainsboro);
+        border: 1px solid #e1e1e1;
+    }
+        .brands__filter-inner {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        }
+        .brands__filter a {
+            text-transform: uppercase;
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            line-height: 33px
+        }
+        .brands__filter a:not(:last-child) {
+        margin-right: 15px;
+}
+        .brands__filter a:hover {
+        color: var(--Flamenco);
+        color: var(--Flamenco);
+        color: #e08b44;
+}
+        .brands__filter-disable {
+            color: var(--hrefDisable);
+            color: var(--hrefDisable);
+            color: #a3a2a2;
+            pointer-events: none;
+        }
+        .brands__filter-btn {
+            margin-top: 12px;
+            color: var(--Charcoal);
+            color: var(--Charcoal);
+            line-height: 1.1;
+            border-bottom: 1px dashed var(--Charcoal);
+            border-bottom: 1px dashed var(--Charcoal);
+            border-bottom: 1px dashed #494949;
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s
+        }
+        .brands__filter-btn:hover {
+        border-bottom: 1px dashed var(--White);
+        border-bottom: 1px dashed var(--White);
+        border-bottom: 1px dashed #ffffff;
+}
+    .brands__result-block:first-child {
+        padding-bottom: 45px;
+        border-bottom: 1px dashed var(--Gainsboro);
+        border-bottom: 1px dashed var(--Gainsboro);
+        border-bottom: 1px dashed #e1e1e1;
+}
+    .brands__result-block:last-child {
+        margin-top: 5px;
+}
+    .brands__result-item {
+            margin-top: 40px;
+        }
+    .brands__result-item li:not(:last-child) {
+                margin-bottom: 18px;
+            }
+    .brands__result-item a {
+                white-space: nowrap;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                   text-overflow: ellipsis;
+                line-height: 1.3;
+                -webkit-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s
+            }
+    .brands__result-item a:hover {
+        color: var(--Flamenco);
+        color: var(--Flamenco);
+        color: #e08b44;
+}
+    .brands__result-title {
+            font-size: 20px;
+            color: var(--Wedgewood);
+            color: var(--Wedgewood);
+            color: #445f87;
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+    .brands .feedback__inner {
+            padding: 23px 44px;
+        }
+    @media(max-width: 1700px) {
+            .brands .feedback__inner {
+                padding: 23px 15px;
+            }
+}
+    @media(max-width: 925px) {
+        .brands__filter {
+            padding: 10px 20px 20px;
+        }
+            .brands__filter a:not(:last-child) {
+                margin-right: 10.5px;
+        }
+}
+    @media(max-width: 767px) {
+        .brands__filter {
+            padding: 10px 20px 20px;
+        }
+            .brands__filter a {
+                line-height: 33px;
+            }
+            .brands__filter .row {
+                margin: 0;
+            }
+            .brands__filter-btn {
+                margin-top: 5px;
+            }
+            .brands__filter .col-auto {
+                padding: 0;
+            }
+        .brands__result{
+            margin-top: -10px;
+        }
+            .brands__result-title {
+                margin-bottom: 18px;
+            }
+            .brands__result-block:first-child {
+                padding-bottom: 30px;
+            }
+            .brands__result-block:last-child {
+                margin-top: -10px;
+            }
+        .brands .feedback {
+            margin: 40px 0 30px;
+        }
+}
+    @media(max-width: 620px) {
+            .brands__filter-block.col-auto {
+                padding: 6px 0;
+            }
+            .brands__filter-block {
+                border-bottom: 1px dashed var(--Gainsboro);
+                border-bottom: 1px dashed var(--Gainsboro);
+                border-bottom: 1px dashed #e1e1e1;
+                width: 100%;
+            }
+            .brands__filter-btn {
+                margin-top: 10px;
+            }
+}
+    @media(max-width: 576px) {
+        .brands__filter {
+            padding: 4px 15px 20px;
+        }
+            .brands__filter a:not(:last-child) {
+                margin-right: 9px;
+        }
+        .brands__result {
+            margin-top: 0;
+        }
+            .brands__result-item {
+                margin-top: 30px;
+            }
+                .brands__result-item li:not(:last-child) {
+                    margin-bottom: 13px;
+                }
+                .brands__result-item a {
+                    font-size: 14px;
+                }
+            .brands__result-title {
+                font-size: 21px;
+            }
+        .brands__result-block:last-child {
+            margin-top: 0;
+        }
+        .brands .feedback {
+            margin: 30px 0;
+        }
+        .brands .text-block .section-title  {
+            margin-bottom: 0;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/brands/brands.css.map */

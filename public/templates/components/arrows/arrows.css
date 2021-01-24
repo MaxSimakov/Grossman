@@ -1,0 +1,27 @@
+.arrowDown{
+    position: relative;
+    padding-right: 18px
+}
+.arrowDown::after{
+    position: absolute;
+    content: "\E008";
+    font-family: "icons";
+    color: currentColor;
+    font-size: 5px;
+    right: 0;
+    top: calc(50% - 2.5px);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.arrowDown:hover::after{
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.arrowDown:hover> .dropdown{
+    display: block;
+}
+/*# sourceMappingURL=../../../maps/templates/components/arrows/arrows.css.map */

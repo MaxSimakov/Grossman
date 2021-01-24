@@ -1,0 +1,21 @@
+mixin advantages(data)
+	// start advantages
+	+b.SECTION.advantages.section#advantages&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Преимущества
+			+e.UL.list
+				mixin item(i, t)
+					+e.LI.item
+						+e.img
+							img(src=`assets/svg/advantages-${i}.svg`, alt="")
+						+e.SPAN.text=t
+				+item('1','Гарантия на всю продукцию 5 лет')
+				+item('2','Современный стиль')
+				+item('3','Экологически чистые материалы')
+				+item('4','Высокая надежность')
+				+item('5','Доступные цены')
+
+
+				
+	// end advantages

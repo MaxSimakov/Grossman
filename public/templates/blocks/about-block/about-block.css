@@ -1,0 +1,64 @@
+.about-block{
+    padding: 60px 0 70px;
+    position: relative;
+}
+    .about-block .section-title{
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    .about-block .typography{
+        color: rgba(255, 255, 255, 0.502);
+        line-height: 1.588;
+        font-size: 13px;
+        margin-top: 30px;
+    }
+    .about-block .Btn{
+        margin-top: 60px;
+    }
+.about-block__inner {
+    position: relative;
+    z-index: 1;
+}
+@media(max-width: 1890px){
+    .about-block::after{
+        right: -15px;
+    }
+}
+@media(max-width: 1199px) {
+    .about-block {
+        padding-top: 40px;
+    }
+}
+@media(max-width: 1024px){
+    .about-block {
+        padding: 0 0 40px
+    }
+    .about-block::after{
+        top: auto;
+        bottom: 18px;
+    }
+    .about-block .Btn{
+            margin-top: 30px;
+    }
+}
+@media(max-width: 767px){
+        .about-block .typography{
+            font-size: 14px;
+        }
+}
+@media(max-width: 600px){
+    .about-block {
+        padding-bottom: 30px
+    }
+    .about-block::after{
+        display: none;
+    }
+    .about-block .typography{
+            margin-top: 15px;
+    }
+    .about-block .Btn{
+            margin-top: 12px;
+    }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/about-block/about-block.css.map */

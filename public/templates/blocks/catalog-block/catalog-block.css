@@ -1,0 +1,41 @@
+.catalog-block {
+    margin-top: 30px;
+}
+.Item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+@media(max-width: 767px){
+    .Item{
+        margin-bottom: 10px;
+    }
+    .catalog-block {
+        margin-top: 30px;
+    }
+}
+@media(max-width: 750px){
+    .Item{
+        max-width: 33%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33%;
+                flex: 0 0 33%
+    }
+}
+@media(max-width: 575px){
+    .Item{
+        max-width: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+    }
+        .Item .card-body{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .catalog-block strong {
+            font-size: 11px;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/catalog-block/catalog-block.css.map */

@@ -1,5 +1,2021 @@
 mixin header()
-	// start header
-	+b.HEADER.header#header&attributes(attributes)
-		block
-	// end header
+		header
+			.header
+				.header__top
+					.container
+						.header__top-inner
+							.header__top-left
+								.BtnMenu(data-modal_btn="mob-menu")
+									i.icon-1-3_menu
+								.logo
+									a(href="index.html")
+										img(src="assets/svg/grossman-logo.svg" alt="")
+							nav.menu-wrap
+									ul.menu.menu-min.def-ul
+										li.arrowDown
+											a.defLink.h-Flamenco-1(href="#") О&nbsp;компании
+											ul.def-ul.dropdown
+												li
+													a.defLink.h-Flamenco-1(href="#") О&nbsp;компании
+												li
+													a.defLink.h-Flamenco-1(href="#") Новости 
+												li
+													a.defLink.h-Flamenco-1(href="#") Вакансии
+										li.arrowDown
+											a.defLink.h-Flamenco-1(href="#") Клиентам
+											ul.def-ul.dropdown
+												li
+													a.defLink.h-Flamenco-1(href="#") Условия оплаты 
+												li
+													a.defLink.h-Flamenco-1(href="#") Условия доставки 
+												li
+													a.defLink.h-Flamenco-1(href="#") Гарантия на&nbsp;товар
+												li
+													a.defLink.h-Flamenco-1(href="#") Вопрос-ответ
+												li
+													a.defLink.h-Flamenco-1(href="#") Коллекции
+												li
+													a.defLink.h-Flamenco-1(href="#") Образы
+										li.arrowDown
+											a.defLink.h-Flamenco-1(href="#") Контакты
+											ul.def-ul.dropdown
+												li
+													a.defLink.h-Flamenco-1(href="#") Контактная информация
+												li
+													a.defLink.h-Flamenco-1(href="#") Напишите нам 
+												li
+													a.defLink.h-Flamenco-1(href="#") Обратный звонок
+												li
+													a.defLink.h-Flamenco-1(href="#") Написать руководителю
+										li
+											a.defLink.h-Flamenco-1(href="#") Доставка
+							.header__top-right
+								.contact
+									a.defLink.h-Flamenco(href="tel:8(495)2870700")
+										+icon('phone')
+										span +7 (495) 287-07-00
+									a.defLink.h-Flamenco(href="tel:8(495)2870700")
+											span +7 (495) 287-07-00
+											span с 9:00 до 18:00
+									a.defLink.h-Flamenco(href="mailto:info@grossman.com.ru")
+										+icon('mail')
+										span info@grossman.com.ru
+								// .elect, .comparison, .basket, .logIn - имеют класс not-empty !
+								ul.def-ul.list-line
+									li
+										a.elect.not-empty.popup-desc-parent.defLink(href="#")
+											+icon('heart')
+											span 40
+											span.popup-desc.shadow-15 Избранное
+									li
+										a.comparison.popup-desc-parent.defLink(href="#")
+											+icon('compare')
+											span 0
+											span.popup-desc.shadow-15 Сравнение
+									li
+										a.basket.popup-desc-parent.not-empty.h-Flamenco.defLink(href="#")
+											+icon('basket')
+											.basket__inner
+												span.def-p.show-600 25
+												span.def-p 25 товаров
+												span.def-p 10 230,36 руб
+												span.popup-desc.shadow-15 Корзина
+									li
+										button.logIn.popup-desc-parent.h-Flamenco.defBtn
+											+icon('user')
+											span Войти
+											span.popup-desc.shadow-15 Личный кабинет
+				.header__bottom
+					.container
+						.header__bottom-inner
+							.header__bottom-left
+								nav
+									ul.def-ul.menu
+										li.arrowDown
+											i.icon-1-3_menu
+											a.defLink(href="catalog.html") Каталог товаров
+											.dropdown.vm-parent
+												ul.def-ul.catalog-list.vert-menu
+													li.vm-item.arrowDown.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 412.5 472.5")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g(id="Ñëîé_1" data-name="Ñëîé 1")
+																		path.cls-1(d="M11.25 472.5A11.25 11.25 0 010 461.25v-450a11.25 11.25 0 0122.5 0v450a11.25 11.25 0 01-11.25 11.25zM401.25 472.5A11.25 11.25 0 01390 461.25v-450a11.25 11.25 0 0122.5 0v450a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M401.25 22.5h-390a11.25 11.25 0 010-22.5h390a11.25 11.25 0 010 22.5zM401.25 472.5h-390a11.25 11.25 0 010-22.5h390a11.25 11.25 0 010 22.5z")
+																		path.cls-1(d="M281.25 472.5A11.25 11.25 0 01270 461.25v-450a11.25 11.25 0 0122.5 0v450a11.25 11.25 0 01-11.25 11.25zM131.25 112.5A11.25 11.25 0 01120 101.25a18.77 18.77 0 00-18.75-18.75 11.25 11.25 0 010-22.5 41.29 41.29 0 0141.25 41.25 11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M101.25 82.5h-90a11.25 11.25 0 010-22.5h90a11.25 11.25 0 010 22.5zM131.25 142.5A11.25 11.25 0 01120 131.25v-30a11.25 11.25 0 0122.5 0v30a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M176.25 142.5h-90a11.25 11.25 0 010-22.5h90a11.25 11.25 0 010 22.5zM326.25 262.5A11.25 11.25 0 01315 251.25v-30a11.25 11.25 0 0122.5 0v30a11.25 11.25 0 01-11.25 11.25zM86.4 202.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM131.4 202.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM176.4 202.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM86.4 262.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM131.4 262.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM176.4 262.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM86.4 322.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM131.4 322.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM176.4 322.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM86.4 382.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM131.4 382.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM176.4 382.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5z")
+														a.defLink(href="#") Душевые кабины
+														.vm-menu.dropdown
+															.navList
+																.firstColumn
+																	ul.def-ul
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-2-8_catalog1
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style
+																				//- ul.def-ul
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Стальные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Чугунные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Нержавеющие
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-1_catalog-list2
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Galaxy
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-2_catalog-list3
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Cosmo
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-3_catalog-list4
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Cosmo
+																				//- ul.def-ul
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Стальные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Латунные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Нержавеющие
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Чугунные
+																//- .secondColumn
+																//- 	ul.def-ul
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-4_catalog-list5
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Краны пробковые
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-5_catalog-list6
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Клапаны
+																//- 				ul.def-ul
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Запорные 
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Обратные
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Балансировочные
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Предохранительные
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-6_catalog-list7
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Фильтры и грязевики
+																//- 				ul.def-ul
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Фильтры
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Грязевики
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-7_catalog-list8
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Электроприводы
+																//- .thirdColumn
+																//- 	.card
+																//- 		.card-img(style="background-image: url(assets/images/product1.jpg)")
+																//- 		.card-body
+																//- 			strong Задвижка нержавеющая клиновая фланцевая 
+																//- 			p ЗКЛ2-16 30нж41нж Ду80 Ру16, Нитэкмаш Сервис
+																//- 			a.defLink.Btn.Btn-Wedgewood(href="#") подробнее
+													li.vm-item.arrowDown.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 472.5 292.5")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g(id="Ñëîé_1" data-name="Ñëîé 1")
+																		path.cls-1(d="M71.25 262.5c-27.31 0-47-10.85-58.56-32.25C4 214.19 0 192.27 0 161.25a11.25 11.25 0 0122.5 0c0 27.14 3.18 45.67 10 58.31C40 233.51 52.33 240 71.25 240a11.25 11.25 0 010 22.5zM401.25 262.5a11.25 11.25 0 010-22.5c18.92 0 31.23-6.49 38.75-20.44 6.82-12.64 10-31.17 10-58.31a11.25 11.25 0 0122.5 0c0 31-4 52.94-12.69 69-11.55 21.4-31.25 32.25-58.56 32.25z")
+																		path.cls-1(d="M401.25 262.5h-330a11.25 11.25 0 010-22.5h330a11.25 11.25 0 010 22.5zM461.25 112.5h-450a11.25 11.25 0 010-22.5h450a11.25 11.25 0 010 22.5z")
+																		path.cls-1(d="M11.25 172.5A11.25 11.25 0 010 161.25v-60a11.25 11.25 0 0122.5 0v60a11.25 11.25 0 01-11.25 11.25zM461.25 172.5A11.25 11.25 0 01450 161.25v-60a11.25 11.25 0 0122.5 0v60a11.25 11.25 0 01-11.25 11.25zM71.25 292.5A11.25 11.25 0 0160 281.25v-30a11.25 11.25 0 0122.5 0v30a11.25 11.25 0 01-11.25 11.25zM401.25 292.5A11.25 11.25 0 01390 281.25v-30a11.25 11.25 0 0122.5 0v30a11.25 11.25 0 01-11.25 11.25zM41.25 112.5A11.25 11.25 0 0130 101.25v-60a11.25 11.25 0 0122.5 0v60a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M41.25 52.5A11.25 11.25 0 0130 41.25 41.29 41.29 0 0171.25 0a11.25 11.25 0 010 22.5A18.77 18.77 0 0052.5 41.25 11.25 11.25 0 0141.25 52.5z")
+																		path.cls-1(d="M101.25 52.5A11.25 11.25 0 0190 41.25 18.77 18.77 0 0071.25 22.5a11.25 11.25 0 010-22.5 41.29 41.29 0 0141.25 41.25 11.25 11.25 0 01-11.25 11.25z")
+														a.defLink(href="#") Ванны
+														.vm-menu.dropdown
+															.navList
+																.firstColumn
+																	ul.def-ul
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-2-8_catalog1
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 1
+																				//- ul.def-ul
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Стальные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Чугунные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Нержавеющие
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-1_catalog-list2
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 1
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-2_catalog-list3
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 1
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-3_catalog-list4
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 1
+														//- .vm-menu.dropdown
+														//- 	.navList
+														//- 		.firstColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-2-8_catalog1
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-1_catalog-list2
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки шиберные
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-2_catalog-list3
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Затворы
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-3_catalog-list4
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны шаровые
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Латунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 		.secondColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-4_catalog-list5
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны пробковые
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-5_catalog-list6
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Клапаны
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорные 
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Обратные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Балансировочные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Предохранительные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-6_catalog-list7
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Фильтры и грязевики
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Фильтры
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Грязевики
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-7_catalog-list8
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Электроприводы
+														//- 		.thirdColumn
+														//- 			.card
+														//- 				.card-img(style="background-image: url(assets/images/product1.jpg)")
+														//- 				.card-body
+														//- 					strong Ванны
+														//- 					p ЗКЛ2-16 30нж41нж Ду80 Ру16, Нитэкмаш Сервис
+														//- 					a.defLink.Btn.Btn-Wedgewood(href="#") подробнее
+													li.vm-item.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 412.5 472.5")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g(id="Ñëîé_1" data-name="Ñëîé 1")
+																		path.cls-1(d="M11.25 472.5A11.25 11.25 0 010 461.25v-450a11.25 11.25 0 0122.5 0v450a11.25 11.25 0 01-11.25 11.25zM401.25 472.5A11.25 11.25 0 01390 461.25v-450a11.25 11.25 0 0122.5 0v450a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M401.25 22.5h-390a11.25 11.25 0 010-22.5h390a11.25 11.25 0 010 22.5zM401.25 472.5h-390a11.25 11.25 0 010-22.5h390a11.25 11.25 0 010 22.5z")
+																		path.cls-1(d="M206.25 137.17A11.25 11.25 0 01195 125.92v-110a11.25 11.25 0 1122.5 0v110a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M251.25 137.17h-90a11.25 11.25 0 010-22.5h90a11.25 11.25 0 110 22.5zM161.4 197.17h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM206.4 197.17h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM251.4 197.17h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM161.4 257.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 010 22.5zM206.4 257.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 010 22.5zM251.4 257.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 010 22.5zM161.4 317.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 110 22.5zM206.4 317.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 110 22.5zM251.4 317.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 010 22.5zM161.4 377.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 110 22.5zM206.4 377.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 110 22.5zM251.4 377.17h-.3a11.25 11.25 0 110-22.5h.3a11.25 11.25 0 010 22.5zM302.75 472.5a11.25 11.25 0 01-11.25-11.25v-450a11.25 11.25 0 0122.5 0v450a11.25 11.25 0 01-11.25 11.25zM347.75 262.5a11.25 11.25 0 01-11.25-11.25v-30a11.25 11.25 0 0122.5 0v30a11.25 11.25 0 01-11.25 11.25zM109.75 472.5A11.25 11.25 0 00121 461.25v-450a11.25 11.25 0 00-22.5 0v450a11.25 11.25 0 0011.25 11.25zM64.75 262.5A11.25 11.25 0 0076 251.25v-30a11.25 11.25 0 00-22.5 0v30a11.25 11.25 0 0011.25 11.25z")
+														a.defLink(href="#") Душевые ограждения
+														//- .vm-menu.dropdown
+														//- 	.navList
+														//- 		.firstColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-2_catalog-list3
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Затворы
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-3_catalog-list4
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны шаровые
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Латунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+													li.vm-item.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 472.5 472.5")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g(id="Ñëîé_1" data-name="Ñëîé 1")
+																		path.cls-1(d="M11.25 472.5A11.25 11.25 0 010 461.25v-450a11.25 11.25 0 0122.5 0v450a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M461.25 22.5h-450a11.25 11.25 0 010-22.5h450a11.25 11.25 0 010 22.5zM161.25 472.5h-150a11.25 11.25 0 010-22.5h150a11.25 11.25 0 010 22.5z")
+																		path.cls-1(d="M461.25 172.5A11.25 11.25 0 01450 161.25v-150a11.25 11.25 0 0122.5 0v150a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M161.25 472.5a11.25 11.25 0 010-22.5C320.47 450 450 320.47 450 161.25a11.25 11.25 0 0122.5 0A311.07 311.07 0 01161.25 472.5zM101.25 142.5a41.25 41.25 0 1141.25-41.25 41.29 41.29 0 01-41.25 41.25zm0-60A18.75 18.75 0 10120 101.25a18.77 18.77 0 00-18.75-18.75z")
+														a.defLink(href="#") Поддоны
+														//- .vm-menu.dropdown
+														//- 	.navList
+														//- 		.firstColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-2-8_catalog1
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-1_catalog-list2
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки шиберные
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-2_catalog-list3
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Затворы
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-3_catalog-list4
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны шаровые
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Латунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 		.secondColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-4_catalog-list5
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны пробковые
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-5_catalog-list6
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Клапаны
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорные 
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Обратные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Балансировочные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Предохранительные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-6_catalog-list7
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Фильтры и грязевики
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Фильтры
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Грязевики
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-7_catalog-list8
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Электроприводы
+														//- 		.thirdColumn
+														//- 			.card
+														//- 				.card-img(style="background-image: url(assets/images/product1.jpg)")
+														//- 				.card-body
+														//- 					strong Ванны
+														//- 					p ЗКЛ2-16 30нж41нж Ду80 Ру16, Нитэкмаш Сервис
+														//- 					a.defLink.Btn.Btn-Wedgewood(href="#") подробнее
+													li.vm-item.arrowDown.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 412.5 472.5")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g(id="Ñëîé_1" data-name="Ñëîé 1")
+																		path.cls-1(d="M311.26 382.5a11.25 11.25 0 01-5-21.31C363.17 332.71 390 312.58 390 251.25a11.25 11.25 0 0122.5 0c0 34.63-8 60.32-25.12 80.83-16.27 19.49-40.19 33.78-71.1 49.23a11.15 11.15 0 01-5.02 1.19z")
+																		path.cls-1(d="M341.25 472.5a11.25 11.25 0 01-10.67-7.69l-30-90a11.25 11.25 0 1121.34-7.12l30 90a11.24 11.24 0 01-7.11 14.23 11.06 11.06 0 01-3.56.58zM101.25 472.5A11.25 11.25 0 0190 461.25v-90a11.25 11.25 0 0122.5 0v90a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M101.26 382.5a11.25 11.25 0 01-10.07-6.22l-60-120a11.25 11.25 0 0120.12-10.06l60 120a11.25 11.25 0 01-10 16.28z")
+																		path.cls-1(d="M131.25 262.5h-120a11.25 11.25 0 010-22.5h120a11.25 11.25 0 010 22.5z")
+																		path.cls-1(d="M11.25 262.5A11.25 11.25 0 010 251.25v-210a11.25 11.25 0 0122.5 0v210a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M11.25 52.5A11.25 11.25 0 010 41.25 41.29 41.29 0 0141.25 0a11.25 11.25 0 010 22.5A18.77 18.77 0 0022.5 41.25 11.25 11.25 0 0111.25 52.5z")
+																		path.cls-1(d="M101.25 22.5h-60a11.25 11.25 0 010-22.5h60a11.25 11.25 0 010 22.5zM401.25 262.5h-270a11.25 11.25 0 010-22.5h270a11.25 11.25 0 010 22.5z")
+																		path.cls-1(d="M401.25 262.5A11.25 11.25 0 01390 251.25v-15a11.25 11.25 0 0122.5 0v15a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M401.25 247.5A11.25 11.25 0 01390 236.25a18.77 18.77 0 00-18.75-18.75 11.25 11.25 0 010-22.5 41.29 41.29 0 0141.25 41.25 11.25 11.25 0 01-11.25 11.25zM176.25 262.5A11.25 11.25 0 01165 251.25v-15a11.25 11.25 0 0122.5 0v15a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M176.25 247.5A11.25 11.25 0 01165 236.25 41.29 41.29 0 01206.25 195a11.25 11.25 0 010 22.5 18.77 18.77 0 00-18.75 18.75 11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M371.25 217.5h-165a11.25 11.25 0 010-22.5h165a11.25 11.25 0 010 22.5zM341.25 472.5h-240a11.25 11.25 0 010-22.5h240a11.25 11.25 0 010 22.5zM131.25 52.5A11.25 11.25 0 01120 41.25a18.77 18.77 0 00-18.75-18.75 11.25 11.25 0 010-22.5 41.29 41.29 0 0141.25 41.25 11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M131.25 262.5A11.25 11.25 0 01120 251.25v-210a11.25 11.25 0 0122.5 0v210a11.25 11.25 0 01-11.25 11.25z")
+														a.defLink(href="#") Унитазы
+														.vm-menu.dropdown
+															.navList
+																.firstColumn
+																	ul.def-ul
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-2-8_catalog1
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 2
+																				//- ul.def-ul
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Стальные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Чугунные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Нержавеющие
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-1_catalog-list2
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 2
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-2_catalog-list3
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 2
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-3_catalog-list4
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 2
+																		li.item
+																			//- .icon-wrap
+																			//- 	i.icon-4-3_catalog-list4
+																			//- .list
+																			a.defLink.h-Flamenco-1(href="#")
+																				b Серия Style 2
+																				//- ul.def-ul
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Стальные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Латунные
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Нержавеющие
+																				//- 	li
+																				//- 		a.defLink.h-Flamenco-1(href="#") Чугунные
+																//- .secondColumn
+																//- 	ul.def-ul
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-4_catalog-list5
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Краны пробковые
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-5_catalog-list6
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Клапаны
+																//- 				ul.def-ul
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Запорные 
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Обратные
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Балансировочные
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Предохранительные
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-6_catalog-list7
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Фильтры и грязевики
+																//- 				ul.def-ul
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Фильтры
+																//- 					li
+																//- 						a.defLink.h-Flamenco-1(href="#") Грязевики
+																//- 		li.item
+																//- 			.icon-wrap
+																//- 				i.icon-4-7_catalog-list8
+																//- 			.list
+																//- 				a.defLink.h-Flamenco-1(href="#")
+																//- 					b Электроприводы
+																//- .thirdColumn
+																//- 	.card
+																//- 		.card-img(style="background-image: url(assets/images/product1.jpg)")
+																//- 		.card-body
+																//- 			strong Ванны
+																//- 			p ЗКЛ2-16 30нж41нж Ду80 Ру16, Нитэкмаш Сервис
+																//- 			a.defLink.Btn.Btn-Wedgewood(href="#") подробнее
+													li.vm-item.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 472.5 472.5")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g(id="Ñëîé_1" data-name="Ñëîé 1")
+																		path.cls-1(d="M161.25 232.5c-38.32 0-77-11.23-106.15-30.82-36-24.24-55.1-59-55.1-100.43a11.25 11.25 0 0122.5 0C22.5 180.48 107.61 210 161.25 210a11.25 11.25 0 010 22.5zM311.25 232.5a11.25 11.25 0 010-22.5C364.89 210 450 180.48 450 101.25a11.25 11.25 0 0122.5 0c0 41.47-19.05 76.19-55.1 100.43-29.14 19.59-67.83 30.82-106.15 30.82z")
+																		path.cls-1(d="M311.25 232.5h-150a11.25 11.25 0 010-22.5h150a11.25 11.25 0 010 22.5zM461.25 112.5h-450a11.25 11.25 0 010-22.5h450a11.25 11.25 0 010 22.5z")
+																		path.cls-1(d="M221.25 112.5A11.25 11.25 0 01210 101.25v-60a11.25 11.25 0 0122.5 0v60a11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M221.25 52.5A11.25 11.25 0 01210 41.25 41.29 41.29 0 01251.25 0a11.25 11.25 0 010 22.5 18.77 18.77 0 00-18.75 18.75 11.25 11.25 0 01-11.25 11.25z")
+																		path.cls-1(d="M281.25 52.5A11.25 11.25 0 01270 41.25a18.77 18.77 0 00-18.75-18.75 11.25 11.25 0 010-22.5 41.29 41.29 0 0141.25 41.25 11.25 11.25 0 01-11.25 11.25zM168.76 472.5h-.71a11.25 11.25 0 01-10.53-11.93l15-240A11.25 11.25 0 11195 222l-15 240a11.26 11.26 0 01-11.24 10.5zM303.74 472.5a11.26 11.26 0 01-11.22-10.5l-15-240a11.25 11.25 0 1122.46-1.4l15 240a11.25 11.25 0 01-10.53 11.93z")
+																		path.cls-1(d="M303.75 472.5h-135a11.25 11.25 0 010-22.5h135a11.25 11.25 0 010 22.5z")
+														a.defLink(href="#") Раковины
+														//- .vm-menu.dropdown
+														//- 	.navList
+														//- 		.firstColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-2-8_catalog1
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-1_catalog-list2
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки шиберные
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-2_catalog-list3
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Затворы
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-3_catalog-list4
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны шаровые
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Латунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 		.secondColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-4_catalog-list5
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны пробковые
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-5_catalog-list6
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Клапаны
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорные 
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Обратные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Балансировочные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Предохранительные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-6_catalog-list7
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Фильтры и грязевики
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Фильтры
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Грязевики
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-7_catalog-list8
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Электроприводы
+														//- 		.thirdColumn
+														//- 			.card
+														//- 				.card-img(style="background-image: url(assets/images/product1.jpg)")
+														//- 				.card-body
+														//- 					strong Ванны
+														//- 					p ЗКЛ2-16 30нж41нж Ду80 Ру16, Нитэкмаш Сервис
+														//- 					a.defLink.Btn.Btn-Wedgewood(href="#") подробнее
+													li.vm-item.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 60 60.02")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g#Layer_1(data-name="Layer 1")
+																		path.cls-1(d="M48 23a1 1 0 001-1v-1a1 1 0 00-2 0v1a1 1 0 001 1zM47 27a1 1 0 002 0v-1a1 1 0 00-2 0zM45 21a1 1 0 00-2 0v1a1 1 0 002 0zM44 25a1 1 0 00-1 1v1a1 1 0 002 0v-1a1 1 0 00-1-1zM52 23a1 1 0 001-1v-1a1 1 0 00-2 0v1a1 1 0 001 1zM51 27a1 1 0 002 0v-1a1 1 0 00-2 0z")
+																		path.cls-1(d="M57 6a1 1 0 001-1V4h1a1 1 0 000-2h-1V1a1 1 0 00-2 0v1H4V1a1 1 0 00-2 0v1H1a1 1 0 000 2h1v1a1 1 0 002 0V4h15v26H3a3 3 0 000 6c.27 7.28 3.39 15 8.06 17.29a4 4 0 106.37.71h25.13a4 4 0 00-.56 2 4 4 0 106.92-2.71C53.59 51 56.71 43.28 57 36a3 3 0 000-6V14c0-3.69-1.57-8-6-8h-3a1 1 0 00-1 1v5.1a5 5 0 00-4 4.9 1 1 0 001 1h8a1 1 0 001-1 5 5 0 00-4-4.9V8h2c3.81 0 4 5 4 6v16H41V4h15v1a1 1 0 001 1zm-6.17 10h-5.66a3 3 0 015.66 0zM39 40a1 1 0 01-2 0 1 1 0 00-2 0 1 1 0 01-2 0 1 1 0 00-2 0 1 1 0 01-2 0 1 1 0 00-2 0 1 1 0 01-2 0 1 1 0 00-2 0 1 1 0 01-2 0V7.82a2.94 2.94 0 003-.58 3 3 0 004 0 3 3 0 004 0 3 3 0 004 0 2.94 2.94 0 003 .58zm0-36v1a1 1 0 01-2 0V4zm-4 0v1a1 1 0 01-2 0V4zm-4 0v1a1 1 0 01-2 0V4zm-4 0v1a1 1 0 01-2 0V4zm-4 1a1 1 0 01-2 0V4h2zM2 33a1 1 0 011-1h16v2H3a1 1 0 01-1-1zm14 23a2 2 0 11-2-2 2 2 0 012 2zm32 0a2 2 0 11-2-2 2 2 0 012 2zm-2-4H14c-4.45 0-8.65-7.64-9-16h14v4a3 3 0 005 2.23 3 3 0 004 0 3 3 0 004 0 3 3 0 004 0 3 3 0 004.24-.23 3 3 0 00.76-2v-4h14c-.35 8.36-4.55 16-9 16zm11-20a1 1 0 010 2H41v-2z")
+																		path.cls-1(d="M24 11a1 1 0 00-1 1v23a1 1 0 002 0V12a1 1 0 00-1-1zM28 11a1 1 0 00-1 1v23a1 1 0 002 0V12a1 1 0 00-1-1zM32 11a1 1 0 00-1 1v23a1 1 0 002 0V12a1 1 0 00-1-1zM36 11a1 1 0 00-1 1v23a1 1 0 002 0V12a1 1 0 00-1-1z")
+														a.defLink(href="#") Шторки для ванн
+														//- .vm-menu.dropdown
+														//- 	.navList
+														//- 		.firstColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-2_catalog-list3
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Затворы
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-3_catalog-list4
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны шаровые
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Латунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+													li.vm-item.h-White
+														.icon-wrap
+															svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 472.5 352.5")
+																defs
+																	style.
+																		.cls-1{fill:#e32027}
+																g(id="Слой_2" data-name="Слой 2")
+																	g(id="Ñëîé_1" data-name="Ñëîé 1")
+																		path.cls-1(d="M11.25 52.5A11.25 11.25 0 010 41.25 41.29 41.29 0 0141.25 0a11.25 11.25 0 010 22.5A18.77 18.77 0 0022.5 41.25 11.25 11.25 0 0111.25 52.5zM461.25 52.5A11.25 11.25 0 01450 41.25a18.77 18.77 0 00-18.75-18.75 11.25 11.25 0 010-22.5 41.29 41.29 0 0141.25 41.25 11.25 11.25 0 01-11.25 11.25zM41.25 352.5A41.29 41.29 0 010 311.25a11.25 11.25 0 0122.5 0A18.77 18.77 0 0041.25 330a11.25 11.25 0 010 22.5zM431.25 352.5a11.25 11.25 0 010-22.5A18.77 18.77 0 00450 311.25a11.25 11.25 0 0122.5 0 41.29 41.29 0 01-41.25 41.25z")
+																		path.cls-1(d="M11.25 322.5A11.25 11.25 0 010 311.25v-270a11.25 11.25 0 0122.5 0v270a11.25 11.25 0 01-11.25 11.25zM461.25 322.5A11.25 11.25 0 01450 311.25v-270a11.25 11.25 0 0122.5 0v270a11.25 11.25 0 01-11.25 11.25zM431.25 352.5h-390a11.25 11.25 0 010-22.5h390a11.25 11.25 0 010 22.5zM431.25 22.5h-390a11.25 11.25 0 010-22.5h390a11.25 11.25 0 010 22.5zM236.4 292.5h-.3a11.25 11.25 0 010-22.5h.3a11.25 11.25 0 010 22.5zM341.25 142.5a11.25 11.25 0 01-8-19.21l60-60a11.26 11.26 0 0115.92 15.92l-60 60a11.25 11.25 0 01-7.92 3.29zM311.25 112.5a11.25 11.25 0 01-8-19.21l30-30a11.26 11.26 0 0115.92 15.92l-30 30a11.25 11.25 0 01-7.92 3.29z")
+														a.defLink(href="#") Зеркала
+														//- .vm-menu.dropdown
+														//- 	.navList
+														//- 		.firstColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-2-8_catalog1
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-1_catalog-list2
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Задвижки шиберные
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-2_catalog-list3
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Затворы
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-3_catalog-list4
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны шаровые
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Стальные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Латунные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Нержавеющие
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Чугунные
+														//- 		.secondColumn
+														//- 			ul.def-ul
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-4_catalog-list5
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Краны пробковые
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-5_catalog-list6
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Клапаны
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорные 
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Обратные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Балансировочные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Предохранительные
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-6_catalog-list7
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Фильтры и грязевики
+														//- 						ul.def-ul
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Фильтры
+														//- 							li
+														//- 								a.defLink.h-Flamenco-1(href="#") Грязевики
+														//- 				li.item
+														//- 					.icon-wrap
+														//- 						i.icon-4-7_catalog-list8
+														//- 					.list
+														//- 						a.defLink.h-Flamenco-1(href="#")
+														//- 							b Электроприводы
+													//- li.vm-item.arrowDown.h-White
+													//- 	.icon-wrap
+													//- 		i.icon-3-6_catalog9
+													//- 	a.defLink(href="#") Фитинги
+													//- 	.vm-menu.dropdown
+													//- 		.navList
+													//- 			.firstColumn
+													//- 				ul.def-ul
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-2_catalog-list3
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Затворы
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-3_catalog-list4
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Краны шаровые
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Стальные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Латунные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Нержавеющие
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Чугунные
+													//- li.vm-item.arrowDown.h-White
+													//- 	.icon-wrap
+													//- 		i.icon-3-7_catalog10
+													//- 	a.defLink(href="#") Теплоизоляция
+													//- 	.vm-menu.dropdown
+													//- 		.navList
+													//- 			.firstColumn
+													//- 				ul.def-ul
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-2-8_catalog1
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Задвижки
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Стальные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Чугунные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Нержавеющие
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-1_catalog-list2
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Задвижки шиберные
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-2_catalog-list3
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Затворы
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-3_catalog-list4
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Краны шаровые
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Стальные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Латунные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Нержавеющие
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Чугунные
+													//- 			.secondColumn
+													//- 				ul.def-ul
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-4_catalog-list5
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Краны пробковые
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-5_catalog-list6
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Клапаны
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Запорные 
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Обратные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Балансировочные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Предохранительные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-6_catalog-list7
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Фильтры и грязевики
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Фильтры
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Грязевики
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-7_catalog-list8
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Электроприводы
+													//- li.vm-item.arrowDown.h-White
+													//- 	.icon-wrap
+													//- 		i.icon-3-8_catalog11
+													//- 	a.defLink(href="#") Канализационное оборудование
+													//- 	.vm-menu.dropdown
+													//- 		.navList
+													//- 			.firstColumn
+													//- 				ul.def-ul
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-2_catalog-list3
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Затворы
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-3_catalog-list4
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Краны шаровые
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Стальные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Латунные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Нержавеющие
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Чугунные
+													//- li.vm-item.arrowDown.h-White
+													//- 	.icon-wrap
+													//- 		i.icon-3-9_catalog12
+													//- 	a.defLink(href="#") Противопожарное оборудование
+													//- 	.vm-menu.dropdown
+													//- 		.navList
+													//- 			.firstColumn
+													//- 				ul.def-ul
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-2-8_catalog1
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Задвижки
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Стальные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Чугунные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Нержавеющие
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-1_catalog-list2
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Задвижки шиберные
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-2_catalog-list3
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Затворы
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-3_catalog-list4
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Краны шаровые
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Стальные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Латунные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Нержавеющие
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Чугунные
+													//- 			.secondColumn
+													//- 				ul.def-ul
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-4_catalog-list5
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Краны пробковые
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-5_catalog-list6
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Клапаны
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Запорные 
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Обратные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Балансировочные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Предохранительные
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Запорно-регулирующие
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-6_catalog-list7
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Фильтры и грязевики
+													//- 							ul.def-ul
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Фильтры
+													//- 								li
+													//- 									a.defLink.h-Flamenco-1(href="#") Грязевики
+													//- 					li.item
+													//- 						.icon-wrap
+													//- 							i.icon-4-7_catalog-list8
+													//- 						.list
+													//- 							a.defLink.h-Flamenco-1(href="#")
+													//- 								b Электроприводы
+										//- li.arrowDown
+										//- 	i.icon-2-5_services
+										//- 	a.defLink(href="services.html") Услуги
+										//- 	.dropdown
+										//- 		ul.def-ul.service-list
+										//- 			li.arrowDown
+										//- 				.icon-wrap
+										//- 					i.icon-4-8_service1
+										//- 				a.defLink(href="") Металлообработка и металлоконструкции
+										//- 				.dropdown
+										//- 					ul.def-ul
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Изготовление металлокнструкций 
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Лазерная резка 
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Лентопильная резка 
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Плазменная резка 
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Газовая резка 
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Сварка 
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Нарезка резьбы 
+										//- 						li
+										//- 							a.defLink.h-Flamenco-1(href="#") Переточка фланцев под исполнение 
+										//- 			li.arrowDown
+										//- 				.icon-wrap
+										//- 					i.icon-4-9_service2
+										//- 				a.defLink(href="") ППУ, ВУС, ППМ, ЦПИ изоляция 
+										//- 			li
+										//- 				.icon-wrap
+										//- 					i.icon-5-0_service3
+										//- 				a.defLink(href="") Грунтовка и покраска металла
+										//- 			li.arrowDown
+										//- 				.icon-wrap
+										//- 					i.icon-5-1_service4
+										//- 				a.defLink(href="") Цинкование металла 
+										//- li.arrowDown
+											i.icon-1-2_brands
+											a.defLink(href="brends.html") Бренды
+											.dropdown.brends-list
+												ul.def-ul
+													li
+														a(href="#") A
+														a(href="#") B
+														a(href="#") C
+														a(href="#") D
+														a(href="#") E
+														a(href="#") F
+														a(href="#") G
+														a(href="#") H
+														a(href="#") I
+														a(href="#") J
+														a(href="#") K
+														a(href="#") L
+														a(href="#") M
+														a(href="#") N
+														a(href="#") O
+														a(href="#") P
+														a(href="#") Q
+														a(href="#") R
+														a(href="#") S
+														a(href="#") T
+														a(href="#") U
+														a(href="#") V
+														a(href="#") W
+														a(href="#") X
+														a(href="#") Y
+														a(href="#") Z
+													li
+														a(href="#") А
+														a(href="#") Б
+														a(href="#") В
+														a(href="#") Г
+														a(href="#") Д
+														a(href="#") Е
+														a(href="#") Ж
+														a(href="#") З
+														a(href="#") И
+														a(href="#") Й
+														a(href="#") К
+														a(href="#") Л
+														a(href="#") М
+														a(href="#") Н
+														a(href="#") О
+														a(href="#") П
+														a(href="#") Р
+														a(href="#") С
+														a(href="#") Т
+														a(href="#") У
+														a(href="#") Ф
+														a(href="#") Х
+														a(href="#") Ц
+														a(href="#") Ч
+														a(href="#") Ш
+														a(href="#") Щ
+														a(href="#") Ъ
+														a(href="#") Ы
+														a(href="#") Ь
+														a(href="#") Э
+														a(href="#") Ю
+												a.defLink(href="") все
+								a.serv-center(href="#") Официальный сервисный центр
+							.header__bottom-right
+								button#makeOrderBtn.defBtn.Btn-Flamenco cделать заказ
+								form(action="#")
+									label.input-wrap
+										input.input(type="search" placeholder="Поиск по наименованию или коду товара")
+										button.defBtn.searchBtn(type="button")
+											i.icon-2-3_search
+			.mobile-modal(data-modal="mob-menu")
+				.menu-mobile
+					span.modal__inner-close
+						i.icon-1-4_close
+					.menu-mobile__inner
+						ul.def-ul.list-line
+							li
+								button.logIn.h-Flamenco.defBtn
+									+icon('user')
+									span Войти
+								a.elect.not-empty.popup-desc-parent.defLink(href="#")
+									+icon('heart')
+									span 40
+									span.popup-desc.shadow-15 Избранное
+								a.comparison.popup-desc-parent.defLink(href="#")
+									+icon('compare')
+									span 0
+									span.popup-desc.shadow-15 Сравнение
+							li
+								a.basket.not-empty.h-Flamenco.defLink(href="#")
+									+icon('basket')
+									.basket__inner
+										span.def-p.show-600 25
+										span.def-p 25&nbsp;товаров, 10 230,36 руб
+							li
+								.contact
+									a.defLink.h-Flamenco(href="tel:+7 (495) 287-07-00")
+										+icon('phone')
+										span +7 (495) 287-07-00
+									a.defLink.h-Flamenco(href="mailto:sales@staleron-group.ru")
+										+icon('mail')
+										span sales@staleron-group.ru
+						.menu-mobile__list
+							ul.def-ul.firstStage
+								li
+									.arrowDown.item__inner
+										i.icon-1-3_menu
+										a.defLink(href="catalog.html") Каталог товаров
+									ul.def-ul.secondStage
+										li
+											.arrowDown.item__inner
+												a.defLink(href="#") Душевые кабины
+											ul.def-ul.thirdStage
+												li
+													.item__inner
+														a.defLink(href="#") Серия Galaxy
+													//- ul.def-ul.fourth
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Стальные
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Чугунные
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Нержавеющие
+												li
+													.item__inner
+														a.defLink(href="#") Серия Cosmo
+												li
+													.item__inner
+														a.defLink(href="#") Серия Galaxy
+												li
+													.item__inner
+														a.defLink(href="#") Серия Style
+												//- li
+												//- 	.item__inner
+												//- 		a.defLink(href="#") Краны пробковые
+												//- li
+												//- 	.arrowDown.item__inner
+												//- 		a.defLink(href="#") Клапаны
+												//- li
+												//- 	.arrowDown.item__inner
+												//- 		a.defLink(href="#") Фильтры и&nbsp;грязевики
+												//- li
+												//- 	.item__inner
+												//- 		a.defLink(href="#") Электроприводы
+										li
+											.arrowDown.item__inner
+												a.defLink(href="#") Ванны
+											ul.def-ul.thirdStage
+												li
+													.item__inner
+														a.defLink(href="#") Серия Galaxy
+													//- ul.def-ul.fourth
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Стальные
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Чугунные
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Нержавеющие
+												li
+													.item__inner
+														a.defLink(href="#") Серия Cosmo
+												li
+													.item__inner
+														a.defLink(href="#") Серия Galaxy
+												li
+													.item__inner
+														a.defLink(href="#") Серия Style
+										li
+											.item__inner
+												a.defLink(href="#") Душевые ограждения
+										li
+											.item__inner
+												a.defLink(href="#") Поддоны
+										li
+											.arrowDown.item__inner
+												a.defLink(href="#") Унитазы
+											ul.def-ul.thirdStage
+												li
+													.item__inner
+														a.defLink(href="#") Серия Galaxy
+													//- ul.def-ul.fourth
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Стальные
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Чугунные
+													//- 	li
+													//- 		.item__inner
+													//- 			a.defLink(href="#") Нержавеющие
+												li
+													.item__inner
+														a.defLink(href="#") Серия Cosmo
+												li
+													.item__inner
+														a.defLink(href="#") Серия Galaxy
+												li
+													.item__inner
+														a.defLink(href="#") Серия Style
+										li
+											.item__inner
+												a.defLink(href="#") Раковины
+										li
+											.item__inner
+												a.defLink(href="#") Шторки для ванн
+										li
+											.item__inner
+												a.defLink(href="#") Зеркала
+										//- li
+										//- 	.arrowDown.item__inner
+										//- 		a.defLink(href="#") Фитинги
+										//- li
+										//- 	.arrowDown.item__inner
+										//- 		a.defLink(href="#") Теплоизоляция
+										//- li
+										//- 	.arrowDown.item__inner
+										//- 		a.defLink(href="#") Канализационное оборудование
+										//- li
+										//- 	.arrowDown.item__inner
+										//- 		a.defLink(href="#") Противопожарное оборудование
+								//- li
+								//- 	.arrowDown.item__inner
+								//- 		i.icon-2-5_services
+								//- 		a.defLink(href="#") Услуги
+								//- 	ul.def-ul.secondStage
+								//- 		li
+								//- 			.arrowDown.item__inner
+								//- 				a.defLink(href="#") Металлообработка и металлоконструкции 
+								//- 			ul.def-ul.thirdStage
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Изготовление металлокнструкций
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Лазерная резка
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Лентопильная резка
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Плазменная резка
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Газовая резка
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Сварка
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Нарезка резьбы
+								//- 				li
+								//- 					.item__inner
+								//- 						a.defLink(href="#") Переточка фланцев под исполнение
+								//- 		li
+								//- 			.arrowDown.item__inner
+								//- 				a.defLink(href="#") ППУ, ВУС, ППМ, ЦПИ изоляция 
+								//- 		li
+								//- 			.item__inner
+								//- 				a.defLink(href="#") Грунтовка и покраска металла
+								//- 		li
+								//- 			.arrowDown.item__inner
+								//- 				a.defLink(href="#") Цинкование металла
+								//- li
+								//- 	.arrowDown.item__inner
+								//- 		i.icon-1-2_brands
+								//- 		a.defLink(href="#") Бренды
+								//- 	ul.def-ul.secondStage
+								//- 		li
+								//- 			.item__inner
+								//- 				ul.def-ul.brends-list
+								//- 					li
+								//- 						a(href="#") A
+								//- 						a(href="#") B
+								//- 						a(href="#") C
+								//- 						a(href="#") D
+								//- 						a(href="#") E
+								//- 						a(href="#") F
+								//- 						a(href="#") G
+								//- 						a(href="#") H
+								//- 						a(href="#") I
+								//- 						a(href="#") J
+								//- 						a(href="#") K
+								//- 						a(href="#") L
+								//- 						a(href="#") M
+								//- 						a(href="#") N
+								//- 						a(href="#") O
+								//- 						a(href="#") P
+								//- 						a(href="#") Q
+								//- 						a(href="#") R
+								//- 						a(href="#") S
+								//- 						a(href="#") T
+								//- 						a(href="#") U
+								//- 						a(href="#") V
+								//- 						a(href="#") W
+								//- 						a(href="#") X
+								//- 						a(href="#") Y
+								//- 						a(href="#") Z
+								//- 					li
+								//- 						a(href="#") А
+								//- 						a(href="#") Б
+								//- 						a(href="#") В
+								//- 						a(href="#") Г
+								//- 						a(href="#") Д
+								//- 						a(href="#") Е
+								//- 						a(href="#") Ж
+								//- 						a(href="#") З
+								//- 						a(href="#") И
+								//- 						a(href="#") Й
+								//- 						a(href="#") К
+								//- 						a(href="#") Л
+								//- 						a(href="#") М
+								//- 						a(href="#") Н
+								//- 						a(href="#") О
+								//- 						a(href="#") П
+								//- 						a(href="#") Р
+								//- 						a(href="#") С
+								//- 						a(href="#") Т
+								//- 						a(href="#") У
+								//- 						a(href="#") Ф
+								//- 						a(href="#") Х
+								//- 						a(href="#") Ц
+								//- 						a(href="#") Ч
+								//- 						a(href="#") Ш
+								//- 						a(href="#") Щ
+								//- 						a(href="#") Ъ
+								//- 						a(href="#") Ы
+								//- 						a(href="#") Ь
+								//- 						a(href="#") Э
+								//- 						a(href="#") Ю
+								//- 		li
+								//- 			.item__inner
+								//- 				a.defLink.dashed(href="") все
+								li
+									.arrowDown.item__inner
+										a.defLink(href="#") О компании 
+									ul.def-ul.secondStage
+										li
+											.item__inner
+												a.defLink(href="#") О компании
+										li
+											.item__inner
+												a.defLink(href="#") Новости 
+										li
+											.item__inner
+												a.defLink(href="#") Вакансии
+								li
+									.arrowDown.item__inner
+										a.defLink(href="#") Клиентам
+									ul.def-ul.secondStage
+										li
+											.item__inner
+												a.defLink(href="#") Как сделать заказ 
+										li
+											.item__inner
+												a.defLink(href="#") Оплата
+										li
+											.item__inner
+												a.defLink(href="#") Банковские реквизиты
+										li
+											.item__inner
+												a.defLink(href="#") Юридическая информация
+										li
+											.item__inner
+												a.defLink(href="#") Статьи
+										li
+											.item__inner
+												a.defLink(href="#") Частые вопросы
+								li
+									.arrowDown.item__inner
+										a.defLink(href="#") Контакты
+									ul.def-ul.secondStage
+										li
+											.item__inner
+												a.defLink(href="#") Контактная информация
+										li
+											.item__inner
+												a.defLink(href="#") Напишите нам
+										li
+											.item__inner
+												a.defLink(href="#") Обратный звонок
+										li
+											.item__inner
+												a.defLink(href="#") Написать руководителю
+								li
+									.item__inner
+										a.defLink(href="#") Доставка
+			//-
+				<div class="menu-mobile">
+				<div class="menu-mobile__inner">
+				<ul class="def-ul list-line">
+				<li>
+				<button class="logIn h-Flamenco defBtn">
+				<i class="icon-2-1_login"></i>
+				<span>Войти</span>
+				</button>
+				<a href="#" class="elect not-empty popup-desc-parent defLink">
+				<i class="icon-2-4_elect"></i>
+				<span>40</span>
+				<span class="popup-desc shadow-15">Избранное</span>
+				</a>
+				<a href="#" class="comparison popup-desc-parent defLink">
+				<i class="icon-1-5_comparison"></i>
+				<span>0</span>
+				<span class="popup-desc shadow-15">Сравнение</span>
+				</a>
+				</li>
+				<li>
+				<a href="#" class="basket not-empty h-Flamenco defLink">
+				<i class="icon-1-1_basket"></i>
+				<div class="basket__inner">
+				<span class="def-p show-600">25</span>
+				<span class="def-p">25 товаров, 10 230,36 руб</span>
+				</div>
+				</a>
+				</li>
+				<li>
+				<div class="contact">
+				<a class="defLink h-Flamenco" href="tel:8(495)3747472">
+				<i class="icon-2-2_phone"></i>
+				<span>8 (495) 374-74-72</span>
+				</a>
+				<a class="defLink h-Flamenco" href="mailto:sales@staleron-group.ru">
+				<i class="icon-1-8_email"></i>
+				<span>sales@staleron-group.ru</span>
+				</a>
+				</div>
+				</li>
+				</ul>
+				<div class="menu-mobile__list">
+				<ul class="def-ul firstStage">
+				<li>
+				<div class="arrowDown item__inner">
+				<i class="icon-1-3_menu"></i>
+				<a href="catalog.html" class="defLink">Каталог товаров</a>
+				</div>
+				<ul class="def-ul secondStage">
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Трубопроводная и запорно-регулирующая арматура</a>
+				</div>
+				<ul class="def-ul thirdStage">
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Задвижки</a>
+				</div>
+				<ul class="def-ul fourth">
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Стальные</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Чугунные</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Нержавеющие</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Задвижки шиберные</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Затворы</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Краны шаровые</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Краны пробковые</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Клапаны</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Фильтры и грязевики</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Электроприводы</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Ванны</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Душевые ограждения</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Поддоны</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Унитазы</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Раковины</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Шторки для ванн</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Зеркала</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Фитинги</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Теплоизоляция</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Канализационное оборудование</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Противопожарное оборудование</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<i class="icon-2-5_services"></i>
+				<a href="#" class="defLink">Услуги</a>
+				</div>
+				<ul class="def-ul secondStage">
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Металлообработка и металлоконструкции </a>
+				</div>
+				<ul class="def-ul thirdStage">
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Изготовление металлокнструкций</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Лазерная резка</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Лентопильная резка</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Плазменная резка</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Газовая резка</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Сварка</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Нарезка резьбы</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Переточка фланцев под исполнение</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">ППУ, ВУС, ППМ, ЦПИ изоляция </a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Грунтовка и покраска металла</a>
+				</div>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Цинкование металла</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<i class="icon-1-2_brands"></i>
+				<a href="#" class="defLink">Бренды</a>
+				</div>
+				<ul class="def-ul secondStage">
+				<li>
+				<div class="item__inner">
+				<ul class="def-ul brends-list">
+				<li>
+				<a href="#">A</a>
+				<a href="#">B</a>
+				<a href="#">C</a>
+				<a href="#">D</a>
+				<a href="#">E</a>
+				<a href="#">F</a>
+				<a href="#">G</a>
+				<a href="#">H</a>
+				<a href="#">I</a>
+				<a href="#">J</a>
+				<a href="#">K</a>
+				<a href="#">L</a>
+				<a href="#">M</a>
+				<a href="#">N</a>
+				<a href="#">O</a>
+				<a href="#">P</a>
+				<a href="#">Q</a>
+				<a href="#">R</a>
+				<a href="#">S</a>
+				<a href="#">T</a>
+				<a href="#">U</a>
+				<a href="#">V</a>
+				<a href="#">W</a>
+				<a href="#">X</a>
+				<a href="#">Y</a>
+				<a href="#">Z</a>
+				</li>
+				<li>
+				<a href="#">А</a>
+				<a href="#">Б</a>
+				<a href="#">В</a>
+				<a href="#">Г</a>
+				<a href="#">Д</a>
+				<a href="#">Е</a>
+				<a href="#">Ж</a>
+				<a href="#">З</a>
+				<a href="#">И</a>
+				<a href="#">Й</a>
+				<a href="#">К</a>
+				<a href="#">Л</a>
+				<a href="#">М</a>
+				<a href="#">Н</a>
+				<a href="#">О</a>
+				<a href="#">П</a>
+				<a href="#">Р</a>
+				<a href="#">С</a>
+				<a href="#">Т</a>
+				<a href="#">У</a>
+				<a href="#">Ф</a>
+				<a href="#">Х</a>
+				<a href="#">Ц</a>
+				<a href="#">Ч</a>
+				<a href="#">Ш</a>
+				<a href="#">Щ</a>
+				<a href="#">Ъ</a>
+				<a href="#">Ы</a>
+				<a href="#">Ь</a>
+				<a href="#">Э</a>
+				<a href="#">Ю</a>
+				</li>
+				</ul>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a class="defLink dashed" href="">все</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">О компании </a>
+				</div>
+				<ul class="def-ul secondStage">
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">О компании</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Новости </a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Вакансии</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Клиентам</a>
+				</div>
+				<ul class="def-ul secondStage">
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Как сделать заказ </a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Оплата</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Банковские реквизиты</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Юридическая информация</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Статьи</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Частые вопросы</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="arrowDown item__inner">
+				<a href="#" class="defLink">Контакты</a>
+				</div>
+				<ul class="def-ul secondStage">
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Контактная информация</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Напишите нам</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Обратный звонок</a>
+				</div>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Написать руководителю</a>
+				</div>
+				</li>
+				</ul>
+				</li>
+				<li>
+				<div class="item__inner">
+				<a href="#" class="defLink">Доставка</a>
+				</div>
+				</li>
+				</ul>
+				</div>
+				</div>
+				</div>
+			.header-fixed
+				.container
+					.header-fixed__inner
+						.header__bottom-left
+							.BtnMenu(data-modal_btn="mob-menu")
+								i.icon-1-3_menu
+							.logo
+								a(href="index.html")
+									img(src="assets/svg/grossman-logo-white.svg" alt="")
+						.header__bottom-right
+							.contact
+								a.defLink.h-Flamenco(href="tel:+7 (495) 287-07-00")
+									+icon('phone')
+									span +7 (495) 287-07-00
+								a.defLink.h-Flamenco(href="mailto:info@grossman.com.ru")
+									+icon('mail')
+									span info@grossman.com.ru
+								button#makeOrderBtn.defBtn.Btn-Flamenco Сделать заказ
+							div
+								ul.def-ul.list-line
+									li
+										a.basket.not-empty.popup-desc-parent.h-Flamenco.defLink(href="#")
+											+icon('basket')
+											.basket__inner
+												span.def-p 25
+												span.popup-desc.shadow-15 Корзина
+									li
+										a.elect.not-empty.popup-desc-parent.defLink(href="#")
+											+icon('heart')
+											span 40
+											span.popup-desc.shadow-15 Избранное
+									li
+										a.comparison.popup-desc-parent.defLink(href="#")
+											+icon('compare')
+											span 0
+											span.popup-desc.shadow-15 Сравнение
+									li
+										button.logIn.h-Flamenco.popup-desc-parent.defBtn
+											+icon('user')
+											span Войти
+											span.popup-desc.shadow-15 Личный кабинет
+			.min-modals
+					.elect.min-modal.shadow-15(data-index="1")
+						.min-modal__inner
+							i.close.icon-1-4_close
+							h3.section-title
+								span добавлен
+								|  в избранное
+							.min-modal__body
+								.min-modal__img(style="background-image: url(assets/images/subcatalog2-img1.jpg)")
+								.min-modal__body-inner
+									p Задвижка стальная клиновая фланцевая ЗКЛ2-40 30с15нж Ду80 Ру40, Нитэкмаш Сервис
+							.min-modal__bottom
+								a.defLink.Btn-Wedgewood(href="#") перейти в избранное
+					.comparison.min-modal.shadow-15(data-index="2")
+						.min-modal__inner
+							i.close.icon-1-4_close
+							h3.section-title
+								span добавлен
+								|  в сравнение
+							.min-modal__body
+								.min-modal__img(style="background-image: url(assets/images/subcatalog2-img1.jpg)")
+								.min-modal__body-inner
+									p Задвижка стальная клиновая фланцевая ЗКЛ2-40 30с15нж Ду80 Ру40, Нитэкмаш Сервис
+							.min-modal__bottom
+								a.defLink.Btn-Wedgewood(href="#") перейти в сравнение
+					.basket.min-modal.shadow-15(data-index="3")
+						.min-modal__inner
+							i.close.icon-1-4_close
+							h3.section-title
+								span вы
+								|   добавили в корзину
+							.min-modal__body
+								.min-modal__img(style="background-image: url(assets/images/subcatalog2-img1.jpg)")
+								.min-modal__body-inner
+									p Задвижка стальная клиновая фланцевая ЗКЛ2-40 30с15нж Ду80 Ру40, Нитэкмаш Сервис
+									strong 1 шт × 11 094 ₽
+							.min-modal__bottom
+								a.defLink.Btn-Flamenco1(href="#") продолжить покупки
+								a.defLink.Btn-Wedgewood(href="#") перейти в корзину

@@ -1,0 +1,21 @@
+mixin catalog-block(data)
+	.container
+		.catalog-block
+				h2.section-title
+					span Каталог
+				.row
+					mixin item(i, t)
+						.col-sm-3.col-6.d-flex
+							a.card-type-1(href="#")
+								.card-img
+									img.res-i(src=`assets/images/catalog-${i}.jpg`, alt="")
+								.card-body
+									span= t
+					+item('1','Душевые кабины')
+					+item('2','Ванны')
+					+item('3','Душевые ограждения')
+					+item('4','Поддоны')
+					+item('5','Унитазы')
+					+item('6','Раковины')
+					+item('7','Шторки для ванн')
+					+item('8','Зеркала')

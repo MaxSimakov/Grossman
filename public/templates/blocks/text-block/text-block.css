@@ -1,0 +1,56 @@
+.text-block{
+    margin-bottom: 55px;
+}
+    .text-block .section-title{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .text-block__inner{
+        overflow-y: auto;
+        height: 115px;
+        -webkit-transition: height .3s ease-out;
+        -o-transition: height .3s ease-out;
+        transition: height .3s ease-out;
+    }
+.text-block.open .text-block__inner{
+            height: 100%;
+            -webkit-transition: height .3s ease-out;
+            -o-transition: height .3s ease-out;
+            transition: height .3s ease-out;
+}
+.control-btns{
+    display: none;
+}
+.control-btns .dashed{
+        color: #494949;
+        font-size: 14px;
+    }
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    width: 9px;
+    border-radius: 4px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: #e1e1e1!important;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail{
+    background-color: transparent;
+}
+@media(max-width: 767px){
+    .text-block{
+        margin-bottom: 30px;
+    }
+        .text-block__inner{
+            overflow-y: hidden;
+            height: 245px;
+        }
+    .control-btns{
+        padding-top: 10px;
+        display: block;
+    }
+}
+@media(max-width: 575px){
+        .text-block .section-title{
+            margin-bottom: 15px;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/text-block/text-block.css.map */

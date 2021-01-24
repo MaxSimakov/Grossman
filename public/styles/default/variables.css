@@ -1,0 +1,28 @@
+:root {
+    --mainColor: #000;
+    --mainFont: "OpenSans", sans-serif;
+    --White: #ffffff;
+    --Flamenco: #e08b44;
+    --Whisper: #e8e8e8;
+    --DarkGray: #a8a8a8;
+    --Red: #ff0000;
+    --Wedgewood: #445f87;
+    --CatalinaBlue: #233a5b;
+    --Midnight: #202b3c;
+    --BlueCharcoal: #181f2a;
+    --VeryLightGrey: #c8c8c8;
+    --Charcoal: #494949;
+    --PinkSwan: #b2b2b2;
+    --EchoBlue: #b9bbbf;
+    --Gainsboro: #e1e1e1;
+    --Nobel: #999999;
+    --DarkGray1: #ababab;
+    --Charcoal1: #484848;
+    --hrefDisable: #a3a2a2;
+    --PuertoRico: #48b09e;
+    --CodeColor: #939393;
+    --tableBg: #f9f9f9;
+    --dashed: #e2e2e2;
+    --compareBg: #f7f7f7;
+}
+/*# sourceMappingURL=../../maps/styles/default/variables.css.map */

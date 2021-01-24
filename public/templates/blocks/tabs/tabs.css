@@ -1,0 +1,61 @@
+.tab-btn{
+    background-color: transparent;
+    border: 1px solid #e1e1e1;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    color: #000000;
+    outline-color: transparent;
+}
+    .tab-btn i{
+        display: inline-block;
+        color: currentColor;
+        font-size: 14px;
+    }
+.tab-btn[data-content='icon']{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+}
+.tab-btn:not(:last-child){
+    margin-right: 10px;
+}
+.tab-btn:hover, .tab-btn.active{
+    border-color: #e08b44;
+    color: #e08b44;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.tab-btn:focus{
+    outline: none;
+}
+.tab-btns{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}
+.tab-container{
+    display: none;
+}
+@media(max-width: 575px){
+    .tab-btns[data-hide="yes"]{
+        display: none!important;
+    }
+            .tab-containers[data-hide="yes"] .tab-container:not(:last-of-type) .pagination{
+                display: none;
+            }
+        .tab-containers[data-hide="yes"] .tab-container{
+            display: block!important;
+        }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/tabs/tabs.css.map */

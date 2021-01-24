@@ -1,0 +1,16 @@
+.services-category strong {
+        margin-bottom: 0;
+        color: var(--Charcoal);
+        color: var(--Charcoal);
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    .services-category .card-body {
+        padding-bottom: 30px;
+    }
+    .services-category .card-type-2:hover strong {
+            color: var(--mainColor);
+            color: var(--mainColor);
+        }
+/*# sourceMappingURL=../../../maps/templates/blocks/services-category/services-category.css.map */

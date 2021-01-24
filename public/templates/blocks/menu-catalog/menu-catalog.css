@@ -1,0 +1,191 @@
+.catalog-list{
+    z-index: 1
+}
+.catalog-list> li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    padding-right: 35px;
+    padding-left: 20px;
+}
+.catalog-list> li a{
+            color: var(--mainColor);
+            color: var(--mainColor);
+            font-size: 13px;
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+}
+.catalog-list> li i{
+            color: var(--Wedgewood);
+            color: var(--Wedgewood);
+            font-size: 52px;
+            -webkit-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out
+}
+.catalog-list> li i.icon-2-9_catalog2{
+    font-size: 42px;
+}
+.catalog-list> li i.icon-3-0_catalog3{
+    font-size: 35px;
+}
+.catalog-list> li i.icon-3-1_catalog4{
+    font-size: 48px;
+}
+.catalog-list> li i.icon-3-2_catalog5{
+    font-size: 42px;
+}
+.catalog-list> li i.icon-3-3_catalog6{
+    font-size: 47px;
+}
+.catalog-list> li i.icon-3-4_catalog7,  .catalog-list> li i.icon-3-5_catalog8{
+    font-size: 43px;
+}
+.catalog-list> li i.icon-3-6_catalog9{
+    font-size: 40px;
+}
+.catalog-list> li i.icon-3-7_catalog10{
+    font-size: 20px;
+}
+.catalog-list> li i.icon-3-8_catalog11{
+    font-size: 45px;
+}
+.catalog-list> li i.icon-3-9_catalog12{
+    font-size: 50px;
+}
+.catalog-list> li:hover{
+    background-color: var(--Wedgewood);
+    background-color: var(--Wedgewood);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+.catalog-list> li:hover> .icon-wrap i, .catalog-list> li:hover> a{
+    color: var(--White);
+    color: var(--White);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.catalog-list> li .list{
+            padding-top: 20px;
+}
+.catalog-list .arrowDown::after{
+    color: var(--VeryLightGrey);
+    color: var(--VeryLightGrey);
+    font-size: 7px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    right: 16px;
+}
+.catalog-list .arrowDown:hover::after{
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    color: var(--Flamenco);
+    color: var(--Flamenco);
+}
+.catalog-list .dropdown{
+        left: 100%;
+        top: 0;
+        z-index: 4;
+}
+.catalog-list li{
+        padding-top: 11px;
+        padding-bottom: 11px;
+}
+.navList{
+    /* width: 1170px; */
+    /* width: 780px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.navList> div{
+    /* width: calc(100% / 3); */
+    /* width: calc(100% / 2); */
+    width: 390px;
+}
+.navList .firstColumn li,.navList .secondColumn li{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+        }
+.navList .firstColumn li:hover i,.navList .secondColumn li:hover i{
+                    color: var(--Flamenco);
+                    color: var(--Flamenco);
+}
+.navList .firstColumn li i.icon-4-2_catalog-list3,.navList .secondColumn li i.icon-4-2_catalog-list3{
+    font-size: 49px;
+}
+.navList .firstColumn li i.icon-4-3_catalog-list4,.navList .secondColumn li i.icon-4-3_catalog-list4{
+    font-size: 32px;
+}
+.navList .firstColumn li i.icon-4-4_catalog-list5,.navList .secondColumn li i.icon-4-4_catalog-list5{
+    font-size: 43px;
+}
+.navList .firstColumn li i.icon-4-7_catalog-list8,.navList .secondColumn li i.icon-4-7_catalog-list8{
+    font-size: 30px;
+}
+.navList .firstColumn li.item,.navList .secondColumn li.item{
+    padding-bottom: 22px;
+}
+.navList .firstColumn li.item li:last-of-type,.navList .secondColumn li.item li:last-of-type{
+                    padding-bottom: 0;
+}
+.navList .thirdColumn{
+        display: none;
+        padding-top: 17px;
+}
+.navList .thirdColumn a.Btn-Wedgewood{
+            color: var(--Wedgewood);
+            color: var(--Wedgewood)
+        }
+.navList .thirdColumn a.Btn-Wedgewood:hover{
+    color: var(--White);
+    color: var(--White);
+}
+.navList .thirdColumn .card-body{
+            padding: 0;
+        }
+li.menu-left__active {
+    background-color: var(--Wedgewood);
+    background-color: var(--Wedgewood)
+}
+li.menu-left__active>a {
+    color: var(--White);
+    color: var(--White);
+}
+li.menu-left__active>.icon-wrap i {
+    color: var(--White);
+    color: var(--White);
+}
+i.icon-4-2_catalog-list3 {
+    margin-right: 18.5px;
+}
+i.icon-4-3_catalog-list4 {
+    margin-left: 15px;
+}
+.vm-item:first-child:hover .vm-menu {
+    top: -22px;
+}
+/* .vm-item:last-child:hover .vm-menu {
+    bottom: -63px;
+    top: auto;
+} */
+@media(max-width: 1600px){
+    .navList{
+        width: 950px;
+    }
+}
+@media(max-width: 1380px){
+    .navList{
+        width: 818px;
+    }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/menu-catalog/menu-catalog.css.map */

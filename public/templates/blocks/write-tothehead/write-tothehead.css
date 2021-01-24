@@ -1,0 +1,44 @@
+.write-tothehead .input-name {
+        width: 170px;
+    }
+    .write-tothehead .bottom {
+        border-top: none;
+    }
+    .write-tothehead .body {
+        padding-top: 50px;
+        border-top: 1px dashed var(--Gainsboro);
+        border-top: 1px dashed var(--Gainsboro);
+    }
+    .write-tothehead .alert {
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+    .write-tothehead__head {
+        margin-bottom: 47px;
+    }
+    .write-tothehead__head b {
+            font-size: 17px;
+        }
+    .write-tothehead__head span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    @media(max-width: 767px) {
+        .write-tothehead .alert {
+            margin-bottom: 25px;
+        }
+        .write-tothehead__head {
+            margin-bottom: 27px;
+        }
+        .write-tothehead .body {
+            padding-top: 30px;
+        }
+}
+    @media(max-width: 575px) {
+            .write-tothehead__head span {
+                margin-top: 8px;
+            }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/write-tothehead/write-tothehead.css.map */

@@ -1,0 +1,199 @@
+.news {
+    overflow: visible;
+}
+    .news-menu .border-style {
+            padding: 0;
+            margin-top: 2px
+        }
+    .news-menu .border-style:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 140px;
+    left: 10px;
+    top: 0;
+    background: -o-linear-gradient(left, var(--Flamenco) 35px, var(--Wedgewood) 35px);
+    background: linear-gradient(to right, var(--Flamenco) 35px, var(--Wedgewood) 35px);
+    background: linear-gradient(to right, var(--Flamenco) 35px, var(--Wedgewood) 35px);
+}
+    .news-menu .border-style li {
+                padding: 19px 35px 19px 20px;
+}
+    .news-sorting {
+        padding: 18px 30px;
+        margin-bottom: 40px;
+        border: 1px solid var(--Gainsboro);
+        border: 1px solid var(--Gainsboro);
+    }
+    .news-sorting button {
+            line-height: 1.9;
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s
+        }
+    .news-sorting button:not(:last-child) {
+    margin-right: 27px;
+}
+    .news-sorting button:hover {
+    color: var(--Flamenco);
+    color: var(--Flamenco);
+}
+    .news-sorting__active {
+            color: var(--Flamenco);
+            color: var(--Flamenco);
+        }
+    .news__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 30px;
+        border: 1px solid var(--Gainsboro);
+        border: 1px solid var(--Gainsboro);
+        margin-bottom: 20px;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .news__item .card-img {
+            height: 187px;
+            width: 295px;
+            margin: 0 40px 0 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+        }
+    .news__item-info {
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+        }
+    .news__item-date {
+            margin: 0 0 15px;
+            font-weight: 600;
+            color: var(--Charcoal);
+            color: var(--Charcoal);
+        }
+    .news__item-title {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-transform: uppercase;
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s
+        }
+    .news__item-title:hover {
+    color: var(--Wedgewood);
+    color: var(--Wedgewood);
+}
+    .news__item-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: var(--Gainsboro);
+    background-color: var(--Gainsboro);
+}
+    .news__item-txt {
+            margin: 0 0 20px;
+            line-height: 1.4;
+        }
+    .news__item .arrowDown {
+            display: inline-block;
+            padding-right: 17px;
+        }
+    .news__item .arrowDown span {
+                border-bottom: 1px dashed var(--Charcoal);
+                border-bottom: 1px dashed var(--Charcoal);
+                color: var(--Charcoal);
+                color: var(--Charcoal);
+                -webkit-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s;
+            }
+    .news__item .arrowDown:after {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    right: 0;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+    .news__item .arrowDown:hover span {
+                    border-color: var(--White);
+                    border-color: var(--White);
+}
+    .news__item .arrowDown:hover:after {
+    color: var(--Flamenco);
+    color: var(--Flamenco);
+}
+    .news__item:hover {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+    .news-result {
+        padding-bottom: 40px;
+    }
+    .news-result .pagination {
+            margin-top: 10px;
+        }
+    @media(max-width: 991px) {
+        .news-sorting {
+            padding: 8px 20px;
+        }
+        .news__item {
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+            .news__item .card-img {
+                margin-right: 20px;
+                width: 210px;
+                height: 135px;
+            }
+        .news__item:last-of-type {
+        margin-bottom: 20px;
+    }
+}
+    @media(max-width: 767px) {
+        .news-result {
+            padding-bottom: 10px;
+        }
+}
+    @media(max-width: 575px) {
+        .news__item {
+            padding: 0 0 24px;
+            border: none;
+            border-bottom: 1px solid var(--Gainsboro);
+            border-bottom: 1px solid var(--Gainsboro);
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+        }
+            .news__item .card-img {
+                width: 100%;
+                height: 184px;
+                margin-bottom: 20px;
+            }
+            .news__item-title {
+                padding-bottom: 15px;
+                margin-bottom: 13px;
+                font-size: 15px;
+            }
+            .news__item-txt {
+                margin-bottom: 17px;
+            }
+        .news__item:hover {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+        .news-result {
+            padding-bottom: 20px;
+        }
+}
+
+/*# sourceMappingURL=../../../maps/templates/blocks/news/news.css.map */

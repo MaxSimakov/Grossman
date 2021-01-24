@@ -1,0 +1,293 @@
+@font-face {
+	font-family: "icons";
+	src: url("../assets/fonts/iconfonts/icons.woff2") format("woff2"),
+		url("../assets/fonts/iconfonts/icons.woff") format("woff");
+}
+[class^="icon-"], [class*="icon-"] {
+	font-family: "icons";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	-webkit-font-feature-settings: normal;
+	        font-feature-settings: normal;
+	font-variant: normal;
+	font-weight: 400;
+    line-height: 1;
+	text-decoration: none;
+    text-transform: none;
+}
+
+
+.icon-1-0_arrow::before {
+	content: "\E001";
+}
+
+.icon-1-1_basket::before {
+	content: "\E002";
+}
+
+.icon-1-2_brands::before {
+	content: "\E003";
+}
+
+.icon-1-3_menu::before {
+	content: "\E004";
+}
+
+.icon-1-4_close::before {
+	content: "\E005";
+}
+
+.icon-1-5_comparison::before {
+	content: "\E006";
+}
+
+.icon-1-6_contacts::before {
+	content: "\E007";
+}
+
+.icon-1-7_down::before {
+	content: "\E008";
+}
+
+.icon-1-8_email::before {
+	content: "\E009";
+}
+
+.icon-1-9_facebook::before {
+	content: "\E00A";
+}
+
+.icon-2-0_instagram::before {
+	content: "\E00B";
+}
+
+.icon-2-1_login::before {
+	content: "\E00C";
+}
+
+.icon-2-2_phone::before {
+	content: "\E00D";
+}
+
+.icon-2-3_search::before {
+	content: "\E00E";
+}
+
+.icon-2-4_elect::before {
+	content: "\E00F";
+}
+
+.icon-2-5_services::before {
+	content: "\E010";
+}
+
+.icon-2-6_up::before {
+	content: "\E011";
+}
+
+.icon-2-7_wk::before {
+	content: "\E012";
+}
+
+.icon-2-8_catalog1::before {
+	content: "\E013";
+}
+
+.icon-2-9_catalog2::before {
+	content: "\E014";
+}
+
+.icon-3-0_catalog3::before {
+	content: "\E015";
+}
+
+.icon-3-1_catalog4::before {
+	content: "\E016";
+}
+
+.icon-3-2_catalog5::before {
+	content: "\E017";
+}
+
+.icon-3-3_catalog6::before {
+	content: "\E018";
+}
+
+.icon-3-4_catalog7::before {
+	content: "\E019";
+}
+
+.icon-3-5_catalog8::before {
+	content: "\E01A";
+}
+
+.icon-3-6_catalog9::before {
+	content: "\E01B";
+}
+
+.icon-3-7_catalog10::before {
+	content: "\E01C";
+}
+
+.icon-3-8_catalog11::before {
+	content: "\E01D";
+}
+
+.icon-3-9_catalog12::before {
+	content: "\E01E";
+}
+
+.icon-4-0_catalog-list1::before {
+	content: "\E01F";
+}
+
+.icon-4-1_catalog-list2::before {
+	content: "\E020";
+}
+
+.icon-4-2_catalog-list3::before {
+	content: "\E021";
+}
+
+.icon-4-3_catalog-list4::before {
+	content: "\E022";
+}
+
+.icon-4-4_catalog-list5::before {
+	content: "\E023";
+}
+
+.icon-4-5_catalog-list6::before {
+	content: "\E024";
+}
+
+.icon-4-6_catalog-list7::before {
+	content: "\E025";
+}
+
+.icon-4-7_catalog-list8::before {
+	content: "\E026";
+}
+
+.icon-4-8_service1::before {
+	content: "\E027";
+}
+
+.icon-4-9_service2::before {
+	content: "\E028";
+}
+
+.icon-5-0_service3::before {
+	content: "\E029";
+}
+
+.icon-5-1_service4::before {
+	content: "\E02A";
+}
+
+.icon-5-2_advantage1::before {
+	content: "\E02B";
+}
+
+.icon-5-3_advantage2::before {
+	content: "\E02C";
+}
+
+.icon-5-4_advantage3::before {
+	content: "\E02D";
+}
+
+.icon-5-5_advantage4::before {
+	content: "\E02E";
+}
+
+.icon-5-6_advantage5::before {
+	content: "\E02F";
+}
+
+.icon-5-7_advantage6::before {
+	content: "\E030";
+}
+
+.icon-5-8_advantage7::before {
+	content: "\E031";
+}
+
+.icon-5-9_advantage8::before {
+	content: "\E032";
+}
+
+.icon-6-0_advantage9::before {
+	content: "\E033";
+}
+
+.icon-6-1_Inbasket::before {
+	content: "\E034";
+}
+
+.icon-6-2_tile::before {
+	content: "\E035";
+}
+
+.icon-6-3_list::before {
+	content: "\E036";
+}
+
+.icon-6-4_check::before {
+	content: "\E037";
+}
+
+.icon-6-5_plus::before {
+	content: "\E038";
+}
+
+.icon-6-6_minus::before {
+	content: "\E039";
+}
+
+.icon-6-7_delivery::before {
+	content: "\E03A";
+}
+
+.icon-6-8_foundcheaper::before {
+	content: "\E03B";
+}
+
+.icon-6-9_pricelist::before {
+	content: "\E03C";
+}
+
+.icon-7-0_doublearrow::before {
+	content: "\E03D";
+}
+
+.icon-7-1_filter::before {
+	content: "\E03E";
+}
+
+.icon-7-2_user::before {
+	content: "\E03F";
+}
+
+.icon-7-3_box::before {
+	content: "\E040";
+}
+
+.icon-7-4_history::before {
+	content: "\E041";
+}
+
+.icon-7-5_profile::before {
+	content: "\E042";
+}
+
+.icon-7-6_pen::before {
+	content: "\E043";
+}
+
+.icon-7-7_eye::before {
+	content: "\E044";
+}
+
+/*# sourceMappingURL=../maps/styles/iconfonts.css.map */

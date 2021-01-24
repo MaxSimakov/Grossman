@@ -1,0 +1,93 @@
+.error404 {
+    padding-bottom: 90px;
+}
+    .error404__block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .error404__block h1 {
+            margin-bottom: 30px;
+            font-size: 230px;
+        }
+    .error404__block h1 span {
+                margin-right: 0;
+            }
+    .error404__block h1 span:after {
+                height: 39px;
+                width: 39px;
+                top: 57px;
+                right: -34px;
+            }
+    .error404__block p {
+            font-size: 33px;
+            margin: 0 0 8px;
+        }
+    .error404__block>span {
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
+    line-height: 23px;
+}
+    .error404__block a {
+            margin-top: 40px;
+}
+    @media(max-width: 767px) {
+    .error404 {
+        padding-bottom: 40px;
+    }
+        .error404__block {
+            margin-top: 25px;
+        }
+            .error404__block h1 {
+                margin-bottom: 20px;
+                font-size: 173px;
+            }
+                .error404__block h1 span:after {
+                    height: 29px;
+                    width: 29px;
+                    top: 43px;
+                    right: -26px;
+                }
+        .error404 p {
+            font-size: 25px;
+        }
+}
+    @media(max-width: 575px) {
+    .error404 {
+        padding-bottom: 30px;
+    }
+        .error404__block {
+            margin-top: 15px;
+        }
+            .error404__block h1 {
+                font-size: 117px;
+                margin-bottom: 15px;
+            }
+                .error404__block h1 span:after {
+                    height: 18px;
+                    width: 18px;
+                    top: 30px;
+                    right: -18px;
+                }
+            .error404__block a {
+                margin-top: 30px;
+            }
+            .error404__block p {
+                font-size: 20px;
+            }
+        .error404__block>span {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+/*# sourceMappingURL=../../../maps/templates/blocks/error404/error404.css.map */
