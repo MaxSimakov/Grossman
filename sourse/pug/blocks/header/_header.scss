@@ -250,7 +250,7 @@
 		&__bottom-right .Btn-Flamenco { 
 			margin-left: rem(15);
 			height: rem(37);
-			@media (max-width: 600px) {
+			@include media-breakpoint-down(xl) {
 				margin-left: 0;
 			}
 		}

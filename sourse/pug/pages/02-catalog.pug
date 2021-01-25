@@ -12,12 +12,16 @@ include ../blocks/sCatalog/_sCatalog.pug
 block variables
 	- let  mainPage= null
 block title
-	- let  title= 'Главная'
+	- let  title= 'Каталог'
 	title= title
 block pagecontent
 
 	//- +mob-mnu()
 	+header()
+	+b.page-head
+		.container
+			+breadcrumb('Главная', title)
+			H1= title
 	//- +top-nav()
 	//- +in-c("checkbox", "text")
 	//- +topLine() 
@@ -25,14 +29,10 @@ block pagecontent
 	//- +sForm()
 	//- +sContact()
 	//-
-
-	
-	main
-		.main-inner
-			+topLine()
-			+catalog-block()
-			+advantages()
-			+about-company()
-			+sCatalog({title: 'Hовинки'})
-			+sCatalog2({title: 'Хит продаж'})
+	//- +topLine()
+	+catalog-block('qwer')
+	//- +advantages()
+	//- +about-company()
+	//- +sCatalog({title: 'Hовинки'})
+	//- +sCatalog2({title: 'Хит продаж'})
 	+footer()
