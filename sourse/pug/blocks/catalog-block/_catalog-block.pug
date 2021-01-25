@@ -1,6 +1,6 @@
 mixin catalog-block(notTitle)
-	.container
-		.catalog-block
+	.catalog-block&attributes(attributes)
+		.container
 			if !notTitle
 				h2.section-title
 					span Каталог
