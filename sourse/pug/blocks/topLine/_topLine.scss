@@ -87,7 +87,6 @@
 
 .menu-left {
 	background-color: $white;
-	min-height: 100%;
 	.border-style {
 		border: none;
 		padding: 0;
@@ -225,4 +224,13 @@
 		}
 	}
 	
+}
+
+.main-inner .menu-left {
+	background-color: $white;
+	min-height: 100%;
+	.border-style {
+		border: none;
+		padding: 0;
+	}
 }

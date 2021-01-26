@@ -1,6 +1,95 @@
 
 	// start .sContent
-	.sContent {
+	.sContent,
+	.about-company.typography {
+		color: $dark;
+				
+
+		h1 {
+			color: $dark;
+			font-size: $h1-font-size;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-size: $h2-font-size;
+			font-weight: 300;
+			margin-bottom: rem(25);
+			margin-top: 0;
+			padding-top: rem(20);
+			line-height: normal;
+			text-transform: uppercase;
+			@include media-breakpoint-down(lg) {
+				margin-bottom: rem(10);
+				font-size: rem(30);
+			}
+		}
+
+		
+
+		h3 {
+			color: $dark;
+			font-size: $h3-font-size;
+			font-weight: 300;
+			text-transform: uppercase;
+			padding-top: rem(22);
+			margin: 0;
+			margin-bottom: rem(20);
+
+		}
+
+		h4, 
+		h5, 
+		h6 {
+			color: $dark;
+			font-size: $h4-font-size;
+			font-weight: 300;
+			text-transform: uppercase;
+			padding-top: rem(22);
+			margin: 0;
+			margin-bottom: rem(20);
+		}
+
+		.subt {
+			font-size: rem(16);
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-bottom: rem(10);
+		}
+
+		p,
+		ul {
+			font-size: rem(16);
+			font-weight: 300;
+			margin-bottom: rem(23);
+			margin-top: 0;
+			line-height: calc(24 / 16);
+			letter-spacing: normal;
+			@include media-breakpoint-down(lg) {
+				margin-bottom: rem(20);
+			}			
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		ul {
+			li {
+				margin-bottom: rem(3);
+			}
+			li:before {
+				content: "";
+				display: block;
+				height: 6px;
+				width: 6px;
+				border-radius: 50%;
+				background-color: $primary;
+				margin: 9px 15px 9px 0;
+			}
+		}
+
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -27,3 +116,26 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.sContent
+
+.about-company.typography {
+	background-color: $white;
+	margin-bottom: rem(70);
+	padding: rem(25) rem(25) rem(30) rem(22);
+}
+
+.sContent {
+	margin-bottom: rem(65);
+
+	h2 {
+		text-transform: none;
+		padding-top: 0;
+	}
+
+	p {
+		margin-bottom: rem(40);
+	}
+
+	p:first-of-type {
+		margin-bottom: rem(43);
+	}
+}

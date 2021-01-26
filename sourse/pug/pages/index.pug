@@ -24,12 +24,24 @@ block pagecontent
 	//- +headerBlock()
 	//- +sForm()
 	//- +sContact()
-	//-
-
-	
 	main
 		.main-inner
 			+topLine()
+				.main-slider.swiper-container
+					.swiper-wrapper
+						- for (var x = 0; x < 5; x++)
+							.swiper-slide
+								.row.align-items-center
+									.col-md-auto
+										.main-slider__text
+											.main-slider__text-inner
+												p душевые кабины grossman
+											a.defLink.Btn.Btn-Flamenco(href='#') в&nbsp;каталог
+									.col.text-end
+										img.res-i(src="assets/images/main-slider-1.jpg", alt="")
+					.swiper-pagination
+					.swiper-button-prev
+					.swiper-button-next
 			+catalog-block()
 			+advantages()
 			+about-company()

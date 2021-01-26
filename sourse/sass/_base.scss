@@ -483,19 +483,15 @@ iframe {
 }
 
 .page-head {
-	padding-top: rem(23);
-	@include media-breakpoint-down(md) {
-		padding-top: rem(10);
-	}
+	padding-bottom: rem(20);
+	
 	.breadcrumb {
-		margin-left: rem(-2);
+		padding-top: 0;
 		padding-left: 0;
 		padding-bottom: rem(5);
 		margin-bottom: 0;
 		background-color: #f1f1f1;
-		@include media-breakpoint-down(md) {
-			margin-left: 0;
-		}
+		
 		.breadcrumb-item a {
 			font-size: 13px;
 			font-weight: 300;
@@ -513,14 +509,101 @@ iframe {
 		}
 	}
 	h1 {
-		margin-left: rem(-2);
 		color: $dark;
 		font-size: $h1-font-size;
 		font-weight: 300;
 		text-transform: uppercase;
 		@include media-breakpoint-down(md) {
 			font-size: rem(30);
-			margin-left: 0;
 		}
 	}
 }
+
+.col-xl-9.full-1199 .page-head {
+	padding-left: rem(21);
+}
+
+
+.section-title {
+	color: $dark;
+	font-size: $h1-font-size;
+	font-weight: 300;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0;
+	padding-bottom: rem(30);
+
+	@include media-breakpoint-down(lg) {
+		font-size: rem(30);
+		padding-bottom: rem(20);
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: rem(25);
+	}
+
+	span::after {
+		display: none;
+	}
+}
+
+.container .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contacts-page {
+	background-color: $white;
+	padding-bottom: 0;
+	margin-bottom: rem(60);
+	@media (max-width: 850px) {
+		margin-bottom: rem(30);
+	}
+	&__map {
+		padding: 0;
+		width: 55.5vw;
+		height: rem(505);
+		overflow: hidden;
+		@media (max-width: 850px) {
+			width: 100%;
+		}
+	}
+
+	&__info {
+		margin-right: 0;
+		padding: rem(25) 0 rem(25) rem(20);
+		@media (min-width: 850px) {
+			max-width: rem(440);
+		}
+		
+		h3 {
+			font-size: rem(16) !important;
+		margin-bottom: rem(25);
+		}
+	}
+
+	&__info-item {
+		padding-right: rem(45);
+		@media (max-width: 850px) {
+			padding-right: rem(20);
+		}
+		.defLink:not(.phone) {
+			color: $primary;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__info-item:not(:last-child) {
+		border-bottom: 1px solid #f1f1f1;
+	}
+
+	.phone {
+		margin-bottom: 0;
+	}
+
+	
+}
+
+

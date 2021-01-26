@@ -10,7 +10,7 @@ function eventHandler() {
 	screenName = 'card.png';
 	if (screenName && x === "localhost:3000") {
 		document.body.insertAdjacentHTML("beforeend", `<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
-	}	
+	}
 
 };
 
