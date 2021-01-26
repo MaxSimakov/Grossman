@@ -1,0 +1,59 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/catalog-block/_catalog-block.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/advantages/_advantages.pug
+include ../blocks/about-company/_about-company.pug
+include ../blocks/sCatalog/_sCatalog.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Контактная информация'
+	title= title
+block pagecontent
+
+	//- +mob-mnu()
+	+header()
+	main
+		+topLine()
+			+b.page-head
+				.container
+					+breadcrumb('Главная', title)
+					H1= title
+			.contacts-page
+				.contacts-page__info
+					.contacts-page__info-item
+						h3.contacts-page__info-title Центральный офис
+						p Россия, Москва, поселение Московский, Киевское шоссе, 22-й километр, вл&nbsp;4, блок Г
+						a.defLink.phone(href="tel:+7(495)287-07-00") +7  (495) 287-07-00
+						ul.def-ul
+							li Каждый день с&nbsp;8:00 до&nbsp;18:00
+						a.defLink(href="mailto:info@grossman.com.ru") info@grossman.com.ru
+					.contacts-page__info-item
+						h3.contacts-page__info-title Склад
+						p Россия, Москва, поселение Московский, Киевское шоссе, 22-й километр, вл&nbsp;4, блок Г
+						a.defLink.phone(href="tel:+7(495)287-07-00") +7 (495) 287-07-00
+						ul.def-ul
+							li Каждый день с&nbsp;8:00 до&nbsp;18:00
+				.contacts-page__map
+					#map
+				
+	
+	//- +top-nav()
+	//- +in-c("checkbox", "text")
+	//- +topLine() 
+	//- +headerBlock()
+	//- +sForm()
+	//- +catalog-block('qwer').pt-0
+	//- +sContact()
+	//-
+	//- +topLine()
+	//- +advantages()
+	//- +about-company()
+	//- +sCatalog({title: 'Hовинки'})
+	//- +sCatalog2({title: 'Хит продаж'})
+	+footer().mt-0
