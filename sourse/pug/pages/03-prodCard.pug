@@ -12,7 +12,7 @@ include ../blocks/sCatalog/_sCatalog.pug
 block variables
 	- let  mainPage= null
 block title
-	- let  title= 'title'
+	- let  title= 'Ванны отдельностоящие'
 	title= title
 block pagecontent
 
@@ -26,7 +26,10 @@ block pagecontent
 	//- +sContact()
 	//-
 
-	
+	+b.page-head
+		.container
+			+breadcrumb('Главная','Каталог', title)
+			H1= title
 	<main>
 		.container
 			+sCardProduct
