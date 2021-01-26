@@ -7,20 +7,47 @@
 			padding: rem(25) rem(5) rem(20);
 		}
 
-		&__title {
+		h1 {
+			color: $dark;
+			font-size: $h1-font-size;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+
+		h2 {
 			font-size: $h2-font-size;
 			font-weight: 300;
-			margin-bottom: rem(32);
+			margin-bottom: rem(25);
 			margin-top: rem(-5);
 			line-height: normal;
-
+			text-transform: uppercase;
 			@include media-breakpoint-down(lg) {
 				margin-bottom: rem(10);
 				font-size: rem(30);
-			}			
-			@include media-breakpoint-down(md) {
-				font-size: rem(25);
 			}
+		}
+
+		.title {
+			text-transform: none;
+		}
+
+		h3 {
+			color: $dark;
+			font-size: $h3-font-size;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-bottom: rem(20);
+		}
+
+		h4, 
+		h5, 
+		h6 {
+			color: $dark;
+			font-size: $h4-font-size;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-bottom: rem(20);
+			padding-top: rem(10);
 		}
 
 		&__subtitle {
@@ -30,23 +57,33 @@
 			margin-bottom: rem(10);
 		}
 
-		&__content {
+		p,
+		ul {
 			font-size: rem(16);
 			font-weight: 300;
-			margin-bottom: rem(43);
+			margin-bottom: rem(25);
 			line-height: calc(24 / 16);
 			letter-spacing: normal;
 			@include media-breakpoint-down(lg) {
-				margin-bottom: rem(15);
+				margin-bottom: rem(20);
 			}
 		}
 
-		// &__content:last-of-type {
-		// 	margin-bottom: rem(30);
-		// 	@include media-breakpoint-down(lg) {
-		// 		margin-bottom: rem(25);
-		// 	}
-		// }
+		ul {
+			list-style-type: none;
+			margin-bottom: rem(45);
+			li {
+				background-image: url("../assets/svg/ellipse.svg");
+				background-position: 3px 10px;
+				background-repeat: no-repeat;
+				padding-left: 20px;
+				margin-bottom: rem(3);
+			 }
+		}
+
+		.m-big {
+			margin-bottom: rem(35);
+		}
 
 		 
 	@include media-breakpoint-up(xl) {}
@@ -74,3 +111,12 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.sContent
+
+.topLine .sContent {
+	background-color: $white;
+	padding: rem(25) rem(4) rem(30) 0;
+	h2 {
+		padding-top: rem(10);
+		margin-top: 0;
+	}
+}

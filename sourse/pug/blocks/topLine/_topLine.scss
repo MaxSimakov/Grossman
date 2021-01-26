@@ -1,6 +1,15 @@
 
 	// start .topLine
 	.topLine {
+		padding-top: rem(37);
+		padding-bottom: rem(63);
+		.page-head {
+			padding-top: 0;
+			.breadcrumb {
+				padding-top: 0;
+				line-height: rem(16);
+			}
+		}
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -87,7 +96,6 @@
 
 .menu-left {
 	background-color: $white;
-	min-height: 100%;
 	.border-style {
 		border: none;
 		padding: 0;
@@ -225,4 +233,13 @@
 		}
 	}
 	
+}
+
+.main-inner .topLine .menu-left {
+	background-color: $white;
+	min-height: 100%;
+	.border-style {
+		border: none;
+		padding: 0;
+	}
 }

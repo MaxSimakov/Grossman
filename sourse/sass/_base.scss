@@ -524,7 +524,7 @@ iframe {
 
 .section-title {
 	color: $dark;
-	font-size: 36px;
+	font-size: $h1-font-size;
 	font-weight: 300;
 	text-align: left;
 	text-transform: uppercase;
@@ -545,3 +545,6 @@ iframe {
 	}
 }
 
+main {
+	margin-top: 0;
+}
