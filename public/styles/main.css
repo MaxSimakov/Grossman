@@ -83,7 +83,7 @@ html, body, .def-p, .def-ul, .def-li{
     list-style: none;
 }
 body {
-    width: 100%;
+    /* width: 100%;
     font-size: 13px;
     font-family: "OpenSans", sans-serif;
     font-family: var(--mainFont);
@@ -92,7 +92,7 @@ body {
     color: #000;
     color: var(--mainColor);
     background-color: #fff;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 }
 .body__inner{
     position: relative;
@@ -149,35 +149,34 @@ main{
     padding-left: 7.5px;
 }
 .typography {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.46;
 }
 .typography .h1, .typography .h2, .typography .h3, .typography .h4, .typography .h5, .typography .h6, .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
         margin: 35px 0 20px;
         font-family: inherit;
-        font-weight: 700;
+        font-weight: 300;
         line-height: 1.2;
-        color: #445f87;
-        color: var(--Wedgewood);
+        color: #282828 !important;
         text-transform: uppercase;
     }
 .typography h1 {
-        font-size: 25px;
+        font-size: 36px;
     }
 .typography h2 {
-        font-size: 21px;
+        font-size: 32px;
     }
 .typography h3 {
-        font-size: 17px;
+        font-size: 28px;
     }
 .typography h4 {
-        font-size: 15px;
+        font-size: 24px;
     }
 .typography h5 {
-        font-size: 14px;
+        font-size: 24px;
     }
 .typography h6 {
-        font-size: 14px;
+        font-size: 24px;
     }
 .typography p {
         margin-top: 20px
@@ -190,11 +189,10 @@ main{
 }
 .typography a {
         display: inline;
-        border-bottom: 1px solid #445f87;
-        border-bottom: 1px solid var(--Wedgewood);
+        border-bottom: 1px solid var(--Flamenco);
         text-decoration: none;
         color: #445f87;
-        color: var(--Wedgewood);
+        color: var(--Flamenco);
     }
 .typography mark {
         padding: .2em;

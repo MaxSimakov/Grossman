@@ -24,12 +24,9 @@ block pagecontent
 	//- +headerBlock()
 	//- +sForm()
 	//- +sContact()
-	//-
-
-	
 	main
 		.main-inner
-			+topLine().pb-0
+			+topLine()
 				.main-slider.swiper-container
 					.swiper-wrapper
 						- for (var x = 0; x < 5; x++)
@@ -42,7 +39,6 @@ block pagecontent
 											a.defLink.Btn.Btn-Flamenco(href='#') в&nbsp;каталог
 									.col.text-end
 										img.res-i(src="assets/images/main-slider-1.jpg", alt="")
-							
 					.swiper-pagination
 					.swiper-button-prev
 					.swiper-button-next

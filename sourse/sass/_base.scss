@@ -521,6 +521,18 @@ iframe {
 	}
 }
 
+.page-head.content {
+	padding-top: 0;
+	.breadcrumb {
+		padding-top: 0;
+		padding-left: rem(21);
+		line-height: 13px;
+	}
+	h1 {
+		padding-left: rem(21);
+	}
+}
+
 
 .section-title {
 	color: $dark;
@@ -545,6 +557,8 @@ iframe {
 	}
 }
 
-main {
-	margin-top: 0;
+.container .container {
+	padding-left: 0;
+	padding-right: 0;
 }
+

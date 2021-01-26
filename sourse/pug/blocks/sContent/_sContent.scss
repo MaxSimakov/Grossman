@@ -1,48 +1,42 @@
 
 	// start .sContent
-	.sContent {
+	.sContent,
+	.about-company.typography {
 		color: $dark;
-		padding-bottom: rem(25);
-		@include media-breakpoint-down(lg) {
-			padding: rem(25) rem(5) rem(20);
-		}
+				
 
 		h1 {
 			color: $dark;
 			font-size: $h1-font-size;
 			font-weight: 300;
 			text-transform: uppercase;
-			@include media-breakpoint-down(lg) {
-				font-size: rem(32);
-			}
 		}
 
 		h2 {
 			font-size: $h2-font-size;
 			font-weight: 300;
 			margin-bottom: rem(25);
-			margin-top: rem(-5);
+			margin-top: 0;
+			padding-top: rem(20);
 			line-height: normal;
 			text-transform: uppercase;
 			@include media-breakpoint-down(lg) {
-				margin-bottom: rem(15);
-				font-size: rem(25);
+				margin-bottom: rem(10);
+				font-size: rem(30);
 			}
 		}
 
-		.title {
-			text-transform: none;
-		}
+		
 
 		h3 {
 			color: $dark;
 			font-size: $h3-font-size;
 			font-weight: 300;
 			text-transform: uppercase;
+			padding-top: rem(22);
+			margin: 0;
 			margin-bottom: rem(20);
-			@include media-breakpoint-down(lg) {
-				font-size: rem(22);
-			}
+
 		}
 
 		h4, 
@@ -52,14 +46,12 @@
 			font-size: $h4-font-size;
 			font-weight: 300;
 			text-transform: uppercase;
+			padding-top: rem(22);
+			margin: 0;
 			margin-bottom: rem(20);
-			padding-top: rem(10);
-			@include media-breakpoint-down(lg) {
-				font-size: rem(18);
-			}
 		}
 
-		&__subtitle {
+		.subt {
 			font-size: rem(16);
 			font-weight: 300;
 			text-transform: uppercase;
@@ -70,28 +62,32 @@
 		ul {
 			font-size: rem(16);
 			font-weight: 300;
-			margin-bottom: rem(25);
+			margin-bottom: rem(23);
+			margin-top: 0;
 			line-height: calc(24 / 16);
 			letter-spacing: normal;
 			@include media-breakpoint-down(lg) {
 				margin-bottom: rem(20);
-			}
+			}			
+		}
+
+		p:last-child {
+			margin-bottom: 0;
 		}
 
 		ul {
-			list-style-type: none;
-			margin-bottom: rem(45);
 			li {
-				background-image: url("../assets/svg/ellipse.svg");
-				background-position: 3px 10px;
-				background-repeat: no-repeat;
-				padding-left: 20px;
 				margin-bottom: rem(3);
-			 }
-		}
-
-		.m-big {
-			margin-bottom: rem(35);
+			}
+			li:before {
+				content: "";
+				display: block;
+				height: 6px;
+				width: 6px;
+				border-radius: 50%;
+				background-color: $primary;
+				margin: 9px 15px 9px 0;
+			}
 		}
 
 		 
@@ -121,11 +117,25 @@
 
 } // end.sContent
 
-.topLine .sContent {
+.about-company.typography {
 	background-color: $white;
-	padding: rem(25) rem(4) rem(30) 0;
+	margin-bottom: rem(70);
+	padding: rem(25) rem(25) rem(30) rem(22);
+}
+
+.sContent {
+	margin-bottom: rem(65);
+
 	h2 {
-		padding-top: rem(10);
-		margin-top: 0;
+		text-transform: none;
+		padding-top: 0;
+	}
+
+	p {
+		margin-bottom: rem(40);
+	}
+
+	p:first-of-type {
+		margin-bottom: rem(43);
 	}
 }
