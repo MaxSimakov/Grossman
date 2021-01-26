@@ -12,6 +12,9 @@
 			font-size: $h1-font-size;
 			font-weight: 300;
 			text-transform: uppercase;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(32);
+			}
 		}
 
 		h2 {
@@ -22,8 +25,8 @@
 			line-height: normal;
 			text-transform: uppercase;
 			@include media-breakpoint-down(lg) {
-				margin-bottom: rem(10);
-				font-size: rem(30);
+				margin-bottom: rem(15);
+				font-size: rem(25);
 			}
 		}
 
@@ -37,6 +40,9 @@
 			font-weight: 300;
 			text-transform: uppercase;
 			margin-bottom: rem(20);
+			@include media-breakpoint-down(lg) {
+				font-size: rem(22);
+			}
 		}
 
 		h4, 
@@ -48,6 +54,9 @@
 			text-transform: uppercase;
 			margin-bottom: rem(20);
 			padding-top: rem(10);
+			@include media-breakpoint-down(lg) {
+				font-size: rem(18);
+			}
 		}
 
 		&__subtitle {
