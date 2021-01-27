@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="templates/blocks/about-block/about-block.css">
 		<link rel="stylesheet" href="templates/blocks/advantage-block/advantage-block.css">
 		<!-- Стили на этой странице - Конец-->
+		<link href="templates/blocks/filter/filter.css" rel="stylesheet"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
 	<body> 
@@ -560,184 +561,371 @@
 					</div>
 				</div>
 			</header>
-			<div class="page-head">
-				<div class="container">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
-							<li class="breadcrumb-item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
-									<meta itemprop="position" content="1"/></a></li>
-							<li class="breadcrumb-item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Каталог</span>
-									<meta itemprop="position" content="2"/></a></li>
-							<li class="breadcrumb-item active" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Ванны отдельностоящие</span>
-									<meta itemprop="position" content="3"/></a></li>
-						</ol>
-					</nav>
-					<H1>Ванны отдельностоящие</H1>
+			<main>
+				<div class="page-head">
+					<div class="container">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Каталог</span>
+										<meta itemprop="position" content="2"/></a></li>
+								<li class="breadcrumb-item active" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Ванны отдельностоящие</span>
+										<meta itemprop="position" content="3"/></a></li>
+							</ol>
+						</nav>
+						<H1>Ванны отдельностоящие</H1>
+					</div>
 				</div>
-			</div><main>
-			<div class="container">
-				<div class="card-product__page">
-					<div>
-						<div class="card-product">
-							<div class="card-product__slider">
-								<div class="card-product__slider-inner">
-									<div class="swiper-container gallery-top">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="card-img" style="background-image: url(assets/images/catalog-1.jpg)"><span class="badge first red">-10%</span><span class="badge second">новинка</span><span class="badge third orange">хит продаж</span></div>
+				<div class="container">
+					<div class="card-product__page">
+						<div>
+							<div class="card-product">
+								<div class="card-product__slider">
+									<div class="card-product__slider-inner">
+										<div class="swiper-container gallery-top">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="card-img" style="background-image: url(assets/images/catalog-1.jpg)"><span class="badge first red">-10%</span><span class="badge second">новинка</span><span class="badge third orange">хит продаж</span></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="card-img" style="background-image: url(assets/images/catalog-2.jpg)"><span class="badge first red">-10%</span><span class="badge second">новинка</span><span class="badge third orange">хит продаж</span></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="card-img" style="background-image: url(assets/images/catalog-1.jpg)"><span class="badge first red">-10%</span><span class="badge second">новинка</span><span class="badge third orange">хит продаж</span></div>
+												</div>
 											</div>
-											<div class="swiper-slide">
-												<div class="card-img" style="background-image: url(assets/images/catalog-2.jpg)"><span class="badge first red">-10%</span><span class="badge second">новинка</span><span class="badge third orange">хит продаж</span></div>
-											</div>
-											<div class="swiper-slide">
-												<div class="card-img" style="background-image: url(assets/images/catalog-1.jpg)"><span class="badge first red">-10%</span><span class="badge second">новинка</span><span class="badge third orange">хит продаж</span></div>
-											</div>
+											<!-- Add Arrows-->
+											<div class="swiper-button-next bx-e10 bx-e11"></div>
+											<div class="swiper-button-prev bx-e10 bx-e11"></div>
 										</div>
-										<!-- Add Arrows-->
-										<div class="swiper-button-next bx-e10 bx-e11"></div>
-										<div class="swiper-button-prev bx-e10 bx-e11"></div>
-									</div>
-									<div class="swiper-container gallery-thumbs">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-1.jpg)"></div>
-											<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-2.jpg)"></div>
-											<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-1.jpg)"></div>
+										<div class="swiper-container gallery-thumbs">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-1.jpg)"></div>
+												<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-2.jpg)"></div>
+												<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-1.jpg)"></div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="card-product__characteristics">
-								<div class="card-product__characteristics-title">Технические характеристики</div>
-								<table class="card-product__characteristics-table">
-									<tbody>
-										<tr>
-											<th>Ширина, см</th>
-											<td>90</td>
-										</tr>
-										<tr>
-											<th>Глубина, см</th>
-											<td>90</td>
-										</tr>
-										<tr>
-											<th>Высота, см</th>
-											<td>200</td>
-										</tr>
-										<tr>
-											<th>Вес НЕТТО, кг</th>
-											<td>71</td>
-										</tr>
-										<tr>
-											<th>Количество коробок, шт</th>
-											<td>1</td>
-										</tr>
-										<tr>
-											<th>Состав упаковки</th>
-											<td>картон</td>
-										</tr>
-										<tr>
-											<th>Ширина упаковки, м</th>
-											<td>0,14</td>
-										</tr>
-										<tr>
-											<th>Глубина упаковки, м</th>
-											<td>0,48</td>
-										</tr>
-										<tr>
-											<th>Высота упаковки, м</th>
-											<td>2,05</td>
-										</tr>
-										<tr>
-											<th>Материал упаковки</th>
-											<td>картон</td>
-										</tr>
-										<tr>
-											<th>Вес БРУТТО, кг</th>
-											<td>74</td>
-										</tr>
-										<tr>
-											<th>Объем, м3</th>
-											<td>0,12</td>
-										</tr>
-										<tr>
-											<th>Объем, м3</th>
-											<td>0,12</td>
-										</tr>
-									</tbody>
-								</table>
-								<div class="card-product__characteristics-all">
+								<div class="card-product__characteristics">
+									<div class="card-product__characteristics-title">Технические характеристики</div>
 									<table class="card-product__characteristics-table">
 										<tbody>
 											<tr>
-												<th>Ду, мм:</th>
-												<td>80</td>
+												<th>Ширина, см</th>
+												<td>90</td>
 											</tr>
 											<tr>
-												<th>Бренд:</th>
-												<td>Abra</td>
+												<th>Глубина, см</th>
+												<td>90</td>
 											</tr>
 											<tr>
-												<th>Давление, Ру кгс/см2:</th>
-												<td>40</td>
+												<th>Высота, см</th>
+												<td>200</td>
 											</tr>
 											<tr>
-												<th>Тип прохода:</th>
-												<td>Полнопроходная</td>
+												<th>Вес НЕТТО, кг</th>
+												<td>71</td>
 											</tr>
 											<tr>
-												<th>Тип присоединения:</th>
-												<td>Фланцевое</td>
+												<th>Количество коробок, шт</th>
+												<td>1</td>
 											</tr>
 											<tr>
-												<th>Материал запирающего устройства:</th>
-												<td>Сталь 25Л + наплавка на клине: 20Х13</td>
+												<th>Состав упаковки</th>
+												<td>картон</td>
 											</tr>
 											<tr>
-												<th>Способ управления:</th>
-												<td>Ручное (штурвал)</td>
+												<th>Ширина упаковки, м</th>
+												<td>0,14</td>
 											</tr>
 											<tr>
-												<th>Рабочая среда:</th>
-												<td>Вода, пар, нефтепродукты</td>
+												<th>Глубина упаковки, м</th>
+												<td>0,48</td>
+											</tr>
+											<tr>
+												<th>Высота упаковки, м</th>
+												<td>2,05</td>
+											</tr>
+											<tr>
+												<th>Материал упаковки</th>
+												<td>картон</td>
+											</tr>
+											<tr>
+												<th>Вес БРУТТО, кг</th>
+												<td>74</td>
+											</tr>
+											<tr>
+												<th>Объем, м3</th>
+												<td>0,12</td>
 											</tr>
 										</tbody>
 									</table>
+									<div class="card-product__characteristics-all">
+										<table class="card-product__characteristics-table">
+											<tbody>
+												<tr>
+													<th>Ду, мм:</th>
+													<td>80</td>
+												</tr>
+												<tr>
+													<th>Бренд:</th>
+													<td>Abra</td>
+												</tr>
+												<tr>
+													<th>Давление, Ру кгс/см2:</th>
+													<td>40</td>
+												</tr>
+												<tr>
+													<th>Тип прохода:</th>
+													<td>Полнопроходная</td>
+												</tr>
+												<tr>
+													<th>Тип присоединения:</th>
+													<td>Фланцевое</td>
+												</tr>
+												<tr>
+													<th>Материал запирающего устройства:</th>
+													<td>Сталь 25Л + наплавка на клине: 20Х13</td>
+												</tr>
+												<tr>
+													<th>Способ управления:</th>
+													<td>Ручное (штурвал)</td>
+												</tr>
+												<tr>
+													<th>Рабочая среда:</th>
+													<td>Вода, пар, нефтепродукты</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<button class="defBtn">Все характеристики</button>
 								</div>
-								<button class="defBtn">Все характеристики</button>
-							</div>
-							<div class="card-product__action-block">
-								<div class="card-product__action-blockinner">
-									<div class="card-product__action-delivery">
-										<div class="card-product__shares">
-											<div class="card-product__hit">Хит продаж</div>
-											<div class="card-product__sale">-10%</div>
+								<div class="card-product__action-block">
+									<div class="card-product__action-blockinner">
+										<div class="card-product__action-delivery">
+											<div class="card-product__shares">
+												<div class="card-product__hit">Хит продаж</div>
+												<div class="card-product__sale">-10%</div>
+											</div>
+											<div class="card-action">
+												<button class="electBtn popup-desc-parent" data-open="min-modal" data-index="1"><i class="icon-2-4_elect"></i><span class="popup-desc shadow-15">Добавить в избранное</span></button>
+												<button class="comparisonBtn popup-desc-parent" data-open="min-modal" data-index="2">
+													<svg class="icon icon-compare ">
+														<use xlink:href="img/svg/sprite.svg#compare"></use>
+													</svg><span class="popup-desc shadow-15">Добавить в сравнение</span>
+												</button>
+											</div>
 										</div>
-										<div class="card-action">
-											<button class="electBtn popup-desc-parent" data-open="min-modal" data-index="1"><i class="icon-2-4_elect"></i><span class="popup-desc shadow-15">Добавить в избранное</span></button>
-											<button class="comparisonBtn popup-desc-parent" data-open="min-modal" data-index="2">
-												<svg class="icon icon-compare ">
-													<use xlink:href="img/svg/sprite.svg#compare"></use>
-												</svg><span class="popup-desc shadow-15">Добавить в сравнение</span>
-											</button>
+										<div class="card-product__action">
+											<div class="card-product__priceWrap">
+												<div class="card-product__title">Душевое ограждение GROSSMAN PR-100SQ</div>
+												<div>
+													<div class="price"><span>22 345 ₽ </span>
+														<del>22 345 ₽ </del>
+													</div>
+												</div>
+											</div>
+											<div class="card-product__smDescr">Стальные петли, стальная ручка, стальные профиля, петли и ручка взаимозаменяемые</div>
+											<div class="card-product__action-btn">
+												<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
+												<button class="Btn-Flamenco popup-desc-parent" data-index="3" data-open="min-modal">
+													<svg class="icon icon-basket ">
+														<use xlink:href="img/svg/sprite.svg#basket"></use>
+													</svg><span>В корзину</span><span class="popup-desc shadow-15">В корзине</span>
+												</button>
+												<!-- <button class="basketBtn">в корзину<i class="icon-1-1_basket"></i></button>-->
+												<button class="defBtn findCheaperBtn"><span>Нашли дешевле?</span></button>
+											</div>
 										</div>
 									</div>
-									<div class="card-product__action">
-										<div class="card-product__priceWrap">
-											<div class="card-product__title">Душевое ограждение GROSSMAN PR-100SQ</div>
-											<div>
-												<div class="price"><span>300 094 ₽</span>
-													<del>320 094 ₽</del>
+								</div>
+							</div>
+						</div>
+						<div class="view-product">
+							<div class="view-product__inner">
+								<button class="defBtn"><i class="icon-1-4_close"></i></button>
+								<div class="swiper-container gallery-top">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="card-img" style="background-image: url(assets/images/catalog-1.jpg)"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="card-img" style="background-image: url(assets/images/catalog-2.jpg)"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="card-img" style="background-image: url(assets/images/catalog-3.jpg)"></div>
+										</div>
+									</div>
+									<!-- Add Arrows-->
+									<div class="swiper-button-next bx-e10 bxe11"></div>
+									<div class="swiper-button-prev bx-e10 bxe11"></div>
+								</div>
+								<div class="swiper-container gallery-thumbs">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-1.jpg)"></div>
+										<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-2.jpg)"></div>
+										<div class="swiper-slide card-img" style="background-image: url(assets/images/catalog-3.jpg)"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end sCardProduct-->
+					<div class="container">
+						<div class="sCatalog">
+							<h2 class="section-title"><span>Советуем посмотреть</span></h2>
+							<div class="row">
+								<div class="col-sm-6 col-lg-3">
+									<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-9.jpg" alt=""/></a>
+										<div class="catalog-item__labels">
+											<div class="catalog-item__label warning-bg">Хит продаж
+											</div>
+											<div class="catalog-item__label black-bg">-10%
+											</div>
+											<div class="catalog-item__label primary-bg">Новинка
+											</div>
+										</div>
+										<div class="row">
+											<div class="col d-flex"><a class="catalog-item__link" href="#">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg></a><a class="catalog-item__link" href="#">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg></a>
+											</div>
+											<div class="col-auto"><span class="catalog-item__presence text-warning">В наличии</span>
+											</div>
+										</div>
+										<div class="catalog-item__title"><a href="#">Душевая кабина GR-227 L/R</a>
+										</div>
+										<div class="row">
+											<div class="catalog-item__price strong col-auto">22 147 ₽
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-auto">
+												<div class="card-action__bottom">
+													<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
+													<button class="basketBtn active"><i class="icon-1-1_basket"></i></button>
 												</div>
 											</div>
 										</div>
-										<div class="card-product__action-btn">
-											<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
-											<button class="Btn-Flamenco popup-desc-parent" data-index="3" data-open="min-modal">
-												<svg class="icon icon-basket ">
-													<use xlink:href="img/svg/sprite.svg#basket"></use>
-												</svg><span>В корзину</span><span class="popup-desc shadow-15">В корзине</span>
-											</button>
-											<!-- <button class="basketBtn">в корзину<i class="icon-1-1_basket"></i></button>-->
-											<button class="defBtn findCheaperBtn"><span>Нашли дешевле?</span></button>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-10.jpg" alt=""/></a>
+										<div class="catalog-item__labels">
+											<div class="catalog-item__label warning-bg">Хит продаж
+											</div>
+											<div class="catalog-item__label black-bg">-10%
+											</div>
+											<div class="catalog-item__label primary-bg">Новинка
+											</div>
+										</div>
+										<div class="row">
+											<div class="col d-flex"><a class="catalog-item__link" href="#">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg></a><a class="catalog-item__link" href="#">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg></a>
+											</div>
+											<div class="col-auto"><span class="catalog-item__presence text-warning">В наличии</span>
+											</div>
+										</div>
+										<div class="catalog-item__title"><a href="#">Раковина GR-3017</a>
+										</div>
+										<div class="row">
+											<div class="catalog-item__price strong col-auto">65 345 ₽
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-auto">
+												<div class="card-action__bottom">
+													<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
+													<button class="basketBtn"><i class="icon-1-1_basket"></i></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-11.jpg" alt=""/></a>
+										<div class="catalog-item__labels">
+											<div class="catalog-item__label warning-bg">Хит продаж
+											</div>
+											<div class="catalog-item__label black-bg">-10%
+											</div>
+											<div class="catalog-item__label primary-bg">Новинка
+											</div>
+										</div>
+										<div class="row">
+											<div class="col d-flex"><a class="catalog-item__link" href="#">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg></a><a class="catalog-item__link" href="#">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg></a>
+											</div>
+											<div class="col-auto"><span class="catalog-item__presence">Нет в наличии </span>
+											</div>
+										</div>
+										<div class="catalog-item__title"><a href="#">Унитаз GR-B4455</a>
+										</div>
+										<div class="row">
+											<div class="catalog-item__price strong col-auto">85 548 ₽
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-auto">
+												<div class="card-action__bottom">
+													<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
+													<button class="basketBtn"><i class="icon-1-1_basket"></i></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-9.jpg" alt=""/></a>
+										<div class="catalog-item__labels">
+											<div class="catalog-item__label warning-bg">Хит продаж
+											</div>
+											<div class="catalog-item__label black-bg">-10%
+											</div>
+											<div class="catalog-item__label primary-bg">Новинка
+											</div>
+										</div>
+										<div class="row">
+											<div class="col d-flex"><a class="catalog-item__link" href="#">
+												<svg class="icon icon-heart ">
+													<use xlink:href="img/svg/sprite.svg#heart"></use>
+												</svg></a><a class="catalog-item__link" href="#">
+												<svg class="icon icon-compare ">
+													<use xlink:href="img/svg/sprite.svg#compare"></use>
+												</svg></a>
+											</div>
+											<div class="col-auto"><span class="catalog-item__presence text-warning">В наличии</span>
+											</div>
+										</div>
+										<div class="catalog-item__title"><a href="#">Раковина GR-3017</a>
+										</div>
+										<div class="row">
+											<div class="catalog-item__price strong col-auto">24 684 ₽
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-auto">
+												<div class="card-action__bottom">
+													<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
+													<button class="basketBtn"><i class="icon-1-1_basket"></i></button>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -745,167 +933,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- end sCardProduct-->
-			</div>
-			<div class="container">
-				<div class="sCatalog">
-					<h2 class="section-title"><span>Советуем посмотреть</span></h2>
-					<div class="row">
-						<div class="col-sm-6 col-lg-3">
-							<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-9.jpg" alt=""/></a>
-								<div class="catalog-item__labels">
-									<div class="catalog-item__label warning-bg">Хит продаж
-									</div>
-									<div class="catalog-item__label black-bg">-10%
-									</div>
-									<div class="catalog-item__label primary-bg">Новинка
-									</div>
-								</div>
-								<div class="row">
-									<div class="col d-flex"><a class="catalog-item__link" href="#">
-										<svg class="icon icon-heart ">
-											<use xlink:href="img/svg/sprite.svg#heart"></use>
-										</svg></a><a class="catalog-item__link" href="#">
-										<svg class="icon icon-compare ">
-											<use xlink:href="img/svg/sprite.svg#compare"></use>
-										</svg></a>
-									</div>
-									<div class="col-auto"><span class="catalog-item__presence text-warning">В наличии</span>
-									</div>
-								</div>
-								<div class="catalog-item__title"><a href="#">Душевая кабина GR-227 L/R</a>
-								</div>
-								<div class="row">
-									<div class="catalog-item__price strong col-auto">22 147 ₽
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-auto">
-										<div class="card-action__bottom">
-											<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
-											<button class="basketBtn active"><i class="icon-1-1_basket"></i></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-10.jpg" alt=""/></a>
-								<div class="catalog-item__labels">
-									<div class="catalog-item__label warning-bg">Хит продаж
-									</div>
-									<div class="catalog-item__label black-bg">-10%
-									</div>
-									<div class="catalog-item__label primary-bg">Новинка
-									</div>
-								</div>
-								<div class="row">
-									<div class="col d-flex"><a class="catalog-item__link" href="#">
-										<svg class="icon icon-heart ">
-											<use xlink:href="img/svg/sprite.svg#heart"></use>
-										</svg></a><a class="catalog-item__link" href="#">
-										<svg class="icon icon-compare ">
-											<use xlink:href="img/svg/sprite.svg#compare"></use>
-										</svg></a>
-									</div>
-									<div class="col-auto"><span class="catalog-item__presence text-warning">В наличии</span>
-									</div>
-								</div>
-								<div class="catalog-item__title"><a href="#">Раковина GR-3017</a>
-								</div>
-								<div class="row">
-									<div class="catalog-item__price strong col-auto">65 345 ₽
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-auto">
-										<div class="card-action__bottom">
-											<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
-											<button class="basketBtn"><i class="icon-1-1_basket"></i></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-11.jpg" alt=""/></a>
-								<div class="catalog-item__labels">
-									<div class="catalog-item__label warning-bg">Хит продаж
-									</div>
-									<div class="catalog-item__label black-bg">-10%
-									</div>
-									<div class="catalog-item__label primary-bg">Новинка
-									</div>
-								</div>
-								<div class="row">
-									<div class="col d-flex"><a class="catalog-item__link" href="#">
-										<svg class="icon icon-heart ">
-											<use xlink:href="img/svg/sprite.svg#heart"></use>
-										</svg></a><a class="catalog-item__link" href="#">
-										<svg class="icon icon-compare ">
-											<use xlink:href="img/svg/sprite.svg#compare"></use>
-										</svg></a>
-									</div>
-									<div class="col-auto"><span class="catalog-item__presence">Нет в наличии </span>
-									</div>
-								</div>
-								<div class="catalog-item__title"><a href="#">Унитаз GR-B4455</a>
-								</div>
-								<div class="row">
-									<div class="catalog-item__price strong col-auto">85 548 ₽
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-auto">
-										<div class="card-action__bottom">
-											<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
-											<button class="basketBtn"><i class="icon-1-1_basket"></i></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="catalog-item"><a class="catalog-item__img-wrap" href="#"><img class="res-i" src="assets/images/catalog-9.jpg" alt=""/></a>
-								<div class="catalog-item__labels">
-									<div class="catalog-item__label warning-bg">Хит продаж
-									</div>
-									<div class="catalog-item__label black-bg">-10%
-									</div>
-									<div class="catalog-item__label primary-bg">Новинка
-									</div>
-								</div>
-								<div class="row">
-									<div class="col d-flex"><a class="catalog-item__link" href="#">
-										<svg class="icon icon-heart ">
-											<use xlink:href="img/svg/sprite.svg#heart"></use>
-										</svg></a><a class="catalog-item__link" href="#">
-										<svg class="icon icon-compare ">
-											<use xlink:href="img/svg/sprite.svg#compare"></use>
-										</svg></a>
-									</div>
-									<div class="col-auto"><span class="catalog-item__presence text-warning">В наличии</span>
-									</div>
-								</div>
-								<div class="catalog-item__title"><a href="#">Раковина GR-3017</a>
-								</div>
-								<div class="row">
-									<div class="catalog-item__price strong col-auto">24 684 ₽
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-auto">
-										<div class="card-action__bottom">
-											<button class="buyFast Btn-Flamenco1">Купить в 1 клик</button>
-											<button class="basketBtn"><i class="icon-1-1_basket"></i></button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div></main>
+			</main>
 			<footer>
 				<div class="footer-fixed">
 					<button class="defBtn Btn-Flamenco" id="makeOrderBtn">сделать заказ</button>
@@ -1092,6 +1120,7 @@
 	<script src="scripts/main.js"></script>
 	<!-- Скрипты общие для всего сайта - Конец-->
 	<!-- Скрипты на этой странице - Начало-->
+	<script src="templates/blocks/filter/filter.js"></script>
 	<script src="templates/blocks/main-slider/main-slider.js"></script>
 	<script src="templates/blocks/brend-customer-sliders/sliders.js"></script>
 	<!-- Скрипты на этой странице - Конец -->

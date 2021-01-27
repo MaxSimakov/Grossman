@@ -2,6 +2,7 @@ mixin allcss()
 	//- link(rel="stylesheet", href="libs/magnificPopup/magnific-popup.css")
 	//- link(rel="stylesheet", href="libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css")
 	//- link(rel="stylesheet", href="css/main.css")
+	link(href='templates/blocks/filter/filter.css', rel="stylesheet")
 	link(href="css/main.min.css", rel="stylesheet")
 
 mixin allcjs()
@@ -14,6 +15,7 @@ mixin allcjs()
 	script(src='scripts/main.js')
 	// Скрипты общие для всего сайта - Конец
 	// Скрипты на этой странице - Начало
+	script(src='templates/blocks/filter/filter.js')
 	script(src='templates/blocks/main-slider/main-slider.js')
 	script(src='templates/blocks/brend-customer-sliders/sliders.js')
 	// Скрипты на этой странице - Конец 

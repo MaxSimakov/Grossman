@@ -3,9 +3,9 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
-include ../blocks/sCardProduct/_sCardProduct.pug
+include ../blocks/catalog-block/_catalog-block.pug
 include ../blocks/topLine/_topLine.pug
-include ../blocks/advantages/_advantages.pug
+include ../blocks/sFilter/_sFilter.pug
 include ../blocks/about-company/_about-company.pug
 include ../blocks/sCatalog/_sCatalog.pug
 
@@ -18,20 +18,25 @@ block pagecontent
 
 	//- +mob-mnu()
 	+header()
+	main
+		+topLine()
+			+b.page-head
+				.container
+					+breadcrumb('Главная', 'Каталог', title)
+					H1= title
+			+sFilter
+			+sCatalog04
 	//- +top-nav()
 	//- +in-c("checkbox", "text")
 	//- +topLine() 
 	//- +headerBlock()
 	//- +sForm()
+	//- +catalog-block('qwer').pt-0
 	//- +sContact()
 	//-
-
-	main
-		+b.page-head
-			.container
-				+breadcrumb('Главная','Каталог', title)
-				H1= title
-		.container
-			+sCardProduct
-			+sCatalog({title: 'Советуем посмотреть'})
-	+footer()
+	//- +topLine()
+	//- +advantages()
+	//- +about-company()
+	//- +sCatalog({title: 'Hовинки'})
+	//- +sCatalog2({title: 'Хит продаж'})
+	+footer().mt-0

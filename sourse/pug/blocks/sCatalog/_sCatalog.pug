@@ -31,6 +31,39 @@ mixin catalog-item(i, t, pr, pro, buy)
 						else
 							button.basketBtn
 								i.icon-1-1_basket
+mixin catalog-item2(i, t, pr, pro, buy)
+	.col-sm-6.col-lg-4
+		+b.catalog-item
+			+e.img-wrap(href="#")
+				img.res-i(src=`assets/images/catalog-${i}.jpg`, alt="")
+			+e.labels
+				+e.label.warning-bg Хит продаж
+				+e.label.black-bg -10%
+				+e.label.primary-bg Новинка
+			.row
+				.col.d-flex
+					+e.link(href="#")
+						+icon('heart')
+					+e.link(href="#")
+						+icon('compare')
+				.col-auto
+					block
+			+e.title
+				a(href="#")= t
+			.row
+				+e.price.strong.col-auto= pr
+				if pro
+					+e.price--old.col-auto= pro
+			.row
+				.col-auto
+					.card-action__bottom
+						button.buyFast.Btn-Flamenco1 Купить в 1 клик
+						if buy
+							button.basketBtn.active
+								i.icon-1-1_basket
+						else
+							button.basketBtn
+								i.icon-1-1_basket
 mixin sCatalog(data)
 	.container
 		.sCatalog
@@ -59,3 +92,27 @@ mixin sCatalog2(data)
 					+e.SPAN.presence Нет в наличии 
 				+catalog-item('9','Раковина GR-3017','22 345 ₽')
 					+e.SPAN.presence.text-warning В наличии
+
+
+mixin sCatalog04(data)
+	.container
+		+b.sCatalog
+			.row
+				+catalog-item2('9','Душевая кабина GR-227 L/R','22 147 ₽','','buy')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item2('10','Раковина GR-3017','65 345 ₽')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item2('11','Унитаз GR-B4455','85 548 ₽')
+					+e.SPAN.presence Нет в наличии 
+				+catalog-item2('9','Раковина GR-3017','24 684 ₽')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item2('9','Душевая кабина GR-227 L/R','22 147 ₽','','buy')
+					+e.SPAN.presence.text-warning В наличии
+				+catalog-item2('10','Раковина GR-3017','65 345 ₽')
+					+e.SPAN.presence.text-warning В наличии
+			+pugin()
+			+e.content
+				+e.title.ttu ГИДРОМАССАЖНЫЕ ВАННЫ GROSSMAN
+				p Это многофункциональные модели, в&nbsp;которые уже включены опции гидромассажа, аэромассажа, подсветки, хромотеропии и&nbsp;другие удобства 21&nbsp;века. Все ванны имеют антискользящее покрытие. Гидромассажная ванна GROSSMAN, установленная в&nbsp;вашем доме, превращает обычное принятие ванны в&nbsp;способ расслабиться и&nbsp;отвлечься от&nbsp;повседневных проблем. Время, проведенное в&nbsp;ванне, улучшает ваше здоровье и&nbsp;позволяет насладиться приятным массажем с&nbsp;мягкой подсветкой.
+				+e.title.ttu СТЕКЛЯННЫЕ ШТОРЫ ДЛЯ ВАНН GROSSMAN
+				p Это специализированные стеклянные секции, которые ограждают ванну. Они предназначены для предотвращения разбрызгивания воды. Стекло&nbsp;&mdash; влагостойкий и&nbsp;практичный материал, оно подчеркнет все преимущества ванной комнаты. Именно стеклянные шторы для ванной GROSSMAN служат идеальным дополнением к&nbsp;любому предложенному стилю дизайнером интерьера. Стеклянные шторы GROSSMAN украсят любую комнату и&nbsp;придадут ей&nbsp;законченный вид. Шторы GROSSMAN&nbsp;&mdash; это немецкое качество по&nbsp;доступной цене.

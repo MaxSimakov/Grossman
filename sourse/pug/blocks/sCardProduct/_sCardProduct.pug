@@ -69,9 +69,6 @@ mixin sCardProduct(data)
 							tr
 								th Объем, м3
 								td 0,12
-							tr
-								th Объем, м3
-								td 0,12
 					.card-product__characteristics-all
 						table.card-product__characteristics-table
 							tbody
@@ -118,8 +115,9 @@ mixin sCardProduct(data)
 								.card-product__title Душевое ограждение GROSSMAN PR-100SQ
 								div
 									.price
-										span 300 094 ₽
-										del 320 094 ₽
+										span 22 345 ₽ 
+										del 22 345 ₽ 
+							.card-product__smDescr Стальные петли, стальная ручка, стальные профиля, петли и ручка взаимозаменяемые
 							.card-product__action-btn
 								button.buyFast.Btn-Flamenco1 Купить в 1 клик
 								button.Btn-Flamenco.popup-desc-parent(data-index='3' data-open='min-modal')
@@ -129,6 +127,26 @@ mixin sCardProduct(data)
 								// <button class="basketBtn">в корзину<i class="icon-1-1_basket"></i></button>
 								button.defBtn.findCheaperBtn
 									span Нашли дешевле?
+		.view-product
+			.view-product__inner
+				button.defBtn
+					i.icon-1-4_close
+				.swiper-container.gallery-top
+					.swiper-wrapper
+						.swiper-slide
+							.card-img(style='background-image: url(assets/images/catalog-1.jpg)')
+						.swiper-slide
+							.card-img(style='background-image: url(assets/images/catalog-2.jpg)')
+						.swiper-slide
+							.card-img(style='background-image: url(assets/images/catalog-3.jpg)')
+					// Add Arrows
+					.swiper-button-next.bx-e10.bxe11
+					.swiper-button-prev.bx-e10.bxe11
+				.swiper-container.gallery-thumbs
+					.swiper-wrapper
+						.swiper-slide.card-img(style='background-image: url(assets/images/catalog-1.jpg)')
+						.swiper-slide.card-img(style='background-image: url(assets/images/catalog-2.jpg)')
+						.swiper-slide.card-img(style='background-image: url(assets/images/catalog-3.jpg)')
 
 
 	// end sCardProduct

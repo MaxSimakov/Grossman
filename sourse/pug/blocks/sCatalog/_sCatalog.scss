@@ -41,6 +41,24 @@
 				}
 			}
 		 
+
+			&__content {
+				padding-top: calc(var(--sPT) / 1.7);
+				padding-bottom: calc(var(--sPB) / 3);
+
+				p {
+					@include media-breakpoint-up(lg) {
+						margin-bottom: rem(40);
+					}
+				}
+			}
+
+			&__title {
+				margin-bottom: rem(10);
+				@include media-breakpoint-up(lg) {
+					margin-bottom: rem(20);
+				}
+			}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

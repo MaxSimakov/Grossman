@@ -1,6 +1,7 @@
 // start .sCardProduct
 .card-product {
-	padding-bottom: var(--sPB);
+	padding-bottom: calc(var(--sPB) / 3);
+	// align-content: stretch;
 
 	&__slider, &__characteristics, &__action-block {
 		background-color: #ffffff;
@@ -9,29 +10,95 @@
 	&__characteristics {
 		margin-bottom: rem(20);
 		padding-bottom: rem(30);
-		padding-top: rem(30);
 		border-bottom: solid 2px #f1f1f1;
+
+		@media (min-width: 1351px) {
+			max-width: 23.3%;
+			flex: 0 0 auto;
+		}
+		@media (max-width: 1350px) {
+			margin-top: rem(20);
+		}
+		padding: rem(10) rem(10) rem(20);
+		@include media-breakpoint-up(md) {
+			padding: rem(23) rem(22);
+		}
+
+		button {
+			margin-top: rem(15);
+			line-height: 1.65;
+		}
+	}
+
+	&__action-block {
+		@media (min-width: 1351px) {
+			max-width: 36.2%;
+			flex: 0 0 auto;
+		}
+
+		@media (max-width: 1350px) {
+			padding-left: 0;
+		}
 	}
 
 	&__characteristics-title {
-		font-size: rem(20);
+		font-size: rem(21);
+		letter-spacing: rem(-0.9);
 		text-transform: none;
 		font-weight: 400;
+		margin-bottom: rem(12);
+	}
+
+	.card-product__characteristics-table td, .card-product__characteristics-table th {
+		padding: rem(2.5) rem(10);
+		line-height: 1.55;
+	}
+
+	&__characteristics-table {
+		td {
+			@media (min-width: 1351px) {
+				width: 60%;
+			}
+			@include media-breakpoint-down(sm) {
+				width: 50%;
+			}
+		}
 	}
 
 	&__action {
-		background-color: transparent;
-		padding-bottom: rem(10);
+		background-color: #fff;
+		// background-color: transparent;
+		padding: rem(20) rem(20) rem(10);
+		@media (min-width: 1351px) {
+			padding: rem(23) rem(30) rem(46);
+		}
 	}
 
-	.card-action button::after {
-		display: none;
+	.card-action {
+
+		button {
+			width: rem(30);
+			&::after {
+				display: none;
+			}
+		}
 	}
 
 	&__action-delivery {
 		border-bottom: solid 2px #f1f1f1;
-		padding: rem(30);
+		padding: rem(10);
+		@include media-breakpoint-up(sm) {
+			padding: rem(25) rem(30);
+		}
 		margin-bottom: 0;
+
+		.popup-desc {
+			left: -80px;
+
+			&::after {
+				left: 90px;
+			}
+		}
 	}
 
 	&__action-blockinner {
@@ -39,8 +106,12 @@
 	}
 
 	&__title {
-		@extend .h1;
+		font-size: $h3-font-size;
+		@include media-breakpoint-up(lg) {
+			font-size: $h1-font-size;
+		}
 		font-weight: 300;
+		text-transform: uppercase;
 	}
 
 	&__priceWrap {
@@ -53,7 +124,13 @@
 
 		del {
 			font-weight: 300;
+			margin-left: calc(10px + 1.4vw);
 		}
+	}
+
+	&__smDescr {
+		margin-top: rem(18);
+		padding-bottom: 5px;
 	}
 
 	.comparisonBtn {
@@ -63,10 +140,27 @@
 	}
 
 	&__slider {
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(sm) {
+			min-height: rem(400);
+		}
+		height: calc(300px + 20vw);
+
+		@media (min-width: 1351px) {
 			height: 663px;
+			flex: 0 0 auto;
+			max-width: 40.5%;
+		}
+
+		@media (max-width: 1350px) {
+			padding-right: 0;
+		}
+
+		.badge {
+			left: 10px;
+			margin-top: 10px;
 		}
 	}
+
 	&__slider-inner {
 		display: flex;
 		padding: 0;
@@ -83,7 +177,10 @@
 	}
 
 	.gallery-thumbs {
-		margin: rem(20);
+		margin: rem(10);
+		@include media-breakpoint-up(sm) {
+			margin: rem(20);
+		}
 		height: auto;
 
 		.swiper-wrapper {
@@ -94,7 +191,10 @@
 
 		.swiper-slide {
 			height: rem(70);
-			margin-bottom: rem(20);
+			margin-bottom: rem(10);
+			@include media-breakpoint-up(sm) {
+				margin-bottom: rem(20);
+			}
 
 		}
 	}
@@ -110,7 +210,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: rem(7);
+		padding: rem(5) rem(10);
 		min-width: rem(95px);
 		min-height: rem(30px);
 		margin-right: rem(10);
@@ -123,12 +223,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: rem(7) rem(10);
+		padding: rem(5) rem(10);
 		margin-right: rem(10);
 		color: #fff;
 	}
 
 	.defBtn {
+		font-size: rem(16);
 		color: $primary;
 		border-color: $primary;
 		outline: none !important;
@@ -145,6 +246,7 @@
 	
 	&__action-btn {
 		flex-wrap: wrap;
+		max-width: 565px;
 		
 		button {
 			flex-shrink: 1;
@@ -154,17 +256,22 @@
 			margin-bottom: rem(20);
 		}
 
-		.Btn-Flamenco {
-			padding: rem(12) rem(20);
-
-			&:hover {
-				color: $primary;
-			}
-		}
-
 		.icon-basket {
 			margin-right: rem(20);
-		} 
+		}
+	}
+
+	.Btn-Flamenco {
+		padding: rem(11) calc(10px + 1.5vw);
+		border-width: 2px;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	.Btn-Flamenco1 {
+		padding: rem(12) calc(7px + 1.5vw);
 	}
 
 
