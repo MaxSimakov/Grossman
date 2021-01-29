@@ -1,23 +1,36 @@
 // start .sCardProduct
 .card-product {
-	padding-bottom: calc(var(--sPB) / 3);
 	// align-content: stretch;
+	padding-bottom: 0;
+	@media (min-width: 1350px) {
+		padding-bottom: calc(var(--sPB) / 3);
+	}
+	@media (max-width: 1350px) {
+		background-color: #fff;
+		margin-bottom: calc(var(--sPB) / 3);
+	}
 
 	&__slider, &__characteristics, &__action-block {
 		background-color: #ffffff;
 	}
 
 	&__characteristics {
-		margin-bottom: rem(20);
+		@media (min-width: 1350px) {
+			margin-bottom: rem(20);
+		}
+		margin-bottom: 0;
 		padding-bottom: rem(30);
-		border-bottom: solid 2px #f1f1f1;
+		// border-bottom: 1px solid var(--Gainsboro);
+		// border-top: 1px solid var(--Gainsboro);
 
 		@media (min-width: 1351px) {
 			max-width: 23.3%;
 			flex: 0 0 auto;
 		}
 		@media (max-width: 1350px) {
-			margin-top: rem(20);
+			margin-top: 0;
+			padding-top: rem(40);
+			border-top: solid 2px var(--Gainsboro);
 		}
 		padding: rem(10) rem(10) rem(20);
 		@include media-breakpoint-up(md) {
@@ -31,6 +44,8 @@
 	}
 
 	&__action-block {
+		border-top: none;
+		border-bottom: none;
 		@media (min-width: 1351px) {
 			max-width: 36.2%;
 			flex: 0 0 auto;
@@ -72,6 +87,10 @@
 		@media (min-width: 1351px) {
 			padding: rem(23) rem(30) rem(46);
 		}
+
+		@media (max-width: 750px) {
+			margin: 0;
+		}
 	}
 
 	.card-action {
@@ -85,7 +104,10 @@
 	}
 
 	&__action-delivery {
-		border-bottom: solid 2px #f1f1f1;
+		border-bottom: solid 2px var(--Gainsboro);
+		@media (max-width: 750px) {
+			border-top: solid 2px var(--Gainsboro);
+		}
 		padding: rem(10);
 		@include media-breakpoint-up(sm) {
 			padding: rem(25) rem(30);
@@ -103,6 +125,13 @@
 
 	&__action-blockinner {
 		padding: 0;
+		border-right: none;
+		border-top: none;
+		border-bottom: none;
+		border-width: 2px;
+		@media (max-width: 1350px) {
+			border: none;
+		}
 	}
 
 	&__title {
@@ -143,7 +172,7 @@
 		@include media-breakpoint-up(sm) {
 			min-height: rem(400);
 		}
-		height: calc(300px + 20vw);
+		height: calc(350px + 22vw);
 
 		@media (min-width: 1351px) {
 			height: 663px;
@@ -165,6 +194,10 @@
 		display: flex;
 		padding: 0;
 		height: 100%;
+		border: none;
+		@media (min-width: 750px) {
+			border-right: solid 2px var(--Gainsboro);
+		}
 	}
 
 	.card-product__slider .gallery-top .swiper-slide {

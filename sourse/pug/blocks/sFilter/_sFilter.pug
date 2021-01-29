@@ -300,9 +300,15 @@ mixin sFilter(data)
 							button.defBtn.Btn-Flamenco1.Btn-filter(type='button')
 								| все
 								| фильтры
-		.row
-			.col-xl-3.col-md-4.col-sm-6
-				.select-wrap(data-name='list20')
+			<div class="filter-Btn">
+					<i class="icon-7-1_filter"></i>
+					<span>Открыть фильтры</span>
+			</div>
+		.filter__row.row
+			.col-xl-3.col-md-4
+				.filter__selectWrap
+					+input('Возрастанию цены','select')
+				//- .select-wrap(data-name='list20')
 					.select-text.input(title='Возрастанию цены')
 						input(type='hidden' value='Возрастанию цены' title='Возрастанию цены')
 						span Возрастанию цены

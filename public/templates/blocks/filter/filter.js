@@ -24,7 +24,7 @@ $(document).ready(function(){
             parent_items,
             filterItem_index = $(this).closest(".filterItem").index();
 
-            parent.css("border-color", "#445f87")
+            parent.css("border-color", "var(--Flamenco)")
             // parent_input.val(this_value);
             // parent_text.html(this_value);
 
