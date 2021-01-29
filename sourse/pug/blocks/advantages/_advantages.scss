@@ -59,20 +59,19 @@
 			min-width: rem(227);
 			min-height: rem(155);
 			padding: rem(20) rem(10) 0;
-			
+			border: 1px solid transparent;
+			// border-right: 1px solid #3c3c3c;
 
-			&:not(:last-child) {
-				border-right: 1px solid #3c3c3c;
-
-				@include media-breakpoint-down(xl) {
-					border-right: none;
+			@include media-breakpoint-up(xl) {
+				&:not(:last-child) {
+					border-right-color:#3c3c3c;
 				}
 			}
 
 			&:hover {
-					@include media-breakpoint-down(xl) {
 					position: relative;
-					border: 1px solid #3c3c3c !important;
+					border-right-color:#3c3c3c !important;
+					border-color: #3c3c3c !important;
 					&::before {
 						content: url(../assets/images/grossman-logo-2.png);
 						position: absolute;
@@ -83,37 +82,35 @@
 						top: rem(-9);
 						right: rem(20);
 					}
-				}
 			}
 			
-			&:nth-child(3) {
-				position: relative;
-				border: 1px solid #3c3c3c;
-				&::after {
-					content: url(../assets/images/grossman-logo-2.png);
-					position: absolute;
-					text-align: center;
-					width: rem(118);
-					height: rem(18);
-					background-color: $dark;
-					top: rem(-9);
-					right: rem(20);
-					@include media-breakpoint-down(xl) {
-						display: none;
-					}
-				}
-				@include media-breakpoint-down(xl) {
-					border-top: none;
-					border-left: none;
-				}
-			}
+			// &:nth-child(3) {
+			// 	position: relative;
+			// 	border: 1px solid #3c3c3c;
+			// 	&::after {
+			// 		content: url(../assets/images/grossman-logo-2.png);
+			// 		position: absolute;
+			// 		text-align: center;
+			// 		width: rem(118);
+			// 		height: rem(18);
+			// 		background-color: $dark;
+			// 		top: rem(-9);
+			// 		right: rem(20);
+			// 		@include media-breakpoint-down(xl) {
+			// 			display: none;
+			// 		}
+			// 	}
+			// 	@include media-breakpoint-down(xl) {
+			// 		border-top: none;
+			// 		border-left: none;
+			// 	}
+			// }
 			@include media-breakpoint-down(xl) {
 				flex-direction: row;
 				justify-content: center;
 				align-items: center;
 				min-width: 35%;
-				border-right: none;
-				border-bottom: 1px solid #3c3c3c;
+				border-bottom-color: #3c3c3c;
 			}
 
 			@include media-breakpoint-down(lg) {

@@ -9,6 +9,8 @@
 
 
 		&__title {
+			position: relative;
+			z-index: 3;
 			font-size: $h2-font-size;
 			font-weight: 300;
 			text-transform: uppercase;
@@ -25,6 +27,8 @@
 		}
 
 		&__descr {
+			position: relative;
+			z-index: 3;
 			color: #686868;
 			font-size: 14px;
 			font-weight: 400;
@@ -36,6 +40,8 @@
 		}
 
 		&__subtitle {
+			position: relative;
+			z-index: 3;
 			font-size: rem(16);
 			font-weight: 300;
 			text-transform: uppercase;
@@ -43,6 +49,8 @@
 		}
 
 		&__content {
+			position: relative;
+			z-index: 3;
 			font-size: rem(16);
 			font-weight: 300;
 			margin-bottom: rem(25);
@@ -65,6 +73,58 @@
 			align-items: center;
 			@include media-breakpoint-up(xxl) {
 				margin-right: rem(-10);
+			}
+			&::before {
+				content: "";
+				background-image: url(../assets/svg/grossman-logo-transparent.svg);
+				background-repeat: no-repeat;
+				width: rem(755);
+				height: rem(133);
+				max-width: rem(755);
+				max-height: rem(133);
+				position: absolute;
+				top: 7%;
+				left: 32.5%;
+				@media (max-width: 1700px) {
+					top: 13%;
+					width: rem(600);
+					height: rem(106);
+				}
+				@media (max-width: 1550px) {
+					top: 17%;
+					left: 31.5%;
+					width: rem(600);
+					height: rem(106);
+				}
+				@media (max-width: 1450px) {
+					top: 23%;
+					left: 31.5%;
+					width: rem(600);
+					height: rem(106);
+				}
+				@media (max-width: 1400px) {
+					top: 23%;
+					left: 27.5%;
+					width: rem(600);
+					height: rem(106);
+				}
+				@include media-breakpoint-down(lg) {
+					top: 17%;
+					left: 20.5%;
+				}
+				@include media-breakpoint-down(md) {
+					top: 6%;
+					left: 13.5%;
+					width: rem(480);
+					height: rem(84);
+				}
+				@include media-breakpoint-down(sm) {
+					top: 4%;
+					left: 10.5%;
+					width: rem(288);
+					height: rem(50);
+				}
+
 			}
 		}
 

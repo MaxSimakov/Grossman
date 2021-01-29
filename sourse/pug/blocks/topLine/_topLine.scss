@@ -37,7 +37,7 @@
 }
 
 .catalog-list .dropdown {
-	left: 110%;
+	left: 100%;
 }
 
 .catalog-list> li:hover> .icon-wrap i, .catalog-list> li:hover> a {
@@ -64,7 +64,7 @@
 	border-bottom: 1px solid #e8e8e8;
 }
 .catalog-list .arrowDown:after {
-	right: 0;
+	right: 0 !important;
 	color: #e32027;
 }
 .catalog-list .arrowDown::after {
@@ -82,7 +82,7 @@
 	padding-top: 0;
 	padding-bottom: 0;
 	min-height: rem(64);
-	margin: 0 rem(28);
+	margin: 0 rem(26);
 }
 
 .menu-left {
@@ -105,6 +105,10 @@
 .dropdown {
 	border-radius: 0;
 	padding: 0;
+}
+
+.navList {
+	width: auto;
 }
 
 .navList .firstColumn li.item, .navList .secondColumn li.item {

@@ -601,9 +601,22 @@ iframe {
 
 	.phone {
 		margin-bottom: 0;
-	}
+	}	
+}
 
-	
+.Btn-Wedgewood{
+	background-color: transparent;
+	border-color: var(--Flamenco);
+	border-color: var(--Flamenco);
+	color: var(--Flamenco);
+	color: var(--Flamenco)
+}
+
+.Btn-Wedgewood:hover{
+	background-color: var(--Flamenco);
+	background-color: var(--Flamenco);
+	color: var(--White);
+	color: var(--White);
 }
 
 

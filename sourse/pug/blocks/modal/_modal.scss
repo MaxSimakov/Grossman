@@ -125,3 +125,7 @@ a {
 @include media-breakpoint-down(sm) {}
 
 @include media-breakpoint-down(xs) {}
+
+.modal__inner .Btn-Wedgewood {
+	@extend .Btn-Flamenco1;
+}

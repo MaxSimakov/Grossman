@@ -686,8 +686,7 @@ main{
     display: inline-block
 }
 .dashed:hover, .solid:hover {
-	color: #445f87;
-	color: var(--Wedgewood);
+	color: var(--Flamenco);
 }
 .dashed{
     border-bottom: 1px dashed currentColor;
