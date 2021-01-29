@@ -520,7 +520,9 @@ iframe {
 }
 
 .col-xl-9.full-1199 .page-head {
-	padding-left: rem(21);
+	@include media-breakpoint-up(sm) {
+			padding-left: rem(21);
+	}
 }
 
 

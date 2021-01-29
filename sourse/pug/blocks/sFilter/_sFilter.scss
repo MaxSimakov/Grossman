@@ -3,7 +3,10 @@
 	
 	&-wrap {
 		background-color: #fff;
-		margin-bottom: rem(30);
+		margin-bottom: rem(15);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(30);
+		}
 	}
 
 	&__Btns {
@@ -13,10 +16,20 @@
 	}
 
 	&-inner {
-		@include media-breakpoint-down(md) {
-			display: block;
+		@media (min-width: 767px) {
+			display: block !important;
 		}
 	}
+
+	&__selectWrap {
+		padding-bottom: rem(20);
+	}
+
+	&__row {
+
+	}
+
+
 
 
 
@@ -31,6 +44,19 @@
 
 .subcategory-page {
 	margin-bottom: rem(-20);
+
+	.form-select {
+		font-size: rem(14);
+		padding: rem(11px) rem(20px);
+	}
+
+	.select-wrap .dropdown .selected label::after {
+		border-color: var(--Flamenco);
+	}
+
+	.select-wrap .dropdown .selected label::before {
+		color: var(--Flamenco);
+	}
 
 	.input {
 		border-radius: 0;
