@@ -307,11 +307,6 @@
 		.menu-mobile__list .secondStage> li:hover> .item__inner {
 			background-color: $dark;
 		}
-
-		
-		
-
-	  
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -355,6 +350,18 @@
 .menu-mobile__list .secondStage> li:hover> .item__inner {
 	background-color: $dark;
 }
+
+.menu-mobile__inner {
+	.icon-phone {
+		margin-bottom: 2px;
+	}
+	.icon-mail {
+		margin-bottom: 4px;
+	}
+		span {
+			margin-left: rem(15);
+		}
+	}
 
 .icon-phone {
 	width: rem(17);
