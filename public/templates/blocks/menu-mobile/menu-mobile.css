@@ -102,10 +102,10 @@
     color: var(--Flamenco);
     color: var(--Flamenco);
 }
-.menu-mobile__list .firstStage> li:hover> .item__inner::after, .menu-mobile__list .firstStage> li:hover> .item__inner> a::after {
+/* .menu-mobile__list .firstStage> li:hover> .item__inner::after, .menu-mobile__list .firstStage> li:hover> .item__inner> a::after {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-}
+} */
 .menu-mobile__list .firstStage:first-of-type> .item__inner {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -125,17 +125,17 @@
     font-size: 17px;
     font-weight: 600;
 }
-.menu-mobile__list .firstStage li:hover .secondStage{
+/* .menu-mobile__list .firstStage li:hover .secondStage{
                     display: block;
                     width: 100%;
-                }
+                } */
 .menu-mobile__list .secondStage{
             width: 100%;
             border-bottom: 1px solid var(--Whisper);
             border-bottom: 1px solid var(--Whisper);
             padding-bottom: 12px;
             overflow: hidden;
-            display: none;
+            /* display: none; */
         }
 .menu-mobile__list .secondStage .arrowDown::after {
     -webkit-transform: rotate(-90deg);
@@ -158,14 +158,14 @@
 .menu-mobile__list .secondStage> li> .item__inner::after {
     right: 12px;
 }
-.menu-mobile__list .secondStage li:hover .thirdStage{
+/* .menu-mobile__list .secondStage li:hover .thirdStage{
                     display: block;
                     width: 100%;
-                }
+                } */
 .menu-mobile__list .thirdStage{
             -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, .15);
                     box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, .15);
-            display: none;
+            /* display: none; */
         }
 .menu-mobile__list .thirdStage li{
                 display: -webkit-box;
@@ -189,17 +189,17 @@
 .menu-mobile__list .thirdStage li ul .item__inner{
                         padding-left: 46px;
                     }
-.menu-mobile__list .thirdStage li:hover .item__inner::after {
+/* .menu-mobile__list .thirdStage li:hover .item__inner::after {
                         -webkit-transform: rotate(180deg);
                                 transform: rotate(180deg);
-}
-.menu-mobile__list .thirdStage li:hover .fourth {
+} */
+/* .menu-mobile__list .thirdStage li:hover .fourth {
                         display: block;
                         width: 100%;
-}
-.menu-mobile__list .fourth{
+} */
+/* .menu-mobile__list .fourth{
             display: none;
-        }
+        } */
 .menu-mobile .brends-list {
         width: 100%;
 }

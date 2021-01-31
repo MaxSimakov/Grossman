@@ -11,7 +11,10 @@ function eventHandler() {
 	if (screenName && x === "localhost:3000") {
 		document.body.insertAdjacentHTML("beforeend", `<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
-
+	$('.menu-mobile__list .arrowDown').append('<div class="toggle-menu"></div>')
+	$('.menu-mobile__list .arrowDown').on('click','.toggle-menu',function(){
+		$(this).parent().toggleClass('active').next().slideToggle();
+	})
 };
 
 if (document.readyState !== 'loading') {
