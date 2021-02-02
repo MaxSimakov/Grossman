@@ -89,11 +89,17 @@ mixin footer()
 			.footer__bottom
 				.container
 					.row
-						.col-md-4
+						.col-lg-2
 							p.copyright © 2020 Grossman
-						.col-md-4
+						.col-lg-2
 							a.privacy(href="#") Политика конфиденциальности
-						.col-md-4
+						.col-lg-5
+							.copyright-gray
+								a.privacy(href="#") Создание сайта
+								span  &minus;&nbsp;Комапания &laquo;ВебПульт&raquo;&nbsp;/ 
+								a.privacy  Продвижение&nbsp;и&nbsp;реклама&nbsp;сайта
+								span &nbsp; &minus;&nbsp;РА&nbsp;&laquo;Профит&raquo;
+						.col-lg-3
 							+soc
 								+item-sos('youtube')
 								+item-sos('vk')

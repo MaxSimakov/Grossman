@@ -176,8 +176,8 @@
 			background-color: $primary;
 			border: 1px solid $primary;
 			&:hover {
-				background-color: transparent;
-				border-color: $primary;
+				background-color: #111111;
+				border-color: #111111;
 			}
 		}
 		
@@ -307,6 +307,19 @@
 		.menu-mobile__list .secondStage> li:hover> .item__inner {
 			background-color: $dark;
 		}
+
+		.icon-compare, .icon-heart, .icon-basket {
+			color: currentColor;
+		}
+		
+		.comparasion {
+			color: #a8a8a8;;
+		}
+
+		.elect.not-empty .icon, .comparasion.not-empty .icon, .basket.not-empty .icon {
+			color: $primary;
+		}
+
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

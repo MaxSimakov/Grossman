@@ -785,8 +785,7 @@ main{
         font-size: 19px;
     }
 .elect.not-empty {
-	color: #000;
-	color: var(--mainColor);
+    color: var(--Flamenco);
 }
 .elect.not-empty i {
             color: #ff0000;
@@ -802,8 +801,7 @@ main{
         font-size: 26px;
     }
 .comparison.not-empty {
-	color: #000;
-	color: var(--mainColor);
+    color: var(--Flamenco);
 }
 .comparison.not-empty i {
             color: #445f87;

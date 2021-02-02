@@ -63,16 +63,16 @@
 .catalog-list li:not(:last-child) {
 	border-bottom: 1px solid #e8e8e8;
 }
-.catalog-list .arrowDown:after {
-	right: 0 !important;
-	color: #e32027;
-}
+// .catalog-list .arrowDown:after {
+// 	// right: 0 !important;
+// 	color: #e32027;
+// }
 .catalog-list .arrowDown::after {
 	color: $primary;
 	font-size: 7px;
 	-webkit-transform: rotate(-90deg);
 	transform: rotate(-90deg);
-	right: -5px;
+	right: 5px;
 	top: calc(50% - 5.5px);
 }
 
@@ -82,7 +82,7 @@
 	padding-top: 0;
 	padding-bottom: 0;
 	min-height: rem(64);
-	margin: 0 rem(26);
+	margin: 0 rem(24);
 }
 
 .menu-left {
